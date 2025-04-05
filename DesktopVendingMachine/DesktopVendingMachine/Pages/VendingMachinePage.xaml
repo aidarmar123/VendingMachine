@@ -1,0 +1,189 @@
+﻿<Page x:Class="DesktopVendingMachine.Pages.VendingMachinePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DesktopVendingMachine.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="VendingMachinePage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel>
+            <TextBlock Text="Торговые автоматы"/>
+            <TextBlock Text="{Binding VendingMachine.Count, StringFormat='Всего найдено {0}'}"/>
+            
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Показать"/>
+                    <ComboBox x:Name="CbCountItem"
+                              SelectedItem="{Binding CountItem}"
+                              SelectionChanged="CbCountItem_SelectionChanged"/>
+                    <TextBlock Text="запиcей"/>
+                </StackPanel>
+
+                <StackPanel HorizontalAlignment="Center">
+                    <TextBox Text="{Binding SearchText}" Width="250"/>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="BAdd"
+                            Content="➕ Добавить"
+                            Click="BAdd_Click"/>
+                    <Button x:Name="BExport"
+                            Content="⤵ Экспорт"
+                            Click="BExport_Click"/>
+                    
+                    
+                </StackPanel>
+            </Grid>
+            <TabControl Grid.Row="1" >
+                 <TabItem Header="В строку">
+                    <DataGrid x:Name="DGMacine"
+              
+                AutoGenerateColumns="False"
+                      IsReadOnly="True">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Id"
+                                  Binding="{Binding Id}"/>
+
+                            <DataGridTextColumn Header="Название автомата"
+                                  Binding="{Binding Name}"/>
+
+                            <DataGridTextColumn Header="Модель"
+                                  Binding="{Binding Model.Name}"/>
+
+                            <DataGridTextColumn Header="Компания"
+                                  Binding="{Binding Manufacture.Name}"/>
+
+                            <DataGridTextColumn Header="Адрес/Место"
+                                  Binding="{Binding FullAdress}"/>
+
+                            <DataGridTextColumn Header="В работе с "
+                                  Binding="{Binding InitWork}"/>
+
+                            <DataGridTemplateColumn>
+                                <DataGridTemplateColumn.CellTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="BEdit"
+                                      Content="✏"
+                                      Foreground="LightBlue"
+                                      Click="BEdit_Click"
+                                      Background="Transparent"
+                                      BorderThickness="0"/>
+
+                                            <Button x:Name="BDelete"
+                                      Content="🗑"
+                                      Foreground="LightBlue"
+                                      Click="BDelete_Click"
+                                      Background="Transparent"
+                                      BorderThickness="0"/>
+
+                                            <Button x:Name="BUnlokModem"
+                                      Content="🔓"
+                                      Foreground="LightBlue"
+                                      Click="BUnlokModem_Click"
+                                      Background="Transparent"
+                                      BorderThickness="0"/>
+
+
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </DataGridTemplateColumn.CellTemplate>
+                            </DataGridTemplateColumn>
+
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </TabItem>
+                <TabItem Header="Плиткой">
+                    <ListView x:Name="LVMachine">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock 
+      Text="{Binding Id, StringFormat='Id {0}'}"/>
+
+                                    <TextBlock
+      Text="{Binding Name, StringFormat='Название автомата {0}'}"/>
+
+                                    <TextBlock 
+      Text="{Binding Model.Name, StringFormat='Модель {0}'}"/>
+
+                                    <TextBlock 
+      Text="{Binding Manufacture.Name, StringFormat='Компания {0}'}"/>
+
+                                    <TextBlock 
+      Text="{Binding FullAdress, StringFormat='Адрес/Место {0}'}"/>
+
+                                    <TextBlock
+      Text="{Binding InitWork, StringFormat='В работе с  dd.MM.yyyy'}"/>
+
+                                   
+                                                <StackPanel Orientation="Horizontal">
+                                                    <Button x:Name="BEdit"
+          Content="✏"
+          Foreground="LightBlue"
+          Click="BEdit_Click"
+          Background="Transparent"
+          BorderThickness="0"/>
+
+                                                    <Button x:Name="BDelete"
+          Content="🗑"
+          Foreground="LightBlue"
+          Click="BDelete_Click"
+          Background="Transparent"
+          BorderThickness="0"/>
+
+                                                    <Button x:Name="BUnlokModem"
+          Content="🔓"
+          Foreground="LightBlue"
+          Click="BUnlokModem_Click"
+          Background="Transparent"
+          BorderThickness="0"/>
+
+
+                                                </StackPanel>
+                                           
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                        <ListView.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ListView.ItemsPanel>
+                    </ListView>
+                </TabItem>
+                
+            </TabControl>
+
+            <Grid Grid.Row="2">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button x:Name="BPrevous"
+                            Content="◀"
+                            Click="BPrevous_Click"
+                            Background="Transparent"/>
+                    <TextBlock Text="{Binding IndexPage}"/>
+                    <Button x:Name="BNext"
+                            Content="▶"
+                            Click="BNext_Click"
+                            Background="Transparent"/>
+                    
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>

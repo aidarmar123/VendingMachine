@@ -1,0 +1,132 @@
+﻿<Page x:Class="DesktopVendingMachine.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:DesktopVendingMachine.Pages"
+      xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage">
+    <Page.Resources>
+        <Style TargetType="Grid" x:Key="Card">
+            <Setter Property="Background"
+                    Value="White"/>
+            <Setter Property="Margin"
+                    Value="10"/>
+        </Style>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Личный кабинет. Главная" FontSize="20" />
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="2*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            
+                <Grid Style="{StaticResource Card}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto"/>
+                        <RowDefinition/>
+                    <RowDefinition Height="auto"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Эффективность cети"  Background="LightGray"/>
+                <lvc:AngularGauge Grid.Row="1" Value="{Binding ValueEffects}" SectionsInnerRadius=".5">
+                    <lvc:AngularGauge.Sections>
+                        <lvc:AngularSection FromValue="1" ToValue="100" Fill="Green"/>
+                    </lvc:AngularGauge.Sections>
+                </lvc:AngularGauge>
+                <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding ValueEffects, StringFormat='Работающих автоматов: {0}%'}"/>
+            </Grid>
+
+
+            <Grid Style="{StaticResource Card}" Grid.Row="1" Grid.ColumnSpan="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel>
+                    <TextBlock Text="Динамика продаж за последние 10 дней"/>
+                    <TextBlock Text="{Binding Dates, StringFormat='Данные по продажам с {0}'}"/>
+
+                    <StackPanel Orientation="Horizontal">
+                        <Button x:Name="BSum"
+                                Content="По сумме"
+                                Click="BSum_Click"/>
+                        
+                        <Button x:Name="BCount"
+                                Content="По количеству"
+                                Click="BCount_Click"/>
+           
+                    </StackPanel>
+                </StackPanel>
+                <lvc:CartesianChart x:Name="ChartSale" Grid.Row="1">
+                    <lvc:CartesianChart.AxisX>
+                        <lvc:Axis ShowLabels="True" Separator="{Binding Separator}" Labels="{Binding LabelsSales}"/>
+                    </lvc:CartesianChart.AxisX>
+                </lvc:CartesianChart>
+            </Grid>
+
+            <Grid Style="{StaticResource Card}" Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Состояние сети"/>
+                <lvc:PieChart Grid.Row="1" x:Name="PieChart" InnerRadius="10">
+                </lvc:PieChart>
+            </Grid>
+
+            <Grid Style="{StaticResource Card}" Grid.Column="2">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Сводка"/>
+                <StackPanel Grid.Row="1">
+                    <TextBlock Text="{Binding Money, StringFormat='Денег в ТА {0}'}"/>
+                    <TextBlock Text="{Binding Change, StringFormat='Сдача в ТА {0}'}"/>
+                    <TextBlock Text="{Binding ProfitTodya, StringFormat='Выручка, сегодня {0}'}"/>
+                    <TextBlock Text="{Binding ProfitYestday, StringFormat='Выручка, вчера {0}'}"/>
+                    <TextBlock Text="{Binding IncisedToday, StringFormat='Инкансировани, сегодня {0}'}"/>
+                    <TextBlock Text="{Binding IncisedYestday, StringFormat='Инкансировани, вчера {0}'}"/>
+                    <TextBlock Text="{Binding Services, StringFormat='Обслужино ТА, сегодня/вчера {0}'}"/>
+                  
+                </StackPanel>
+            </Grid>
+
+            <Grid Style="{StaticResource Card}" Grid.Column="2" Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Новости"/>
+                <ListView x:Name="LVNews"
+                         Grid.Row="1" >
+
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn DisplayMemberBinding="{Binding Date , StringFormat='dd.MM.yyyy'}"/>
+                            <GridViewColumn DisplayMemberBinding="{Binding ContentNews }"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+            </Grid>
+
+
+
+
+        </Grid>
+    </Grid>
+</Page>

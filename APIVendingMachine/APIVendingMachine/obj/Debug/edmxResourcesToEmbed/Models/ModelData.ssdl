@@ -1,0 +1,535 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Хранилище VendingMachinesModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MachineProduct">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="VendingMachinId" Type="int" Nullable="false" />
+    <Property Name="MinProduct" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="MachineTypePay">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendingMachinId" Type="int" Nullable="false" />
+    <Property Name="TypePayId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Manufacture">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Model">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="News">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ContentNews" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="Date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PriotityService">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ShortDecription" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Price" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ProductMatrix">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sales">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendingMachinId" Type="int" Nullable="false" />
+    <Property Name="ProductId" Type="int" Nullable="false" />
+    <Property Name="CountProduct" Type="int" Nullable="false" />
+    <Property Name="DateTimeSale" Type="datetime" Nullable="false" />
+    <Property Name="TypePayId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Services">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="VendingMachinId" Type="int" Nullable="false" />
+    <Property Name="DateService" Type="datetime" Nullable="false" />
+    <Property Name="Decription" Type="nvarchar" MaxLength="4000" Nullable="false" />
+    <Property Name="Problems" Type="nvarchar" MaxLength="4000" />
+    <Property Name="EmployeeId" Type="int" />
+    <Property Name="NameEmployee" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="StatusMachin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="TimeZone">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypePay">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Surname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Patronic" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="RoleId" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VendingMachin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lacation" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Coordination" Type="nvarchar" MaxLength="500" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ManufactureId" Type="int" Nullable="false" />
+    <Property Name="ModelId" Type="int" Nullable="false" />
+    <Property Name="WorkModeId" Type="int" Nullable="false" />
+    <Property Name="InitWork" Type="datetime" Nullable="false" />
+    <Property Name="StatusMachinId" Type="int" Nullable="false" />
+    <Property Name="TotalIncome" Type="int" Nullable="false" />
+    <Property Name="LastServiceDate" Type="datetime" />
+    <Property Name="IsDelete" Type="bit" Nullable="false" />
+    <Property Name="HaveModem" Type="bit" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="4000" />
+    <Property Name="TimeZoneId" Type="int" Nullable="false" />
+    <Property Name="ProductMatrixId" Type="int" Nullable="false" />
+    <Property Name="ShcemaCritValueId" Type="int" />
+    <Property Name="ShcemaNotificationId" Type="int" />
+    <Property Name="ClientId" Type="int" />
+    <Property Name="MenedgerId" Type="int" />
+    <Property Name="IngenerId" Type="int" />
+    <Property Name="TapId" Type="int" />
+    <Property Name="PFIDServiece" Type="nvarchar" MaxLength="50" />
+    <Property Name="RFIDIncasation" Type="nvarchar" MaxLength="50" />
+    <Property Name="RFIDDownload" Type="nvarchar" MaxLength="50" />
+    <Property Name="KitOnline" Type="nvarchar" MaxLength="50" />
+    <Property Name="PriotityServiceId" Type="int" Nullable="false" />
+    <Property Name="Number" Type="int" />
+  </EntityType>
+  <EntityType Name="WorkMode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_MachineProduct_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="MachineProduct" Type="Self.MachineProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MachineProduct">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MachineProduct_VendingMachin">
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="1" />
+    <End Role="MachineProduct" Type="Self.MachineProduct" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MachineProduct">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MachineTypePay_TypePay">
+    <End Role="TypePay" Type="Self.TypePay" Multiplicity="1" />
+    <End Role="MachineTypePay" Type="Self.MachineTypePay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypePay">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MachineTypePay">
+        <PropertyRef Name="TypePayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_MachineTypePay_VendingMachin">
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="1" />
+    <End Role="MachineTypePay" Type="Self.MachineTypePay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="MachineTypePay">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_Product">
+    <End Role="Product" Type="Self.Product" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Product">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="ProductId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_TypePay">
+    <End Role="TypePay" Type="Self.TypePay" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypePay">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="TypePayId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sales_VendingMachin">
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="1" />
+    <End Role="Sales" Type="Self.Sales" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sales">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Services_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="Services" Type="Self.Services" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Services">
+        <PropertyRef Name="EmployeeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Services_VendingMachin">
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="1" />
+    <End Role="Services" Type="Self.Services" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Services">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_Manufacture">
+    <End Role="Manufacture" Type="Self.Manufacture" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Manufacture">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ManufactureId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_Model">
+    <End Role="Model" Type="Self.Model" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Model">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ModelId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_PriotityService">
+    <End Role="PriotityService" Type="Self.PriotityService" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PriotityService">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="PriotityServiceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_ProductMatrix">
+    <End Role="ProductMatrix" Type="Self.ProductMatrix" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductMatrix">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ProductMatrixId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_StatusMachin">
+    <End Role="StatusMachin" Type="Self.StatusMachin" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="StatusMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_TimeZone">
+    <End Role="TimeZone" Type="Self.TimeZone" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TimeZone">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="TimeZoneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_User">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ClientId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_User1">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="MenedgerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_User2">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="IngenerId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_User3">
+    <End Role="User" Type="Self.User" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="TapId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_WorkMode">
+    <End Role="WorkMode" Type="Self.WorkMode" Multiplicity="1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="WorkMode">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="WorkModeId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="Хранилище VendingMachinesModelContainer">
+    <EntitySet Name="MachineProduct" EntityType="Self.MachineProduct" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="MachineTypePay" EntityType="Self.MachineTypePay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Manufacture" EntityType="Self.Manufacture" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Model" EntityType="Self.Model" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="News" EntityType="Self.News" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="PriotityService" EntityType="Self.PriotityService" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Product" EntityType="Self.Product" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ProductMatrix" EntityType="Self.ProductMatrix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StatusMachin" EntityType="Self.StatusMachin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TimeZone" EntityType="Self.TimeZone" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TypePay" EntityType="Self.TypePay" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VendingMachin" EntityType="Self.VendingMachin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="WorkMode" EntityType="Self.WorkMode" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_MachineProduct_Product" Association="Self.FK_MachineProduct_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="MachineProduct" EntitySet="MachineProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MachineProduct_VendingMachin" Association="Self.FK_MachineProduct_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="MachineProduct" EntitySet="MachineProduct" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MachineTypePay_TypePay" Association="Self.FK_MachineTypePay_TypePay">
+      <End Role="TypePay" EntitySet="TypePay" />
+      <End Role="MachineTypePay" EntitySet="MachineTypePay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_MachineTypePay_VendingMachin" Association="Self.FK_MachineTypePay_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="MachineTypePay" EntitySet="MachineTypePay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_Product" Association="Self.FK_Sales_Product">
+      <End Role="Product" EntitySet="Product" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_TypePay" Association="Self.FK_Sales_TypePay">
+      <End Role="TypePay" EntitySet="TypePay" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sales_VendingMachin" Association="Self.FK_Sales_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="Sales" EntitySet="Sales" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Services_User" Association="Self.FK_Services_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="Services" EntitySet="Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Services_VendingMachin" Association="Self.FK_Services_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="Services" EntitySet="Services" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
+      <End Role="Role" EntitySet="Role" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_Manufacture" Association="Self.FK_VendingMachin_Manufacture">
+      <End Role="Manufacture" EntitySet="Manufacture" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_Model" Association="Self.FK_VendingMachin_Model">
+      <End Role="Model" EntitySet="Model" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_PriotityService" Association="Self.FK_VendingMachin_PriotityService">
+      <End Role="PriotityService" EntitySet="PriotityService" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_ProductMatrix" Association="Self.FK_VendingMachin_ProductMatrix">
+      <End Role="ProductMatrix" EntitySet="ProductMatrix" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_StatusMachin" Association="Self.FK_VendingMachin_StatusMachin">
+      <End Role="StatusMachin" EntitySet="StatusMachin" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_TimeZone" Association="Self.FK_VendingMachin_TimeZone">
+      <End Role="TimeZone" EntitySet="TimeZone" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_User" Association="Self.FK_VendingMachin_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_User1" Association="Self.FK_VendingMachin_User1">
+      <End Role="User" EntitySet="User" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_User2" Association="Self.FK_VendingMachin_User2">
+      <End Role="User" EntitySet="User" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_User3" Association="Self.FK_VendingMachin_User3">
+      <End Role="User" EntitySet="User" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_WorkMode" Association="Self.FK_VendingMachin_WorkMode">
+      <End Role="WorkMode" EntitySet="WorkMode" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
