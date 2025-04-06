@@ -6,6 +6,10 @@ using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Microsoft.Owin;
 using Owin;
+using APIVendingMachine.Models;
+using APIVendingMachine.Models.MetaData;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel;
 
 [assembly: OwinStartup(typeof(APIVendingMachine.Startup))]
 
@@ -15,6 +19,9 @@ namespace APIVendingMachine
     {
         public void Configuration(IAppBuilder app)
         {
+            RegistartionProvider<VendingMachin, MetaVendingMachine>();
+            RegistartionProvider<Company, MetaCompany>();
+
             var secretKey = ConfigurationManager.AppSettings["secretKey"];
             var issure = ConfigurationManager.AppSettings["issure"];
             var audince = ConfigurationManager.AppSettings["audince"];
@@ -38,5 +45,13 @@ namespace APIVendingMachine
             });
             ConfigureAuth(app);
         }
+
+        private void RegistartionProvider<T1, T2>()
+        {
+            var provider = new AssociatedMetadataTypeTypeDescriptionProvider(typeof(T1), typeof(T2));
+            TypeDescriptor.AddProviderTransparent(provider, typeof(T1));
+        }
     }
+
+
 }

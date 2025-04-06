@@ -1,6 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="Хранилище VendingMachinesModelContainer" CdmEntityContainer="VendingMachinesEntities">
+    <EntitySetMapping Name="Company">
+      <EntityTypeMapping TypeName="VendingMachinesModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+          <ScalarProperty Name="ContactCompany" ColumnName="ContactCompany" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="InitWork" ColumnName="InitWork" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ConnectionProvider">
+      <EntityTypeMapping TypeName="VendingMachinesModel.ConnectionProvider">
+        <MappingFragment StoreEntitySet="ConnectionProvider">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Icon" ColumnName="Icon" />
+          <ScalarProperty Name="StateConnectId" ColumnName="StateConnectId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="MachineProduct">
       <EntityTypeMapping TypeName="VendingMachinesModel.MachineProduct">
         <MappingFragment StoreEntitySet="MachineProduct">
@@ -36,6 +59,23 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="News">
+      <EntityTypeMapping TypeName="VendingMachinesModel.News">
+        <MappingFragment StoreEntitySet="News">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ContentNews" ColumnName="ContentNews" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PriotityService">
+      <EntityTypeMapping TypeName="VendingMachinesModel.PriotityService">
+        <MappingFragment StoreEntitySet="PriotityService">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Product">
       <EntityTypeMapping TypeName="VendingMachinesModel.Product">
         <MappingFragment StoreEntitySet="Product">
@@ -43,6 +83,14 @@
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="ShortDecription" ColumnName="ShortDecription" />
           <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ProductMatrix">
+      <EntityTypeMapping TypeName="VendingMachinesModel.ProductMatrix">
+        <MappingFragment StoreEntitySet="ProductMatrix">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -79,6 +127,30 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="ShcemaCritValue">
+      <EntityTypeMapping TypeName="VendingMachinesModel.ShcemaCritValue">
+        <MappingFragment StoreEntitySet="ShcemaCritValue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShcemaNotification">
+      <EntityTypeMapping TypeName="VendingMachinesModel.ShcemaNotification">
+        <MappingFragment StoreEntitySet="ShcemaNotification">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StateConnect">
+      <EntityTypeMapping TypeName="VendingMachinesModel.StateConnect">
+        <MappingFragment StoreEntitySet="StateConnect">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="StatusMachin">
       <EntityTypeMapping TypeName="VendingMachinesModel.StatusMachin">
         <MappingFragment StoreEntitySet="StatusMachin">
@@ -95,6 +167,14 @@
           <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
           <ScalarProperty Name="version" ColumnName="version" />
           <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TimeZone">
+      <EntityTypeMapping TypeName="VendingMachinesModel.TimeZone">
+        <MappingFragment StoreEntitySet="TimeZone">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -116,26 +196,13 @@
           <ScalarProperty Name="Email" ColumnName="Email" />
           <ScalarProperty Name="RoleId" ColumnName="RoleId" />
           <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="VendingMachin">
       <EntityTypeMapping TypeName="VendingMachinesModel.VendingMachin">
         <MappingFragment StoreEntitySet="VendingMachin">
-          <ScalarProperty Name="Number" ColumnName="Number" />
-          <ScalarProperty Name="PriotityServiceId" ColumnName="PriotityServiceId" />
-          <ScalarProperty Name="KitOnline" ColumnName="KitOnline" />
-          <ScalarProperty Name="RFIDDownload" ColumnName="RFIDDownload" />
-          <ScalarProperty Name="RFIDIncasation" ColumnName="RFIDIncasation" />
-          <ScalarProperty Name="PFIDServiece" ColumnName="PFIDServiece" />
-          <ScalarProperty Name="TapId" ColumnName="TapId" />
-          <ScalarProperty Name="IngenerId" ColumnName="IngenerId" />
-          <ScalarProperty Name="MenedgerId" ColumnName="MenedgerId" />
-          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
-          <ScalarProperty Name="ShcemaNotificationId" ColumnName="ShcemaNotificationId" />
-          <ScalarProperty Name="ShcemaCritValueId" ColumnName="ShcemaCritValueId" />
-          <ScalarProperty Name="ProductMatrixId" ColumnName="ProductMatrixId" />
-          <ScalarProperty Name="TimeZoneId" ColumnName="TimeZoneId" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Adress" ColumnName="Adress" />
           <ScalarProperty Name="Lacation" ColumnName="Lacation" />
@@ -151,6 +218,25 @@
           <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
           <ScalarProperty Name="HaveModem" ColumnName="HaveModem" />
           <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="TimeZoneId" ColumnName="TimeZoneId" />
+          <ScalarProperty Name="ProductMatrixId" ColumnName="ProductMatrixId" />
+          <ScalarProperty Name="ShcemaCritValueId" ColumnName="ShcemaCritValueId" />
+          <ScalarProperty Name="ShcemaNotificationId" ColumnName="ShcemaNotificationId" />
+          <ScalarProperty Name="ClientId" ColumnName="ClientId" />
+          <ScalarProperty Name="MenedgerId" ColumnName="MenedgerId" />
+          <ScalarProperty Name="IngenerId" ColumnName="IngenerId" />
+          <ScalarProperty Name="TapId" ColumnName="TapId" />
+          <ScalarProperty Name="PFIDServiece" ColumnName="PFIDServiece" />
+          <ScalarProperty Name="RFIDIncasation" ColumnName="RFIDIncasation" />
+          <ScalarProperty Name="RFIDDownload" ColumnName="RFIDDownload" />
+          <ScalarProperty Name="KitOnline" ColumnName="KitOnline" />
+          <ScalarProperty Name="PriotityServiceId" ColumnName="PriotityServiceId" />
+          <ScalarProperty Name="Number" ColumnName="Number" />
+          <ScalarProperty Name="TimeWork" ColumnName="TimeWork" />
+          <ScalarProperty Name="ConnectionProviderId" ColumnName="ConnectionProviderId" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="PriceInMounth" ColumnName="PriceInMounth" />
+          <ScalarProperty Name="PaybackMonth" ColumnName="PaybackMonth" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -159,39 +245,6 @@
         <MappingFragment StoreEntitySet="WorkMode">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="News">
-      <EntityTypeMapping TypeName="VendingMachinesModel.News">
-        <MappingFragment StoreEntitySet="News">
-          <ScalarProperty Name="Date" ColumnName="Date" />
-          <ScalarProperty Name="ContentNews" ColumnName="ContentNews" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="PriotityService">
-      <EntityTypeMapping TypeName="VendingMachinesModel.PriotityService">
-        <MappingFragment StoreEntitySet="PriotityService">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Name" ColumnName="Name" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="ProductMatrix">
-      <EntityTypeMapping TypeName="VendingMachinesModel.ProductMatrix">
-        <MappingFragment StoreEntitySet="ProductMatrix">
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="TimeZone">
-      <EntityTypeMapping TypeName="VendingMachinesModel.TimeZone">
-        <MappingFragment StoreEntitySet="TimeZone">
-          <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

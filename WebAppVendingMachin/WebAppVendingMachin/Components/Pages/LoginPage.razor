@@ -1,0 +1,81 @@
+﻿@page "/Login"
+@using Microsoft.AspNetCore.Localization
+@using Microsoft.Extensions.Localization
+@layout AuthorizationLayout
+@inject NavigationManager navigationManager
+@inject IHttpContextAccessor HttpContextAccessor
+@inject IStringLocalizer<Resource> Localizer
+<PageTitle>Login</PageTitle>
+<Button Clicked="SetEnglish">En</Button>
+<Button Clicked="SetRussia">Ru</Button>
+<EditForm FormName="Authorize" Model="contextUser" OnValidSubmit="Login">
+	<DataAnnotationsValidator />
+	<Microsoft.AspNetCore.Components.Forms.ValidationSummary />
+	<div class="form-center">
+		<div>
+			<label>
+				Email:
+			</label>
+			<br/>
+			<InputText @bind-Value="@contextUser.Email" />
+		</div>
+		<div>
+			<label>
+				Password:
+			</label>
+			<br />
+
+			<InputText @bind-Value="@contextUser.Password" />
+		</div>
+		<Button Type="ButtonType.Submit">@Localizer["Login"]</Button>
+		<Button Clicked="Registration">@Localizer["Sign Up"]</Button>
+	</div>
+</EditForm>
+@code {
+	[Inject] IMessageService messageService { get; set; }
+	[Inject] IJSRuntime JS { get; set; }
+	LoginUser contextUser { get; set; } = new LoginUser();
+
+	private void Registration(MouseEventArgs args)
+	{
+		navigationManager.NavigateTo("/Registration");
+	}
+	private async Task Login(EditContext args)
+	{
+		var response = await NetManager.Authorization(contextUser.Email, contextUser.Password);
+		if (response.IsSuccessStatusCode)
+		{
+			UserServices.AuthUser = (await NetManager.ParseResponse<GetToken>(response)).contextUser;
+			await DataManager.InitData();
+
+			navigationManager.NavigateTo("/");
+		}else if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+		{
+			await ShowMessage("Пользоватлеь не найден");
+		}
+	}
+	private Task ShowMessage(string msg)
+	{
+		return messageService.Error(msg,"Error");
+	}
+	private async Task SetRussia(MouseEventArgs args)
+	{
+		await JS.InvokeVoidAsync("setCulture", "ru");
+		StateHasChanged();
+	}
+	private async Task SetEnglish(MouseEventArgs args)
+	{
+		await JS.InvokeVoidAsync("setCulture", "en");
+		StateHasChanged();
+
+	}
+}
+<style>
+	
+</style>
+<script>
+	function setCulture(culture) {
+		document.cookie = `.AspNetCore.Culture=c=${culture}|uic=${culture}; path=/`;
+		location.reload();
+	}
+</script>

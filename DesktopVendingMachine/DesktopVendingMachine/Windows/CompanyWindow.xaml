@@ -1,0 +1,57 @@
+﻿<Window x:Class="DesktopVendingMachine.Windows.CompanyWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DesktopVendingMachine.Windows"
+        mc:Ignorable="d"
+        Title="Компания" Height="450" Width="800">
+    <ScrollViewer>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <StackPanel>
+                <TextBlock Text="Вышестоящия компания"/>
+                <TextBox Text="{Binding PrimaryCompanyName}" IsEnabled="False"/>
+                
+                <TextBlock Text="Контакты компании"/>
+                <TextBox Text="{Binding ContactCompany}"/>
+
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="Название компании"/>
+                <TextBox Text="{Binding Name}"/>
+
+                <TextBlock Text="Примечание"/>
+                <TextBox Text="{Binding Notes}"/>
+
+                    
+            </StackPanel>
+            <StackPanel Grid.Column="2">
+                <TextBlock Text=""/>
+                <TextBox Text="{Binding Adress}"/>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal"
+                        Grid.Row="1"
+                        >
+                <Button x:Name="BSave"
+                        Content="Сохранить"
+                        Background="LightBlue"
+                        Foreground="White"
+                        BorderThickness="0"
+                        Click="BSave_Click"
+                        />
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>

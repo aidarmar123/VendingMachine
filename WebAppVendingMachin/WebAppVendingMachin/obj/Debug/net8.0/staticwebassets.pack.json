@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebAppVendingMachin.bundle.scp.css",
+      "PackagePath": "staticwebassets\\WebAppVendingMachin.pkxgj70qx9.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\wwwroot\\js\\TestCanvas.js",
+      "PackagePath": "staticwebassets\\js\\TestCanvas.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebAppVendingMachin.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebAppVendingMachin.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.WebAppVendingMachin.props",
+      "PackagePath": "build\\WebAppVendingMachin.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAppVendingMachin.props",
+      "PackagePath": "buildMultiTargeting\\WebAppVendingMachin.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.WebAppVendingMachin.props",
+      "PackagePath": "buildTransitive\\WebAppVendingMachin.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

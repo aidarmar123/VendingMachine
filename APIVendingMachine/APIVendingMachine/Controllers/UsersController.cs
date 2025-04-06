@@ -53,9 +53,9 @@ namespace APIVendingMachine.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                var error = ModelState.SelectMany(x => x.Value.Errors).Select(x => x.ErrorMessage).ToList();
+                return BadRequest(string.Join("\n", error));
             }
-
             if (id != user.Id)
             {
                 return BadRequest();
@@ -90,7 +90,8 @@ namespace APIVendingMachine.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                var error = ModelState.SelectMany(x => x.Value.Errors).Select(x => x.ErrorMessage).ToList();
+                return BadRequest(string.Join("\n", error));
             }
 
             db.User.Add(user);
@@ -98,7 +99,7 @@ namespace APIVendingMachine.Controllers
 
             return CreatedAtRoute("DefaultApi", new { id = user.Id }, user);
         }
-
+        
         // DELETE: api/Users/5
         [ResponseType(typeof(User))]
         [SwaggerResponse(HttpStatusCode.OK, Description = "Возращает когда User успешно удален из Базы Данных")]

@@ -27,7 +27,7 @@ namespace DesktopVendingMachine.Models
     
         [JsonIgnore]
     
-        public virtual User User 
+        public virtual User Employee
         {
             get
             {

@@ -36,7 +36,7 @@ namespace DesktopVendingMachine.Services
             return response;
         }
 
-        public static async Task<HttpResponseMessage> Delete<T>(string path)
+        public static async Task<HttpResponseMessage> Delete(string path)
         {
             var response = await httpClient.DeleteAsync(Url + path);
             return response;

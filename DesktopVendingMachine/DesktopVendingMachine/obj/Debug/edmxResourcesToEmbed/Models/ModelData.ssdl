@@ -1,5 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="Хранилище VendingMachinesModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Adress" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="ContactCompany" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="4000" />
+    <Property Name="InitWork" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ConnectionProvider">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Price" Type="int" />
+    <Property Name="Icon" Type="image" />
+    <Property Name="StateConnectId" Type="int" Nullable="false" />
+  </EntityType>
   <EntityType Name="MachineProduct">
     <Key>
       <PropertyRef Name="Id" />
@@ -92,6 +113,27 @@
     <Property Name="EmployeeId" Type="int" />
     <Property Name="NameEmployee" Type="nvarchar" MaxLength="4000" />
   </EntityType>
+  <EntityType Name="ShcemaCritValue">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ShcemaNotification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="StateConnect">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="StatusMachin">
     <Key>
       <PropertyRef Name="Id" />
@@ -167,6 +209,10 @@
     <Property Name="RFIDDownload" Type="nvarchar" MaxLength="50" />
     <Property Name="KitOnline" Type="nvarchar" MaxLength="50" />
     <Property Name="PriotityServiceId" Type="int" Nullable="false" />
+    <Property Name="Number" Type="int" />
+    <Property Name="TimeWork" Type="char" MaxLength="11" />
+    <Property Name="ConnectionProviderId" Type="int" />
+    <Property Name="CompanyId" Type="int" />
   </EntityType>
   <EntityType Name="WorkMode">
     <Key>
@@ -175,6 +221,18 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <Association Name="FK_ConnectionProvider_StateConnect">
+    <End Role="StateConnect" Type="Self.StateConnect" Multiplicity="1" />
+    <End Role="ConnectionProvider" Type="Self.ConnectionProvider" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StateConnect">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ConnectionProvider">
+        <PropertyRef Name="StateConnectId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_MachineProduct_Product">
     <End Role="Product" Type="Self.Product" Multiplicity="1" />
     <End Role="MachineProduct" Type="Self.MachineProduct" Multiplicity="*" />
@@ -295,6 +353,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_VendingMachin_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_ConnectionProvider">
+    <End Role="ConnectionProvider" Type="Self.ConnectionProvider" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConnectionProvider">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ConnectionProviderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_VendingMachin_Manufacture">
     <End Role="Manufacture" Type="Self.Manufacture" Multiplicity="1" />
     <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
@@ -340,6 +422,30 @@
       </Principal>
       <Dependent Role="VendingMachin">
         <PropertyRef Name="ProductMatrixId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_ShcemaCritValue">
+    <End Role="ShcemaCritValue" Type="Self.ShcemaCritValue" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShcemaCritValue">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ShcemaCritValueId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_ShcemaNotification">
+    <End Role="ShcemaNotification" Type="Self.ShcemaNotification" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ShcemaNotification">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ShcemaNotificationId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -427,7 +533,40 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="Хранилище VendingMachinesModelContainer">
+    <EntitySet Name="Company" EntityType="Self.Company" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ConnectionProvider" EntityType="Self.ConnectionProvider" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MachineProduct" EntityType="Self.MachineProduct" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="MachineTypePay" EntityType="Self.MachineTypePay" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Manufacture" EntityType="Self.Manufacture" Schema="dbo" store:Type="Tables" />
@@ -439,6 +578,9 @@
     <EntitySet Name="Role" EntityType="Self.Role" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sales" EntityType="Self.Sales" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Services" EntityType="Self.Services" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShcemaCritValue" EntityType="Self.ShcemaCritValue" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ShcemaNotification" EntityType="Self.ShcemaNotification" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="StateConnect" EntityType="Self.StateConnect" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="StatusMachin" EntityType="Self.StatusMachin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TimeZone" EntityType="Self.TimeZone" Schema="dbo" store:Type="Tables" />
@@ -446,6 +588,10 @@
     <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="VendingMachin" EntityType="Self.VendingMachin" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="WorkMode" EntityType="Self.WorkMode" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ConnectionProvider_StateConnect" Association="Self.FK_ConnectionProvider_StateConnect">
+      <End Role="StateConnect" EntitySet="StateConnect" />
+      <End Role="ConnectionProvider" EntitySet="ConnectionProvider" />
+    </AssociationSet>
     <AssociationSet Name="FK_MachineProduct_Product" Association="Self.FK_MachineProduct_Product">
       <End Role="Product" EntitySet="Product" />
       <End Role="MachineProduct" EntitySet="MachineProduct" />
@@ -486,6 +632,14 @@
       <End Role="Role" EntitySet="Role" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_Company" Association="Self.FK_VendingMachin_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_ConnectionProvider" Association="Self.FK_VendingMachin_ConnectionProvider">
+      <End Role="ConnectionProvider" EntitySet="ConnectionProvider" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
     <AssociationSet Name="FK_VendingMachin_Manufacture" Association="Self.FK_VendingMachin_Manufacture">
       <End Role="Manufacture" EntitySet="Manufacture" />
       <End Role="VendingMachin" EntitySet="VendingMachin" />
@@ -500,6 +654,14 @@
     </AssociationSet>
     <AssociationSet Name="FK_VendingMachin_ProductMatrix" Association="Self.FK_VendingMachin_ProductMatrix">
       <End Role="ProductMatrix" EntitySet="ProductMatrix" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_ShcemaCritValue" Association="Self.FK_VendingMachin_ShcemaCritValue">
+      <End Role="ShcemaCritValue" EntitySet="ShcemaCritValue" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_ShcemaNotification" Association="Self.FK_VendingMachin_ShcemaNotification">
+      <End Role="ShcemaNotification" EntitySet="ShcemaNotification" />
       <End Role="VendingMachin" EntitySet="VendingMachin" />
     </AssociationSet>
     <AssociationSet Name="FK_VendingMachin_StatusMachin" Association="Self.FK_VendingMachin_StatusMachin">

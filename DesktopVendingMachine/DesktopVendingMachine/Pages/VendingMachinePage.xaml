@@ -123,7 +123,7 @@
       Text="{Binding Model.Name, StringFormat='Модель {0}'}"/>
 
                                     <TextBlock 
-      Text="{Binding Manufacture.Name, StringFormat='Компания {0}'}"/>
+      Text="{Binding Company.Name, StringFormat='Компания {0}'}"/>
 
                                     <TextBlock 
       Text="{Binding FullAdress, StringFormat='Адрес/Место {0}'}"/>
@@ -171,6 +171,7 @@
             </TabControl>
 
             <Grid Grid.Row="2">
+                <TextBlock x:Name="TbNote"/>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                     <Button x:Name="BPrevous"
                             Content="◀"

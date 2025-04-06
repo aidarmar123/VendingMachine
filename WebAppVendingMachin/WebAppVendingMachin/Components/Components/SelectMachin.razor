@@ -1,0 +1,41 @@
+﻿@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Resource> Localizer
+
+<PageTitle>@Localizer["SelectMachin"]</PageTitle>
+<h3>@Localizer["SelectMachin"]</h3>
+<div class="listMachin">
+	@foreach (var contextVendingMachin in vendingMachins)
+	{
+		<Card>
+			<CardBody>
+				<h3>@contextVendingMachin.Name</h3>
+				<p>@contextVendingMachin.Model.Name</p>
+				<p>@contextVendingMachin.PriceInMounth</p>
+				<p>@(contextVendingMachin.PaybackMonth * 12)</p>
+				<p>@(contextVendingMachin.CompanyId == null ? Localizer["Enable"] : Localizer["Busy"])</p>
+				<p>@contextVendingMachin.FullAdress</p>
+				<p>@contextVendingMachin.PaybackMonth</p>
+
+			</CardBody>
+			<CardFooter>
+				<Button Clicked="(()=>SelectClick(contextVendingMachin))">@Localizer["SelectMachin"]</Button>
+			</CardFooter>
+		</Card>
+
+	}
+</div>
+
+@code {
+	private List<Models.VendingMachin> vendingMachins { get; set; } = DataManager.VendingMachins;
+
+	private void SelectClick(VendingMachin args)
+	{
+		throw new NotImplementedException();
+	}
+}
+<style>
+	.listMachin{
+		display:flex;
+
+	}
+</style>

@@ -4,6 +4,24 @@
              xmlns:local="clr-namespace:DesktopVendingMachine"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="3"/>
+            <Setter Property="Padding"
+                    Value="4"/>
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius"
+                            Value="10"/>
+                </Style>
+            </Style.Resources>
+        </Style>
+        
+         <Style TargetType="TextBlock">
+            <Setter Property="FontSize"
+                   Value="18"/>
+        </Style>
+        
         
     </Application.Resources>
 </Application>

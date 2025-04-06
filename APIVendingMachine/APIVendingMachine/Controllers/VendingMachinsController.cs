@@ -18,7 +18,7 @@ namespace APIVendingMachine.Controllers
         private VendingMachinesEntities db = new VendingMachinesEntities();
 
         // GET: api/VendingMachins
-        [SwaggerResponse(HttpStatusCode.OK, Description ="Возращает все VendingMachin")]
+        [SwaggerResponse(HttpStatusCode.OK, Description = "Возращает все VendingMachin")]
         public IQueryable<VendingMachin> GetVendingMachin()
         {
             return db.VendingMachin;
@@ -31,8 +31,8 @@ namespace APIVendingMachine.Controllers
         /// <returns></returns>
         // GET: api/VendingMachins/5
         [ResponseType(typeof(VendingMachin))]
-        [SwaggerResponse(HttpStatusCode.OK, Description ="Возращает VendingMachin по Id")]
-[SwaggerResponse(HttpStatusCode.NotFound, Description = "Возращает когда VendingMachin по указоному Id не найден")]
+        [SwaggerResponse(HttpStatusCode.OK, Description = "Возращает VendingMachin по Id")]
+        [SwaggerResponse(HttpStatusCode.NotFound, Description = "Возращает когда VendingMachin по указоному Id не найден")]
         public IHttpActionResult GetVendingMachin(int id)
         {
             VendingMachin vendingMachin = db.VendingMachin.Find(id);
@@ -46,14 +46,15 @@ namespace APIVendingMachine.Controllers
 
         // PUT: api/VendingMachins/5
         [ResponseType(typeof(void))]
-         [SwaggerResponse(HttpStatusCode.NoContent, Description = "Возращает когда  VendingMachin успешно изменен")]
- [SwaggerResponse(HttpStatusCode.BadRequest, Description = "Возращает когда  VendingMachin не валиден")]
- [SwaggerResponse(HttpStatusCode.NotFound, Description = "Возращает когда  VendingMachin по указоному Id не найден")]
+        [SwaggerResponse(HttpStatusCode.NoContent, Description = "Возращает когда  VendingMachin успешно изменен")]
+        [SwaggerResponse(HttpStatusCode.BadRequest, Description = "Возращает когда  VendingMachin не валиден")]
+        [SwaggerResponse(HttpStatusCode.NotFound, Description = "Возращает когда  VendingMachin по указоному Id не найден")]
         public IHttpActionResult PutVendingMachin(int id, VendingMachin vendingMachin)
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                var error = ModelState.SelectMany(x => x.Value.Errors).Select(x => x.ErrorMessage).ToList();
+                return BadRequest(string.Join("\n", error));
             }
 
             if (id != vendingMachin.Id)
@@ -90,7 +91,8 @@ namespace APIVendingMachine.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
+                var error = ModelState.SelectMany(x => x.Value.Errors).Select(x => x.ErrorMessage).ToList();
+                return BadRequest(string.Join("\n", error));
             }
 
             db.VendingMachin.Add(vendingMachin);
@@ -111,7 +113,7 @@ namespace APIVendingMachine.Controllers
                 return NotFound();
             }
 
-            db.VendingMachin.Remove(vendingMachin);
+            vendingMachin.IsDelete = true;
             db.SaveChanges();
 
             return Ok(vendingMachin);

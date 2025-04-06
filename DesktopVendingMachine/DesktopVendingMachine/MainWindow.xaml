@@ -114,7 +114,7 @@
 
 
                   <TextBlock>
-                        <Hyperlink>
+                        <Hyperlink x:Name="HlCompany" Click="HlCompany_Click">
                             <TextBlock Text="Компании"/>
                         </Hyperlink>
                         </TextBlock>

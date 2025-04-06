@@ -1,0 +1,186 @@
+﻿@page "/Registration"
+@inject NavigationManager navigationManager
+@layout AuthorizationLayout
+@inject IStringLocalizer<Resource> Localizer
+
+
+
+
+<EditForm FormName="InputEmail" Model="contextUser" OnValidSubmit="OnValid" class="@(!isValid?"block":"none")">
+	<DataAnnotationsValidator />
+	<Microsoft.AspNetCore.Components.Forms.ValidationSummary />
+	<div class="form-center">
+		<div>
+			<label>
+				@Localizer["Email"]:
+			</label>
+			<br />
+			<InputText @bind-Value="@contextUser.Email" />
+		</div>
+		<div>
+			<label>
+				@Localizer["Password"]:
+			</label>
+			<br />
+
+			<InputText @bind-Value="@contextUser.Password" />
+		</div>
+		<Button Type="ButtonType.Submit">@Localizer["Next"]</Button>
+
+	</div>
+</EditForm>
+
+
+<EditForm FormName="Registrartion" Model="contextUser" OnValidSubmit="Save" class="@(isValid?"block":"none")">
+	<DataAnnotationsValidator />
+	<Microsoft.AspNetCore.Components.Forms.ValidationSummary />
+	<div class="form-center">
+		<div>
+			<label>
+				@Localizer["Email"]:
+			</label>
+			<br />
+			<InputText @bind-Value="@contextUser.Email" />
+		</div>
+		<div>
+			<label>
+				@Localizer["Password"]:
+			</label>
+			<br />
+
+			<InputText @bind-Value="@contextUser.Password" />
+		</div>
+
+		<div>
+			<label>
+				@Localizer["Name"]:
+			</label>
+			<br />
+			<InputText @bind-Value="@contextUser.Name" />
+		</div><div>
+			<label>
+				@Localizer["Surname"]:
+			</label>
+			<br />
+			<InputText @bind-Value="@contextUser.Surname" />
+		</div><div>
+			<label>
+				@Localizer["Patronic"]:
+			</label>
+			<br />
+			<InputText @bind-Value="@contextUser.Patronic" />
+		</div>
+
+
+		<div>
+			<label>
+				Capthca:<br />
+				@Capthca
+			</label>
+			<InputNumber @bind-Value="Result" />
+		</div>
+
+		<div>
+			<label>
+				@Localizer["CodeEmail"]:
+
+			</label>
+			<br />
+			<InputNumber @bind-Value="CodeEmail" />
+		</div>
+
+		<div>
+			<label>
+				@Localizer["CodeFranching"]:
+
+
+			</label>
+			<br />
+			<InputNumber @bind-Value="contextUser.CompanyId" />
+		</div>
+
+
+		<Button Type="ButtonType.Submit">
+			@Localizer["Sign Up"]:
+		</Button>
+
+
+
+
+	</div>
+</EditForm>
+
+@code {
+	[Inject] IMessageService messageService { get; set; }
+
+	private bool isValid { get; set; } = false;
+	private string Capthca { get; set; }
+
+	private int Result { get; set; }
+	private int CodeEmail { get; set; }
+
+	private int result { get; set; }
+	private int codeEmail { get; set; }
+
+
+
+	private User contextUser { get; set; } = new User();
+	protected override void OnInitialized()
+	{
+		var random = new Random();
+		var number1 = random.Next(15);
+		var number2 = random.Next(15);
+		var number3 = random.Next(15);
+		var number4 = random.Next(15);
+		Capthca = $"{number1} + {number2} * {number3} - {number4}";
+		result = number1 + number2 * number3 - number4;
+
+	}
+	private async Task Save(EditContext args)
+	{
+		if (Result != result)
+		{
+			await ShowMessage("Capthca isn't ride", Localizer["Error"]);
+			return;
+		}
+		if(CodeEmail != codeEmail)
+		{
+			await ShowMessage("Code email isn't ride", Localizer["Error"]);
+			return;
+		}
+
+		var response = await NetManager.Post("api/Users", contextUser);
+		if (response.IsSuccessStatusCode)
+		{
+			UserServices.AuthUser = await NetManager.ParseResponse<User>(response);
+			navigationManager.NavigateTo("/");
+		}
+		else
+		{
+			var error = await NetManager.ParseResponse<ErrorMessage>(response);
+			await ShowMessage(error.Message, Localizer["Error"]);
+		}
+
+	}
+	private Task ShowMessage(string msg, string title)
+	{
+		return messageService.Error(msg, title);
+	}
+	private async Task OnValid(EditContext args)
+	{
+		isValid = true;
+		
+
+		var random = new Random();
+		codeEmail = random.Next(1000, 9999);
+		await ShowMessage($"{codeEmail}", Localizer["Code"]);
+	}
+}
+<style>
+	.block{
+		display:block;
+	}
+	.none{
+		display:none;
+	}
+</style>

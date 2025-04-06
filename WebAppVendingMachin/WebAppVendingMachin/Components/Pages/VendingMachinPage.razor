@@ -1,0 +1,74 @@
+﻿@page "/vendingmachin"
+@using WebAppVendingMachin.Components.Components
+@inject IStringLocalizer<Resource> Localizer
+
+<h3>Vending Machin</h3>
+<Button Clicked="RentMachin">@Localizer["Rent"]</Button>
+<DataGrid TItem="VendingMachin"
+Data="@vendingMachins"
+Responsive
+ShowPager
+ShowPageSizes
+PagerPosition="DataGridPagerPosition.TopAndBottom"
+PagerOptions="new(){ ButtonSize=Size.Small }">
+	<DataGridColumns>
+		<DataGridCommandColumn />
+		<DataGridColumn Field="@nameof(VendingMachin.Id)" Caption="#" Sortable="false" />
+		<DataGridColumn Field="@nameof(VendingMachin.Name)" Caption="First Name" Editable />
+		<DataGridColumn TItem="VendingMachin" Caption="Model">
+			<DisplayTemplate>
+				@(context.Model.Name)
+			</DisplayTemplate>
+		</DataGridColumn>
+
+
+
+		<DataGridColumn Field="@nameof(VendingMachin.FullAdress)" Caption="Salary" Editable />
+		<DataGridColumn Field="@nameof(VendingMachin.InitWork)" Caption="Salary" Editable />
+
+
+	</DataGridColumns>
+	<PageButtonTemplate>
+		<Span TextColor="TextColor.Success">
+			@context.PageNumber
+		</Span>
+	</PageButtonTemplate>
+	<NextPageButtonTemplate><Icon Name="IconName.StepForward" TextColor="TextColor.Success" /></NextPageButtonTemplate>
+	<PreviousPageButtonTemplate><Icon Name="IconName.StepBackward" TextColor="TextColor.Success" /></PreviousPageButtonTemplate>
+	<LastPageButtonTemplate><Icon Name="IconName.Forward" TextColor="TextColor.Success" /></LastPageButtonTemplate>
+	<FirstPageButtonTemplate><Icon Name="IconName.Backward" TextColor="TextColor.Success" /></FirstPageButtonTemplate>
+	<TotalItemsTemplate><Badge Color="Color.Success">@context.TotalItems total items</Badge></TotalItemsTemplate>
+	<TotalItemsShortTemplate><Badge Color="Color.Success">@context.TotalItems</Badge></TotalItemsShortTemplate>
+	<ItemsPerPageTemplate></ItemsPerPageTemplate>
+	<PageSelectorTemplate>
+		<Select TextColor="TextColor.Success" @bind-SelectedValue="@context.CurrentPage" Size="Size.Small">
+			@for (int i = context.FirstVisiblePage; i <= context.LastVisiblePage; ++i)
+			{
+				var pageNumber = i;
+				<SelectItem Value="@pageNumber">@pageNumber</SelectItem>
+			}
+		</Select>
+	</PageSelectorTemplate>
+	<PageSizesTemplate>
+		<Select TextColor="TextColor.Success" @bind-SelectedValue="@context.CurrentPageSize" Size="Size.Small">
+			@foreach (var curPageSize in context.PageSizes)
+			{
+				<SelectItem Value="@curPageSize">@curPageSize</SelectItem>
+			}
+		</Select>
+	</PageSizesTemplate>
+</DataGrid>
+@code {
+	[Inject] IModalService modalService { get; set; }
+
+	private List<VendingMachin> vendingMachins { get; set; } = DataManager.VendingMachins;
+	private async Task RentMachin(MouseEventArgs args)
+	{
+		await ShowModal();
+	}
+
+	private Task ShowModal()
+	{
+		return modalService.Show<SelectMachin>(Localizer["SelectMachin"]);
+	}
+	}

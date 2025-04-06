@@ -10,11 +10,12 @@
 namespace DesktopVendingMachine.Models
 {
     using System;
-	using Newtonsoft.Json;
+    using Newtonsoft.Json;
     using System.Collections.Generic;
-	 using DesktopVendingMachine.Services;
-	using System.Linq;
-    
+    using DesktopVendingMachine.Services;
+    using System.Linq;
+    using System.ComponentModel.Design;
+
     public partial class VendingMachin
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -25,7 +26,7 @@ namespace DesktopVendingMachine.Models
             this.Sales = new HashSet<Sales>();
             this.Services = new HashSet<Services>();
         }
-    
+
         public int Id { get; set; }
         public string Adress { get; set; }
         public string Lacation { get; set; }
@@ -54,35 +55,64 @@ namespace DesktopVendingMachine.Models
         public string RFIDDownload { get; set; }
         public string KitOnline { get; set; }
         public int PriotityServiceId { get; set; }
-    
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public Nullable<int> Number { get; set; }
+        public string TimeWork {  get; set; }
+        public Nullable<int> ConnectionProviderId {  get; set; }
+        public Nullable<int> CompanyId {  get; set; }
+
         public virtual ICollection<MachineProduct> MachineProduct { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        
         public virtual ICollection<MachineTypePay> MachineTypePay { get; set; }
         [JsonIgnore]
-    
-        public virtual Manufacture Manufacture 
+
+        public virtual Manufacture Manufacture
         {
             get
             {
-                return DataManager.Manufactures.FirstOrDefault(x=>x.Id == ManufactureId);
+                return DataManager.Manufactures.FirstOrDefault(x => x.Id == ManufactureId);
             }
             set
             {
-            ManufactureId= value.Id;
+                ManufactureId = value.Id;
             }
         }
         [JsonIgnore]
-    
-        public virtual Model Model 
+
+        public virtual Model Model
         {
             get
             {
-                return DataManager.Models.FirstOrDefault(x=>x.Id == ModelId);
+                return DataManager.Models.FirstOrDefault(x => x.Id == ModelId);
             }
             set
             {
-            ModelId= value.Id;
+                ModelId = value.Id;
+            }
+        }
+        [JsonIgnore]
+
+        public virtual PriotityService PriotityService
+        {
+            get
+            {
+                return DataManager.PriotityServices.FirstOrDefault(x => x.Id == PriotityServiceId);
+            }
+            set
+            {
+                PriotityServiceId = value.Id;
+            }
+        }
+        [JsonIgnore]
+
+        public virtual ProductMatrix ProductMatrix
+        {
+            get
+            {
+                return DataManager.ProductMatrixs.FirstOrDefault(x => x.Id == ProductMatrixId);
+            }
+            set
+            {
+                ProductMatrixId = value.Id;
             }
         }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -90,77 +120,64 @@ namespace DesktopVendingMachine.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Services> Services { get; set; }
         [JsonIgnore]
-    
-        public virtual StatusMachin StatusMachin 
+
+        public virtual ShcemaCritValue ShcemaCritValue
         {
             get
             {
-                return DataManager.StatusMachins.FirstOrDefault(x=>x.Id == StatusMachinId);
+                return DataManager.ShcemaCritValues.FirstOrDefault(x => x.Id == ShcemaCritValueId);
             }
             set
             {
-            StatusMachinId= value.Id;
+                ShcemaCritValueId = value.Id;
             }
         }
         [JsonIgnore]
-    
-        public virtual WorkMode WorkMode 
+
+        public virtual ShcemaNotification ShcemaNotification
         {
             get
             {
-                return DataManager.WorkModes.FirstOrDefault(x=>x.Id == WorkModeId);
+                return DataManager.ShcemaNotifications.FirstOrDefault(x => x.Id == ShcemaNotificationId);
             }
             set
             {
-            WorkModeId= value.Id;
+                ShcemaNotificationId = value.Id;
             }
         }
         [JsonIgnore]
-    
-        public virtual PriotityService PriotityService 
+
+        public virtual StatusMachin StatusMachin
         {
             get
             {
-                return DataManager.PriotityServices.FirstOrDefault(x=>x.Id == PriotityServiceId);
+                return DataManager.StatusMachins.FirstOrDefault(x => x.Id == StatusMachinId);
             }
             set
             {
-            PriotityServiceId= value.Id;
+                StatusMachinId = value.Id;
             }
         }
         [JsonIgnore]
-    
-        public virtual ProductMatrix ProductMatrix 
+
+        public virtual TimeZone TimeZone
         {
             get
             {
-                return DataManager.ProductMatrixs.FirstOrDefault(x=>x.Id == ProductMatrixId);
+                return DataManager.TimeZones.FirstOrDefault(x => x.Id == TimeZoneId);
             }
             set
             {
-            ProductMatrixId= value.Id;
+                TimeZoneId = value.Id;
             }
         }
         [JsonIgnore]
-    
-        public virtual TimeZone TimeZone 
-        {
-            get
-            {
-                return DataManager.TimeZones.FirstOrDefault(x=>x.Id == TimeZoneId);
-            }
-            set
-            {
-            TimeZoneId= value.Id;
-            }
-        }
-        [JsonIgnore]
-    
+
         public virtual User Client
         {
             get
             {
-                return DataManager.Users.FirstOrDefault(x=>x.Id == ClientId);
+                return DataManager.Users.FirstOrDefault(x => x.Id == ClientId);
             }
             set
             {
@@ -168,12 +185,12 @@ namespace DesktopVendingMachine.Models
             }
         }
         [JsonIgnore]
-    
+
         public virtual User Menedger
         {
             get
             {
-                return DataManager.Users.FirstOrDefault(x=>x.Id == MenedgerId);
+                return DataManager.Users.FirstOrDefault(x => x.Id == MenedgerId);
             }
             set
             {
@@ -181,12 +198,12 @@ namespace DesktopVendingMachine.Models
             }
         }
         [JsonIgnore]
-    
+
         public virtual User Ingener
         {
             get
             {
-                return DataManager.Users.FirstOrDefault(x=>x.Id == IngenerId);
+                return DataManager.Users.FirstOrDefault(x => x.Id == IngenerId);
             }
             set
             {
@@ -194,16 +211,55 @@ namespace DesktopVendingMachine.Models
             }
         }
         [JsonIgnore]
-    
+
         public virtual User Tap
         {
             get
             {
-                return DataManager.Users.FirstOrDefault(x=>x.Id == TapId);
+                return DataManager.Users.FirstOrDefault(x => x.Id == TapId);
             }
             set
             {
                 TapId = value.Id;
+            }
+        }
+        [JsonIgnore]
+
+        public virtual WorkMode WorkMode
+        {
+            get
+            {
+                return DataManager.WorkModes.FirstOrDefault(x => x.Id == WorkModeId);
+            }
+            set
+            {
+                WorkModeId = value.Id;
+            }
+        }
+        [JsonIgnore]
+
+        public virtual ConnectionProvider ConnectionProvider
+        {
+            get
+            {
+                return DataManager.ConnectionProviders.FirstOrDefault(x => x.Id == ConnectionProviderId);
+            }
+            set
+            {
+                ConnectionProviderId = value.Id;
+            }
+        }
+        [JsonIgnore]
+
+        public virtual Company Company
+        {
+            get
+            {
+                return DataManager.Companys.FirstOrDefault(x => x.Id == CompanyId);
+            }
+            set
+            {
+                CompanyId = value.Id;
             }
         }
     }

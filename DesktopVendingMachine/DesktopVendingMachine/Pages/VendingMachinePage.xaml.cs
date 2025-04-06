@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,6 +15,8 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using DesktopVendingMachine.Models;
 using DesktopVendingMachine.Services;
+using DesktopVendingMachine.Windows;
+using Microsoft.Win32;
 
 namespace DesktopVendingMachine.Pages
 {
@@ -37,9 +40,11 @@ namespace DesktopVendingMachine.Pages
 
         private void Refresh()
         {
-            VendingMachine = DataManager.VendingMachins.ToList();
-            DGMacine.ItemsSource = VendingMachine.Take(CountItem).Skip(CountItem * indexPage).ToList();
-            LVMachine.ItemsSource = VendingMachine.Take(CountItem);
+            VendingMachine = DataManager.VendingMachins.Where(x=>!x.IsDelete).ToList();
+            DGMacine.ItemsSource = VendingMachine.Skip(CountItem * indexPage).Take(CountItem).ToList();
+            LVMachine.ItemsSource = VendingMachine.Skip(CountItem * indexPage).Take(CountItem).ToList();
+            var textNote = $"Записи с {IndexPage } до {CountItem*IndexPage} из {VendingMachine.Count} записей";
+            TbNote.Text = textNote;
         }
 
         private void CbCountItem_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -49,22 +54,42 @@ namespace DesktopVendingMachine.Pages
 
         private void BAdd_Click(object sender, RoutedEventArgs e)
         {
-
+            new VendingMachineWindow(new VendingMachin() {InitWork = DateTime.Now, StatusMachinId = 1 }).ShowDialog();
         }
 
         private void BExport_Click(object sender, RoutedEventArgs e)
         {
+            var saveFileDilog = new SaveFileDialog() { Filter = ".csv | *.csv" };
+            if (saveFileDilog.ShowDialog().GetValueOrDefault())
+            {
+                var file =  File.Create(saveFileDilog.FileName);
+                file.Close();
 
+                var content = "Id;Название;Модель;Компания;Адрес;В работе с;\n"
+                    + string.Join("\n", VendingMachine.Select(x => $"{x.Id};{x.Name};{x.Model.Name};{x.Company?.Name:''};{x.Adress};{x.InitWork.ToString("d")}"));
+                File.WriteAllText(saveFileDilog.FileName, content, Encoding.UTF8);
+                
+            }
         }
 
         private void BEdit_Click(object sender, RoutedEventArgs e)
         {
-
+            var selectMachine = (sender as Button).DataContext as VendingMachin;
+            if(selectMachine != null)
+            {
+                new VendingMachineWindow(selectMachine).ShowDialog();
+                Refresh();
+            }
         }
 
-        private void BDelete_Click(object sender, RoutedEventArgs e)
+        private async void BDelete_Click(object sender, RoutedEventArgs e)
         {
+            var selectMachine = (sender as Button).DataContext as VendingMachin;
+            if (selectMachine != null)
+            {
+                await NetManager.Delete($"api/VendingMachins/{selectMachine.Id}");
 
+            }
         }
 
         private void BUnlokModem_Click(object sender, RoutedEventArgs e)
@@ -76,12 +101,20 @@ namespace DesktopVendingMachine.Pages
         {
             if (IndexPage * CountItem < VendingMachine.Count)
                 indexPage++;
+            DataContext = null;
+            DataContext = this;
+            Refresh();
+
         }
 
         private void BPrevous_Click(object sender, RoutedEventArgs e)
         {
             if (IndexPage > 0)
                 indexPage--;
+            DataContext = null;
+            DataContext = this;
+            Refresh();
+
 
 
         }

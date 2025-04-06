@@ -4,11 +4,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DesktopVendingMachine.Windows"
+        xmlns:xcd="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Title="VendingMachineWindow" Height="450" Width="800">
+        Title="" Height="450" Width="800">
     <ScrollViewer>
         <Grid>
-
+            
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto"/>
                 <RowDefinition/>
@@ -24,7 +25,7 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <StackPanel Grid.Column="0">
+                <StackPanel Grid.Column="0" Margin="10">
                     <TextBlock Text="Название ТА"/>
                     <TextBox Text="{Binding Name}"/>
 
@@ -69,7 +70,7 @@ SelectedItem="{Binding Tap}"/>
                 </StackPanel>
 
 
-                <StackPanel Grid.Column="1">
+                <StackPanel Grid.Column="1" Margin="10">
                     <TextBlock Text="Производитель ТА"/>
                     <ComboBox x:Name="CbManufacture"
 DisplayMemberPath="Name"
@@ -82,13 +83,13 @@ SelectedItem="{Binding Manufacture}"/>
                     <TextBlock Text="Место"/>
                     <TextBox Text="{Binding Lacation}"/>
 
-                    <TextBlock Text="Время работы(формат: 8:00-22:00)"/>
-                    <TextBox Text="{Binding }"/>
+                    <TextBlock Text="Время работы(формат: 08:00-22:00)"/>
+                    <TextBox Text="{Binding TimeWork}"/>
 
                     <TextBlock Text="Шаблон критичиских значений"/>
-                    <ComboBox x:Name="Cb"
+                    <ComboBox x:Name="CbShcemaCritValue"
 DisplayMemberPath="Name"
-SelectedItem="{Binding }"/>
+SelectedItem="{Binding ShcemaCritValue}"/>
 
                     <TextBlock Text="Менеджер"/>
                     <ComboBox x:Name="CbMenedger"
@@ -97,7 +98,15 @@ SelectedItem="{Binding Menedger}"/>
 
                     <TextBlock Text="Платежные системы"/>
                     <StackPanel>
-                        
+                        <xcd:CheckListBox x:Name="CLBTypePay"
+                                          DisplayMemberPath="TypePay.Name"
+                                          SelectedValue="{Binding MachineTypePay}">
+                            <xcd:CheckListBox.ItemsPanel>
+                                <ItemsPanelTemplate>
+                                    <WrapPanel/>
+                                </ItemsPanelTemplate>
+                            </xcd:CheckListBox.ItemsPanel>
+                        </xcd:CheckListBox>
                     </StackPanel>
 
                     <TextBlock Text="RFID карты инкасации"/>
@@ -112,14 +121,14 @@ SelectedItem="{Binding PriotityService}"/>
 
                 </StackPanel>
 
-                <StackPanel Grid.Column="2">
+                <StackPanel Grid.Column="2" Margin="10">
                     <TextBlock Text="Модель ТА"/>
                     <ComboBox x:Name="CbModel"
 DisplayMemberPath="Name"
 SelectedItem="{Binding Model}"/>
 
                     <TextBlock Text="Модель ТА (Slave)"/>
-                    <TextBox Text="-" IsEnabled="True"/>
+                    <TextBox Text="-" IsEnabled="False"/>
 
                     <TextBlock Text="Координаты"/>
                     <TextBox Text="{Binding Coordination}"/>
@@ -129,10 +138,10 @@ SelectedItem="{Binding Model}"/>
 DisplayMemberPath="Name"
 SelectedItem="{Binding TimeZone}"/>
 
-                    <TextBlock Text=""/>
+                    <TextBlock Text="Шаблон уведомлений"/>
                     <ComboBox x:Name="CbSchema"
 DisplayMemberPath="Name"
-SelectedItem="{Binding }"/>
+SelectedItem="{Binding ShcemaNotification}"/>
 
                     <TextBlock Text="Инжинер"/>
                     <ComboBox x:Name="CbIngener"
@@ -152,24 +161,38 @@ SelectedItem="{Binding Ingener}"/>
                 </StackPanel>
 
 
-                <StackPanel Grid.ColumnSpan="3" Grid.Row="1">
+                <StackPanel Grid.ColumnSpan="3" Grid.Row="1" >
                     <TextBlock Text="Примчания"/>
                     <TextBox Text="{Binding Notes}" TextWrapping="Wrap"/>
                 </StackPanel>
             </Grid>
 
-            <TextBlock Text="{Binding Title, StringFormat='Торгового автомата {0}'}"
+            <TextBlock Text="{Binding Title}"
+                       x:Name="SpTitle"
                    Foreground="LightBlue"
                    Background="LightGray"/>
 
-            <StackPanel Grid.Row="2">
+            <Grid Grid.Row="2">
                 <Button x:Name="BSave"
                     Content="Сохранить"
                     Click="BSave_Click" HorizontalAlignment="Left"
                     Background="LightBlue"
                     Foreground="White"
                     BorderThickness="0"/>
-            </StackPanel>
+                <StackPanel x:Name="SPCreate" Orientation="Horizontal">
+                    <Button x:Name="BCreate"
+     Content="Создать"
+     Click="BCreate_Click"
+     Background="LightBlue"
+     Foreground="White"
+     BorderThickness="0"/>
+                    <Button x:Name="BBack"
+     Content="Отменить"
+     Click="BBack_Click"
+     Background="Transparent"
+    />
+                </StackPanel>
+            </Grid>
         </Grid>
     </ScrollViewer>
 </Window>

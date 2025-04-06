@@ -25,23 +25,28 @@ namespace APIVendingMachine.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Company> Company { get; set; }
+        public virtual DbSet<ConnectionProvider> ConnectionProvider { get; set; }
         public virtual DbSet<MachineProduct> MachineProduct { get; set; }
         public virtual DbSet<MachineTypePay> MachineTypePay { get; set; }
         public virtual DbSet<Manufacture> Manufacture { get; set; }
         public virtual DbSet<Model> Model { get; set; }
+        public virtual DbSet<News> News { get; set; }
+        public virtual DbSet<PriotityService> PriotityService { get; set; }
         public virtual DbSet<Product> Product { get; set; }
+        public virtual DbSet<ProductMatrix> ProductMatrix { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Sales> Sales { get; set; }
         public virtual DbSet<Services> Services { get; set; }
+        public virtual DbSet<ShcemaCritValue> ShcemaCritValue { get; set; }
+        public virtual DbSet<ShcemaNotification> ShcemaNotification { get; set; }
+        public virtual DbSet<StateConnect> StateConnect { get; set; }
         public virtual DbSet<StatusMachin> StatusMachin { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<TimeZone> TimeZone { get; set; }
         public virtual DbSet<TypePay> TypePay { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<VendingMachin> VendingMachin { get; set; }
         public virtual DbSet<WorkMode> WorkMode { get; set; }
-        public virtual DbSet<News> News { get; set; }
-        public virtual DbSet<PriotityService> PriotityService { get; set; }
-        public virtual DbSet<ProductMatrix> ProductMatrix { get; set; }
-        public virtual DbSet<TimeZone> TimeZone { get; set; }
     }
 }

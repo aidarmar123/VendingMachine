@@ -49,5 +49,10 @@ namespace DesktopVendingMachine
             Main.Navigate(new VendingMachinePage());
 
         }
+
+        private void HlCompany_Click(object sender, RoutedEventArgs e)
+        {
+            Main.Navigate(new CompanyPage());
+        }
     }
 }

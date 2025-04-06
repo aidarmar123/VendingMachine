@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVendingMachine\App.xaml
-5-1163377537
-11704334557
-372066933031
-16-71070924
-MainWindow.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\VendingMachinePage.xaml;Windows\VendingMachineWindow.xaml;
+7-1752935015
+21304076067
+47-1527458395
+261568367356
+MainWindow.xaml;Pages\CompanyPage.xaml;Pages\LoginPage.xaml;Pages\MainPage.xaml;Pages\VendingMachinePage.xaml;Windows\CompanyWindow.xaml;Windows\VendingMachineWindow.xaml;
 
 True
 
