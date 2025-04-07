@@ -15,18 +15,37 @@ namespace DesktopVendingMachine.Models
 	 using DesktopVendingMachine.Services;
 	using System.Linq;
     
-    public partial class StateConnect
+    public partial class VendingMachinTypeConnection
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public StateConnect()
-        {
-            this.ConnectionProvider = new HashSet<ConnectionProvider>();
-        }
-    
         public int Id { get; set; }
-        public string Name { get; set; }
+        public int VendingMachinId { get; set; }
+        public int TypeConnectionId { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ConnectionProvider> ConnectionProvider { get; set; }
+        [JsonIgnore]
+    
+        public virtual TypeConnection TypeConnection 
+        {
+            get
+            {
+                return DataManager.TypeConnections.FirstOrDefault(x=>x.Id == TypeConnectionId);
+            }
+            set
+            {
+            TypeConnectionId= value.Id;
+            }
+        }
+        [JsonIgnore]
+    
+        public virtual VendingMachin VendingMachin 
+        {
+            get
+            {
+                return DataManager.VendingMachins.FirstOrDefault(x=>x.Id == VendingMachinId);
+            }
+            set
+            {
+            VendingMachinId= value.Id;
+            }
+        }
     }
 }

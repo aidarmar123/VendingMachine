@@ -11,15 +11,22 @@ namespace DesktopVendingMachine.Models
 {
     using System;
 	using Newtonsoft.Json;
+    using System.Collections.Generic;
 	 using DesktopVendingMachine.Services;
 	using System.Linq;
     
-    public partial class sp_helpdiagrams_Result
+    public partial class Equipment
     {
-        public string Database { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Equipment()
+        {
+            this.EquipmentVachinMachin = new HashSet<EquipmentVachinMachin>();
+        }
+    
+        public int Id { get; set; }
         public string Name { get; set; }
-        public int ID { get; set; }
-        public string Owner { get; set; }
-        public int OwnerID { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
     }
 }

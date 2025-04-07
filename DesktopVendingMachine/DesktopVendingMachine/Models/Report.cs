@@ -15,27 +15,42 @@ namespace DesktopVendingMachine.Models
 	 using DesktopVendingMachine.Services;
 	using System.Linq;
     
-    public partial class Services
+    public partial class Report
     {
         public int Id { get; set; }
+        public int CompanyId { get; set; }
+        public Nullable<System.DateTime> DateSigning { get; set; }
+        public System.DateTime DateStart { get; set; }
+        public System.DateTime DateEnd { get; set; }
+        public int StatusReportId { get; set; }
+        public byte[] ReportData { get; set; }
         public int VendingMachinId { get; set; }
-        public System.DateTime DateService { get; set; }
-        public string Decription { get; set; }
-        public string Problems { get; set; }
-        public Nullable<int> EmployeeId { get; set; }
-        public string NameEmployee { get; set; }
+        public bool NeedInsurance { get; set; }
     
         [JsonIgnore]
     
-        public virtual User Employee 
+        public virtual Company Company 
         {
             get
             {
-                return DataManager.Users.FirstOrDefault(x=>x.Id == EmployeeId);
+                return DataManager.Companys.FirstOrDefault(x=>x.Id == CompanyId);
             }
             set
             {
-            EmployeeId= value.Id;
+            CompanyId= value.Id;
+            }
+        }
+        [JsonIgnore]
+    
+        public virtual StatusReport StatusReport 
+        {
+            get
+            {
+                return DataManager.StatusReports.FirstOrDefault(x=>x.Id == StatusReportId);
+            }
+            set
+            {
+            StatusReportId= value.Id;
             }
         }
         [JsonIgnore]

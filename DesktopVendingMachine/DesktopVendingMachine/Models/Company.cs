@@ -20,6 +20,8 @@ namespace DesktopVendingMachine.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Company()
         {
+            this.Report = new HashSet<Report>();
+            this.User = new HashSet<User>();
             this.VendingMachin = new HashSet<VendingMachin>();
         }
     
@@ -30,6 +32,10 @@ namespace DesktopVendingMachine.Models
         public string Notes { get; set; }
         public System.DateTime InitWork { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Report> Report { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin { get; set; }
     }

@@ -20,8 +20,11 @@ namespace DesktopVendingMachine.Services
         public static List<StatusMachin> StatusMachins;
         public static List<TypePay> TypePays;
         public static List<ConnectionProvider> ConnectionProviders;
-        public static List<StateConnect> StateConnects;
+       
         public static List<Company> Companys;
+        public static List<Equipment> Equipments;
+        public static List<StatusReport> StatusReports;
+        public static List<TypeConnection> TypeConnections;
 
 
         public static List<User> Users;
@@ -46,7 +49,9 @@ namespace DesktopVendingMachine.Services
             ShcemaNotifications = await NetManager.Get<List<ShcemaNotification>>("api/ShcemaNotifications");
             WorkModes = await NetManager.Get<List<WorkMode>>("api/WorkModes");
             TimeZones = await NetManager.Get<List<Models.TimeZone>>("api/TimeZones");
-
+            StatusMachins = await NetManager.Get<List<StatusMachin>>("api/StatusMachins");
+            ConnectionProviders = await NetManager.Get<List<ConnectionProvider>>("api/ConnectionProviders");
+            
 
 
             VendingMachins = await NetManager.Get<List<VendingMachin>>("api/VendingMachins");

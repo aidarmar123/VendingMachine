@@ -192,6 +192,9 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\MonitorVendingMachin.xaml.cs">
+      <DependentUpon>MonitorVendingMachin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\VendingMachinePage.xaml.cs">
       <DependentUpon>VendingMachinePage.xaml</DependentUpon>
     </Compile>
@@ -224,6 +227,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\MonitorVendingMachin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

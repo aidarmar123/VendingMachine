@@ -22,17 +22,14 @@
                 </Style>
             </Style.Resources>
         </Style>
-
-
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-
         <Grid x:Name="GProfile">
-            <Expander HorizontalAlignment="Right">
+            <!--<Expander HorizontalAlignment="Right">
                 <Expander.Header>
                     <StackPanel Orientation="Horizontal">
                         <Image Source="/Resources/russiaflag.jpg" Width="50"/>
@@ -47,7 +44,17 @@
                     <Button Background="Transparent" BorderThickness="0" Content="🔒 Мои сессии"/>
                     <Button x:Name="BExit" Click="BExit_Click" Background="Transparent"  BorderThickness="0" Content="✖ Выход"/>
                 </StackPanel>
-            </Expander>
+            </Expander>-->
+            <Button x:Name="ProfileButton" Content="👤 Профиль" HorizontalAlignment="Right" Click="ProfileButton_Click">
+                <Button.ContextMenu>
+                    <ContextMenu x:Name="ProfileContextMenu">
+                        <MenuItem Header="🙍‍♂️ Мой профиль"/>
+                        <MenuItem Header="🔒 Мои сессии"/>
+                        <MenuItem Header="✖ Выход" Click="BExit_Click"/>
+                    </ContextMenu>
+                </Button.ContextMenu>
+            </Button>
+
         </Grid>
         <Grid Grid.Row="1">
 
@@ -98,57 +105,54 @@
                 </Expander>
 
 
-                <Expander>
-                    <Expander.Header>
-                        <StackPanel Orientation="Horizontal">
-                            <Image/>
-                            <TextBlock Text="Администрирование"/>
+               
+
+
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="❤"/>
+                    <TextBlock Text="Администрирование"/>
+                    <Expander x:Name="EAdministartion">
+                        <StackPanel HorizontalAlignment="Center">
+                            <TextBlock>
+     <Hyperlink x:Name="HLVendingMachine" Click="HLVendingMachine_Click">
+         <TextBlock Text="Торговые автоматы"/>
+     </Hyperlink>
+     </TextBlock>
+
+
+                            <TextBlock>
+     <Hyperlink x:Name="HlCompany" Click="HlCompany_Click">
+         <TextBlock Text="Компании"/>
+     </Hyperlink>
+     </TextBlock>
+
+
+                            <TextBlock>
+     <Hyperlink>
+         <TextBlock Text="Пользователи"/>
+     </Hyperlink>
+     </TextBlock>
+
+
+                            <TextBlock>
+     <Hyperlink>
+         <TextBlock Text="Модемы"/>
+     </Hyperlink>
+     </TextBlock>
+
+
+                            <TextBlock>
+     <Hyperlink>
+         <TextBlock Text="Дополнительые"/>
+     </Hyperlink>
+     </TextBlock>
+
+
                         </StackPanel>
-                    </Expander.Header>
-                    <StackPanel HorizontalAlignment="Center">
-                        <TextBlock>
-                        <Hyperlink x:Name="HLVendingMachine" Click="HLVendingMachine_Click">
-                            <TextBlock Text="Торговые автоматы"/>
-                        </Hyperlink>
-                        </TextBlock>
 
 
-                  <TextBlock>
-                        <Hyperlink x:Name="HlCompany" Click="HlCompany_Click">
-                            <TextBlock Text="Компании"/>
-                        </Hyperlink>
-                        </TextBlock>
-
-
-                  <TextBlock>
-                        <Hyperlink>
-                            <TextBlock Text="Пользователи"/>
-                        </Hyperlink>
-                        </TextBlock>
-
-
-                  <TextBlock>
-                        <Hyperlink>
-                            <TextBlock Text="Модемы"/>
-                        </Hyperlink>
-                        </TextBlock>
-
-
-                  <TextBlock>
-                        <Hyperlink>
-                            <TextBlock Text="Дополнительые"/>
-                        </Hyperlink>
-                        </TextBlock>
-
-
-                    </StackPanel>
-
-
-
-
-                </Expander>
-
-
+                    </Expander>
+                </StackPanel>
 
 
 

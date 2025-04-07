@@ -15,27 +15,23 @@ namespace DesktopVendingMachine.Models
 	 using DesktopVendingMachine.Services;
 	using System.Linq;
     
-    public partial class Services
+    public partial class EquipmentVachinMachin
     {
         public int Id { get; set; }
+        public int EquipmentId { get; set; }
         public int VendingMachinId { get; set; }
-        public System.DateTime DateService { get; set; }
-        public string Decription { get; set; }
-        public string Problems { get; set; }
-        public Nullable<int> EmployeeId { get; set; }
-        public string NameEmployee { get; set; }
     
         [JsonIgnore]
     
-        public virtual User Employee 
+        public virtual Equipment Equipment 
         {
             get
             {
-                return DataManager.Users.FirstOrDefault(x=>x.Id == EmployeeId);
+                return DataManager.Equipments.FirstOrDefault(x=>x.Id == EquipmentId);
             }
             set
             {
-            EmployeeId= value.Id;
+            EquipmentId= value.Id;
             }
         }
         [JsonIgnore]

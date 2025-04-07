@@ -1,5 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="VendingMachinesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Adress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="ContactCompany" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Notes" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="InitWork" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Report" Relationship="Self.FK_Report_Company" FromRole="Company" ToRole="Report" />
+    <NavigationProperty Name="User" Relationship="Self.FK_User_Company" FromRole="Company" ToRole="User" />
+    <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_Company" FromRole="Company" ToRole="VendingMachin" />
+  </EntityType>
+  <EntityType Name="ConnectionProvider">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Price" Type="Int32" />
+    <Property Name="Icon" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_ConnectionProvider" FromRole="ConnectionProvider" ToRole="VendingMachin" />
+  </EntityType>
+  <EntityType Name="Equipment">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="EquipmentVachinMachin" Relationship="Self.FK_EquipmentVachinMachin_Equipment" FromRole="Equipment" ToRole="EquipmentVachinMachin" />
+  </EntityType>
+  <EntityType Name="EquipmentVachinMachin">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EquipmentId" Type="Int32" Nullable="false" />
+    <Property Name="VendingMachinId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Equipment" Relationship="Self.FK_EquipmentVachinMachin_Equipment" FromRole="EquipmentVachinMachin" ToRole="Equipment" />
+    <NavigationProperty Name="VendingMachin" Relationship="Self.FK_EquipmentVachinMachin_VendingMachin" FromRole="EquipmentVachinMachin" ToRole="VendingMachin" />
+  </EntityType>
   <EntityType Name="MachineProduct">
     <Key>
       <PropertyRef Name="Id" />
@@ -72,6 +114,23 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_ProductMatrix" FromRole="ProductMatrix" ToRole="VendingMachin" />
   </EntityType>
+  <EntityType Name="Report">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <Property Name="DateSigning" Type="DateTime" Precision="3" />
+    <Property Name="DateStart" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="DateEnd" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="StatusReportId" Type="Int32" Nullable="false" />
+    <Property Name="ReportData" Type="Binary" MaxLength="4000" FixedLength="false" />
+    <Property Name="VendingMachinId" Type="Int32" Nullable="false" />
+    <Property Name="NeedInsurance" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_Report_Company" FromRole="Report" ToRole="Company" />
+    <NavigationProperty Name="StatusReport" Relationship="Self.FK_Report_StatusReport" FromRole="Report" ToRole="StatusReport" />
+    <NavigationProperty Name="VendingMachin" Relationship="Self.FK_Report_VendingMachin" FromRole="Report" ToRole="VendingMachin" />
+  </EntityType>
   <EntityType Name="Role">
     <Key>
       <PropertyRef Name="Id" />
@@ -105,7 +164,7 @@
     <Property Name="Problems" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
     <Property Name="EmployeeId" Type="Int32" />
     <Property Name="NameEmployee" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="User" Relationship="Self.FK_Services_User" FromRole="Services" ToRole="User" />
+    <NavigationProperty Name="Employee" Relationship="Self.FK_Services_User" FromRole="Services" ToRole="User" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_Services_VendingMachin" FromRole="Services" ToRole="VendingMachin" />
   </EntityType>
   <EntityType Name="ShcemaCritValue">
@@ -131,6 +190,14 @@
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_StatusMachin" FromRole="StatusMachin" ToRole="VendingMachin" />
+  </EntityType>
+  <EntityType Name="StatusReport">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Report" Relationship="Self.FK_Report_StatusReport" FromRole="StatusReport" ToRole="Report" />
   </EntityType>
   <EntityType Name="sysdiagrams">
     <Key>
@@ -168,8 +235,10 @@
     <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Patronic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="RoleId" Type="Int32" Nullable="false" />
+    <Property Name="RoleId" Type="Int32" />
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CompanyId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_User_Company" FromRole="User" ToRole="Company" />
     <NavigationProperty Name="Role" Relationship="Self.FK_User_Role" FromRole="User" ToRole="Role" />
     <NavigationProperty Name="Services" Relationship="Self.FK_Services_User" FromRole="User" ToRole="Services" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_User" FromRole="User" ToRole="VendingMachin" />
@@ -210,28 +279,35 @@
     <Property Name="KitOnline" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="PriotityServiceId" Type="Int32" Nullable="false" />
     <Property Name="Number" Type="Int32" />
+    <Property Name="TimeWork" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <Property Name="ConnectionProviderId" Type="Int32" />
+    <Property Name="CompanyId" Type="Int32" />
+    <Property Name="PriceInMounth" Type="Int32" Nullable="false" />
+    <Property Name="PaybackMonth" Type="Int32" Nullable="false" />
+    <Property Name="Money" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Company" Relationship="Self.FK_VendingMachin_Company" FromRole="VendingMachin" ToRole="Company" />
+    <NavigationProperty Name="ConnectionProvider" Relationship="Self.FK_VendingMachin_ConnectionProvider" FromRole="VendingMachin" ToRole="ConnectionProvider" />
+    <NavigationProperty Name="EquipmentVachinMachin" Relationship="Self.FK_EquipmentVachinMachin_VendingMachin" FromRole="VendingMachin" ToRole="EquipmentVachinMachin" />
     <NavigationProperty Name="MachineProduct" Relationship="Self.FK_MachineProduct_VendingMachin" FromRole="VendingMachin" ToRole="MachineProduct" />
     <NavigationProperty Name="MachineTypePay" Relationship="Self.FK_MachineTypePay_VendingMachin" FromRole="VendingMachin" ToRole="MachineTypePay" />
     <NavigationProperty Name="Manufacture" Relationship="Self.FK_VendingMachin_Manufacture" FromRole="VendingMachin" ToRole="Manufacture" />
     <NavigationProperty Name="Model" Relationship="Self.FK_VendingMachin_Model" FromRole="VendingMachin" ToRole="Model" />
     <NavigationProperty Name="PriotityService" Relationship="Self.FK_VendingMachin_PriotityService" FromRole="VendingMachin" ToRole="PriotityService" />
     <NavigationProperty Name="ProductMatrix" Relationship="Self.FK_VendingMachin_ProductMatrix" FromRole="VendingMachin" ToRole="ProductMatrix" />
+    <NavigationProperty Name="Report" Relationship="Self.FK_Report_VendingMachin" FromRole="VendingMachin" ToRole="Report" />
     <NavigationProperty Name="Sales" Relationship="Self.FK_Sales_VendingMachin" FromRole="VendingMachin" ToRole="Sales" />
     <NavigationProperty Name="Services" Relationship="Self.FK_Services_VendingMachin" FromRole="VendingMachin" ToRole="Services" />
     <NavigationProperty Name="ShcemaCritValue" Relationship="Self.FK_VendingMachin_ShcemaCritValue" FromRole="VendingMachin" ToRole="ShcemaCritValue" />
     <NavigationProperty Name="ShcemaNotification" Relationship="Self.FK_VendingMachin_ShcemaNotification" FromRole="VendingMachin" ToRole="ShcemaNotification" />
     <NavigationProperty Name="StatusMachin" Relationship="Self.FK_VendingMachin_StatusMachin" FromRole="VendingMachin" ToRole="StatusMachin" />
     <NavigationProperty Name="TimeZone" Relationship="Self.FK_VendingMachin_TimeZone" FromRole="VendingMachin" ToRole="TimeZone" />
-    <NavigationProperty Name="User" Relationship="Self.FK_VendingMachin_User" FromRole="VendingMachin" ToRole="User" />
-    <NavigationProperty Name="User1" Relationship="Self.FK_VendingMachin_User1" FromRole="VendingMachin" ToRole="User" />
-    <NavigationProperty Name="User2" Relationship="Self.FK_VendingMachin_User2" FromRole="VendingMachin" ToRole="User" />
-    <NavigationProperty Name="User3" Relationship="Self.FK_VendingMachin_User3" FromRole="VendingMachin" ToRole="User" />
+    <NavigationProperty Name="Client" Relationship="Self.FK_VendingMachin_User" FromRole="VendingMachin" ToRole="User" />
+    <NavigationProperty Name="Menedger" Relationship="Self.FK_VendingMachin_User1" FromRole="VendingMachin" ToRole="User" />
+    <NavigationProperty Name="Ingener" Relationship="Self.FK_VendingMachin_User2" FromRole="VendingMachin" ToRole="User" />
+    <NavigationProperty Name="Tap" Relationship="Self.FK_VendingMachin_User3" FromRole="VendingMachin" ToRole="User" />
     <NavigationProperty Name="WorkMode" Relationship="Self.FK_VendingMachin_WorkMode" FromRole="VendingMachin" ToRole="WorkMode" />
-    <Property Name="TimeWork" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
-    <Property Name="ConnectionProviderId" Type="Int32" />
-    <NavigationProperty Name="ConnectionProvider" Relationship="VendingMachinesModel.FK_VendingMachin_ConnectionProvider" FromRole="VendingMachin" ToRole="ConnectionProvider" />
-    <Property Name="CompanyId" Type="Int32" />
-    <NavigationProperty Name="Company" Relationship="VendingMachinesModel.FK_VendingMachin_Company" FromRole="VendingMachin" ToRole="Company" />
+    <NavigationProperty Name="VendingMachinTypeConnection" Relationship="VendingMachinesModel.FK_VendingMachinTypeConnection_VendingMachin" FromRole="VendingMachin" ToRole="VendingMachinTypeConnection" />
+    <Property Name="MinumProduct" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="WorkMode">
     <Key>
@@ -241,6 +317,78 @@
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_WorkMode" FromRole="WorkMode" ToRole="VendingMachin" />
   </EntityType>
+  <Association Name="FK_Report_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="Report" Type="Self.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_Company">
+    <End Role="Company" Type="Self.Company" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_ConnectionProvider">
+    <End Role="ConnectionProvider" Type="Self.ConnectionProvider" Multiplicity="0..1" />
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ConnectionProvider">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="ConnectionProviderId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EquipmentVachinMachin_Equipment">
+    <End Role="Equipment" Type="Self.Equipment" Multiplicity="1" />
+    <End Role="EquipmentVachinMachin" Type="Self.EquipmentVachinMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Equipment">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EquipmentVachinMachin">
+        <PropertyRef Name="EquipmentId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EquipmentVachinMachin_VendingMachin">
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="1" />
+    <End Role="EquipmentVachinMachin" Type="Self.EquipmentVachinMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EquipmentVachinMachin">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_MachineProduct_Product">
     <End Role="Product" Type="Self.Product" Multiplicity="1" />
     <End Role="MachineProduct" Type="Self.MachineProduct" Multiplicity="*" />
@@ -349,8 +497,32 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Report_StatusReport">
+    <End Role="StatusReport" Type="Self.StatusReport" Multiplicity="1" />
+    <End Role="Report" Type="Self.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StatusReport">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="StatusReportId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Report_VendingMachin">
+    <End Role="VendingMachin" Type="Self.VendingMachin" Multiplicity="1" />
+    <End Role="Report" Type="Self.Report" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Report">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK_User_Role">
-    <End Role="Role" Type="Self.Role" Multiplicity="1" />
+    <End Role="Role" Type="Self.Role" Multiplicity="0..1" />
     <End Role="User" Type="Self.User" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Role">
@@ -518,6 +690,10 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="VendingMachinesEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Company" EntityType="Self.Company" />
+    <EntitySet Name="ConnectionProvider" EntityType="Self.ConnectionProvider" />
+    <EntitySet Name="Equipment" EntityType="Self.Equipment" />
+    <EntitySet Name="EquipmentVachinMachin" EntityType="Self.EquipmentVachinMachin" />
     <EntitySet Name="MachineProduct" EntityType="Self.MachineProduct" />
     <EntitySet Name="MachineTypePay" EntityType="Self.MachineTypePay" />
     <EntitySet Name="Manufacture" EntityType="Self.Manufacture" />
@@ -526,18 +702,44 @@
     <EntitySet Name="PriotityService" EntityType="Self.PriotityService" />
     <EntitySet Name="Product" EntityType="Self.Product" />
     <EntitySet Name="ProductMatrix" EntityType="Self.ProductMatrix" />
+    <EntitySet Name="Report" EntityType="Self.Report" />
     <EntitySet Name="Role" EntityType="Self.Role" />
     <EntitySet Name="Sales" EntityType="Self.Sales" />
     <EntitySet Name="Services" EntityType="Self.Services" />
     <EntitySet Name="ShcemaCritValue" EntityType="Self.ShcemaCritValue" />
     <EntitySet Name="ShcemaNotification" EntityType="Self.ShcemaNotification" />
     <EntitySet Name="StatusMachin" EntityType="Self.StatusMachin" />
+    <EntitySet Name="StatusReport" EntityType="Self.StatusReport" />
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
     <EntitySet Name="TimeZone" EntityType="Self.TimeZone" />
     <EntitySet Name="TypePay" EntityType="Self.TypePay" />
     <EntitySet Name="User" EntityType="Self.User" />
     <EntitySet Name="VendingMachin" EntityType="Self.VendingMachin" />
     <EntitySet Name="WorkMode" EntityType="Self.WorkMode" />
+    <AssociationSet Name="FK_Report_Company" Association="Self.FK_Report_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Report" EntitySet="Report" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Company" Association="Self.FK_User_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_Company" Association="Self.FK_VendingMachin_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_ConnectionProvider" Association="Self.FK_VendingMachin_ConnectionProvider">
+      <End Role="ConnectionProvider" EntitySet="ConnectionProvider" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EquipmentVachinMachin_Equipment" Association="Self.FK_EquipmentVachinMachin_Equipment">
+      <End Role="Equipment" EntitySet="Equipment" />
+      <End Role="EquipmentVachinMachin" EntitySet="EquipmentVachinMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EquipmentVachinMachin_VendingMachin" Association="Self.FK_EquipmentVachinMachin_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="EquipmentVachinMachin" EntitySet="EquipmentVachinMachin" />
+    </AssociationSet>
     <AssociationSet Name="FK_MachineProduct_Product" Association="Self.FK_MachineProduct_Product">
       <End Role="Product" EntitySet="Product" />
       <End Role="MachineProduct" EntitySet="MachineProduct" />
@@ -573,6 +775,14 @@
     <AssociationSet Name="FK_VendingMachin_ProductMatrix" Association="Self.FK_VendingMachin_ProductMatrix">
       <End Role="ProductMatrix" EntitySet="ProductMatrix" />
       <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_StatusReport" Association="Self.FK_Report_StatusReport">
+      <End Role="StatusReport" EntitySet="StatusReport" />
+      <End Role="Report" EntitySet="Report" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Report_VendingMachin" Association="Self.FK_Report_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="Report" EntitySet="Report" />
     </AssociationSet>
     <AssociationSet Name="FK_User_Role" Association="Self.FK_User_Role">
       <End Role="Role" EntitySet="Role" />
@@ -630,128 +840,56 @@
       <End Role="WorkMode" EntitySet="WorkMode" />
       <End Role="VendingMachin" EntitySet="VendingMachin" />
     </AssociationSet>
-    <EntitySet Name="Company" EntityType="VendingMachinesModel.Company" />
-    <EntitySet Name="ConnectionProvider" EntityType="VendingMachinesModel.ConnectionProvider" />
-    <EntitySet Name="StateConnect" EntityType="VendingMachinesModel.StateConnect" />
-    <AssociationSet Name="FK_ConnectionProvider_StateConnect" Association="VendingMachinesModel.FK_ConnectionProvider_StateConnect">
-      <End Role="StateConnect" EntitySet="StateConnect" />
-      <End Role="ConnectionProvider" EntitySet="ConnectionProvider" />
+    <EntitySet Name="TypeConnection" EntityType="VendingMachinesModel.TypeConnection" />
+    <EntitySet Name="VendingMachinTypeConnection" EntityType="VendingMachinesModel.VendingMachinTypeConnection" />
+    <AssociationSet Name="FK_VendingMachinTypeConnection_TypeConnection" Association="VendingMachinesModel.FK_VendingMachinTypeConnection_TypeConnection">
+      <End Role="TypeConnection" EntitySet="TypeConnection" />
+      <End Role="VendingMachinTypeConnection" EntitySet="VendingMachinTypeConnection" />
     </AssociationSet>
-    <AssociationSet Name="FK_VendingMachin_ConnectionProvider" Association="VendingMachinesModel.FK_VendingMachin_ConnectionProvider">
-      <End Role="ConnectionProvider" EntitySet="ConnectionProvider" />
+    <AssociationSet Name="FK_VendingMachinTypeConnection_VendingMachin" Association="VendingMachinesModel.FK_VendingMachinTypeConnection_VendingMachin">
       <End Role="VendingMachin" EntitySet="VendingMachin" />
-    </AssociationSet>
-    <FunctionImport Name="sp_alterdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_creatediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="version" Mode="In" Type="Int32" />
-      <Parameter Name="definition" Mode="In" Type="Binary" />
-    </FunctionImport>
-    <FunctionImport Name="sp_dropdiagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(VendingMachinesModel.sp_helpdiagramdefinition_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(VendingMachinesModel.sp_helpdiagrams_Result)">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-    </FunctionImport>
-    <FunctionImport Name="sp_renamediagram">
-      <Parameter Name="diagramname" Mode="In" Type="String" />
-      <Parameter Name="owner_id" Mode="In" Type="Int32" />
-      <Parameter Name="new_diagramname" Mode="In" Type="String" />
-    </FunctionImport>
-    <FunctionImport Name="sp_upgraddiagrams" />
-    <AssociationSet Name="FK_VendingMachin_Company" Association="VendingMachinesModel.FK_VendingMachin_Company">
-      <End Role="Company" EntitySet="Company" />
-      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="VendingMachinTypeConnection" EntitySet="VendingMachinTypeConnection" />
     </AssociationSet>
   </EntityContainer>
-  <EntityType Name="Company">
+  <EntityType Name="TypeConnection">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Adress" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="ContactCompany" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Notes" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
-    <Property Name="InitWork" Type="DateTime" Nullable="false" Precision="3" />
-    <NavigationProperty Name="VendingMachin" Relationship="VendingMachinesModel.FK_VendingMachin_Company" FromRole="Company" ToRole="VendingMachin" />
+    <NavigationProperty Name="VendingMachinTypeConnection" Relationship="VendingMachinesModel.FK_VendingMachinTypeConnection_TypeConnection" FromRole="TypeConnection" ToRole="VendingMachinTypeConnection" />
   </EntityType>
-  <EntityType Name="ConnectionProvider">
+  <EntityType Name="VendingMachinTypeConnection">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="Price" Type="Int32" />
-    <Property Name="Icon" Type="Binary" MaxLength="Max" FixedLength="false" />
-    <Property Name="StateConnectId" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="StateConnect" Relationship="VendingMachinesModel.FK_ConnectionProvider_StateConnect" FromRole="ConnectionProvider" ToRole="StateConnect" />
-    <NavigationProperty Name="VendingMachin" Relationship="VendingMachinesModel.FK_VendingMachin_ConnectionProvider" FromRole="ConnectionProvider" ToRole="VendingMachin" />
+    <Property Name="VendingMachinId" Type="Int32" Nullable="false" />
+    <Property Name="TypeConnectionId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TypeConnection" Relationship="VendingMachinesModel.FK_VendingMachinTypeConnection_TypeConnection" FromRole="VendingMachinTypeConnection" ToRole="TypeConnection" />
+    <NavigationProperty Name="VendingMachin" Relationship="VendingMachinesModel.FK_VendingMachinTypeConnection_VendingMachin" FromRole="VendingMachinTypeConnection" ToRole="VendingMachin" />
   </EntityType>
-  <EntityType Name="StateConnect">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="ConnectionProvider" Relationship="VendingMachinesModel.FK_ConnectionProvider_StateConnect" FromRole="StateConnect" ToRole="ConnectionProvider" />
-  </EntityType>
-  <Association Name="FK_ConnectionProvider_StateConnect">
-    <End Type="VendingMachinesModel.StateConnect" Role="StateConnect" Multiplicity="1" />
-    <End Type="VendingMachinesModel.ConnectionProvider" Role="ConnectionProvider" Multiplicity="*" />
+  <Association Name="FK_VendingMachinTypeConnection_TypeConnection">
+    <End Type="VendingMachinesModel.TypeConnection" Role="TypeConnection" Multiplicity="1" />
+    <End Type="VendingMachinesModel.VendingMachinTypeConnection" Role="VendingMachinTypeConnection" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="StateConnect">
+      <Principal Role="TypeConnection">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="ConnectionProvider">
-        <PropertyRef Name="StateConnectId" />
+      <Dependent Role="VendingMachinTypeConnection">
+        <PropertyRef Name="TypeConnectionId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_VendingMachin_ConnectionProvider">
-    <End Type="VendingMachinesModel.ConnectionProvider" Role="ConnectionProvider" Multiplicity="0..1" />
-    <End Type="VendingMachinesModel.VendingMachin" Role="VendingMachin" Multiplicity="*" />
+  <Association Name="FK_VendingMachinTypeConnection_VendingMachin">
+    <End Type="VendingMachinesModel.VendingMachin" Role="VendingMachin" Multiplicity="1" />
+    <End Type="VendingMachinesModel.VendingMachinTypeConnection" Role="VendingMachinTypeConnection" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="ConnectionProvider">
+      <Principal Role="VendingMachin">
         <PropertyRef Name="Id" />
       </Principal>
-      <Dependent Role="VendingMachin">
-        <PropertyRef Name="ConnectionProviderId" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <ComplexType Name="sp_helpdiagramdefinition_Result">
-    <Property Type="Int32" Name="version" Nullable="true" />
-    <Property Type="Binary" Name="definition" Nullable="true" />
-  </ComplexType>
-  <ComplexType Name="sp_helpdiagrams_Result">
-    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
-    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
-    <Property Type="Int32" Name="ID" Nullable="false" />
-    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
-    <Property Type="Int32" Name="OwnerID" Nullable="false" />
-  </ComplexType>
-  <Association Name="FK_VendingMachin_Company">
-    <End Type="VendingMachinesModel.Company" Role="Company" Multiplicity="0..1" />
-    <End Type="VendingMachinesModel.VendingMachin" Role="VendingMachin" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="Company">
-        <PropertyRef Name="Id" />
-      </Principal>
-      <Dependent Role="VendingMachin">
-        <PropertyRef Name="CompanyId" />
+      <Dependent Role="VendingMachinTypeConnection">
+        <PropertyRef Name="VendingMachinId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

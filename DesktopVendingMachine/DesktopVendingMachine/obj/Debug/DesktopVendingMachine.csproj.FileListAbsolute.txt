@@ -60,3 +60,5 @@ C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVen
 C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVendingMachine\obj\Debug\Windows\CompanyWindow.g.cs
 C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVendingMachine\obj\Debug\Pages\CompanyPage.baml
 C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVendingMachine\obj\Debug\Windows\CompanyWindow.baml
+C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVendingMachine\obj\Debug\Pages\MonitorPage.g.cs
+C:\Users\Ajdar\OneDrive\Desktop\VendingMachines\DesktopVendingMachine\DesktopVendingMachine\obj\Debug\Pages\MonitorPage.baml

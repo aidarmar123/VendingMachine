@@ -41,7 +41,7 @@ namespace DesktopVendingMachine
 
         private void HLMonitor_Click(object sender, RoutedEventArgs e)
         {
-
+            Main.Navigate(new MonitorPage());
         }
 
         private void HLVendingMachine_Click(object sender, RoutedEventArgs e)
@@ -54,5 +54,15 @@ namespace DesktopVendingMachine
         {
             Main.Navigate(new CompanyPage());
         }
+
+        private void ProfileButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (ProfileButton.ContextMenu != null)
+            {
+               
+                ProfileButton.ContextMenu.IsOpen = true;
+            }
+        }
+
     }
 }

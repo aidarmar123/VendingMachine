@@ -29,6 +29,7 @@ namespace DesktopVendingMachine.Pages
         {
             InitializeComponent();
             DataContext = this;
+        
         }
 
         private async void BLogin_Click(object sender, RoutedEventArgs e)

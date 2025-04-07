@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\vendingmachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\pages\\monitorvendingmachin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\monitorvendingmachin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\windows\\vendingmachinewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\windows\\vendingmachinewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\windows\\companywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\windows\\companywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\vendingmachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\vendingmachin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,15 +35,15 @@
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\vendingmachinepage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\pages\\companypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\pages\\companypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\companypage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\pages\\companypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\pages\\companypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\companypage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\partials\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\partials\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\partials\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -30,55 +54,35 @@
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\loginpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\windows\\companywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\windows\\companywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\windows\\companywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\windows\\companywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\windows\\companywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\services\\netmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\services\\netmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\loginpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\windows\\vendingmachinewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\windows\\vendingmachinewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\services.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\services\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\services\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\services\\datamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\modeldata.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\modeldata.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\modeldata.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\connectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\connectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\connectionprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -86,7 +90,7 @@
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\windows\\vendingmachinewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\errormessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\errormessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\errormessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -98,11 +102,11 @@
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\modeldata.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\modeldata.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\modeldata.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\desktopvendingmachine\\desktopvendingmachine\\models\\workmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\desktopvendingmachine\\models\\workmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F00A50A7-1F77-4C49-8CD9-F3E446A31947}|DesktopVendingMachine\\DesktopVendingMachine.csproj|solutionrelative:desktopvendingmachine\\models\\workmode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -129,49 +133,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VendingMachin.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\VendingMachin.cs",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\VendingMachin.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\VendingMachin.cs",
-              "RelativeToolTip": "DesktopVendingMachine\\Models\\VendingMachin.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:35:03.606Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "VendingMachinePage.xaml",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
-              "RelativeToolTip": "DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
+              "Title": "MonitorVendingMachin.xaml",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\MonitorVendingMachin.xaml",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\MonitorVendingMachin.xaml",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\MonitorVendingMachin.xaml*",
+              "RelativeToolTip": "DesktopVendingMachine\\Pages\\MonitorVendingMachin.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T13:19:53.546Z",
+              "WhenOpened": "2025-04-07T11:30:32.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LoginPage.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
-              "RelativeToolTip": "DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAIwCkAAAAUAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Windows\\CompanyWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
+              "RelativeToolTip": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAvwC4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T09:19:35.237Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:13:49.178Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 2,
               "Title": "LoginPage.xaml",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\LoginPage.xaml",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\LoginPage.xaml",
@@ -183,32 +173,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CompanyWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
-              "RelativeToolTip": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-06T09:07:47.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Windows\\CompanyWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
-              "RelativeToolTip": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAvwC4AAAAFAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "VendingMachin.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\VendingMachin.cs",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\VendingMachin.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\VendingMachin.cs",
+              "RelativeToolTip": "DesktopVendingMachine\\Models\\VendingMachin.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwAoBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T09:13:49.178Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:35:03.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "CompanyPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\CompanyPage.xaml.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\CompanyPage.xaml.cs",
@@ -216,24 +193,22 @@
               "RelativeToolTip": "DesktopVendingMachine\\Pages\\CompanyPage.xaml.cs",
               "ViewState": "AgIAACoAAAAAAAAAAADwv0MAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T09:01:06.487Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:01:06.487Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "CompanyPage.xaml",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\CompanyPage.xaml",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\CompanyPage.xaml",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\CompanyPage.xaml",
               "RelativeToolTip": "DesktopVendingMachine\\Pages\\CompanyPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-06T08:38:53.194Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T08:38:53.194Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "NetManager.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Services\\NetManager.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Services\\NetManager.cs",
@@ -241,12 +216,69 @@
               "RelativeToolTip": "DesktopVendingMachine\\Services\\NetManager.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAEwC8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T08:41:46.445Z",
+              "WhenOpened": "2025-04-05T08:41:46.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\MainWindow.xaml.cs*",
+              "RelativeToolTip": "DesktopVendingMachine\\MainWindow.xaml.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAqwDMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T08:41:05.414Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 14,
+              "Title": "CompanyWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
+              "RelativeToolTip": "DesktopVendingMachine\\Windows\\CompanyWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T09:07:47.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VendingMachineWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
+              "RelativeToolTip": "DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-06T07:08:35.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LoginPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
+              "RelativeToolTip": "DesktopVendingMachine\\Pages\\LoginPage.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAIwCkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T09:19:35.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VendingMachinePage.xaml",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
+              "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
+              "RelativeToolTip": "DesktopVendingMachine\\Pages\\VendingMachinePage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-05T13:19:53.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Services.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\Services.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\Services.cs",
@@ -254,12 +286,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\Services.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAwwCkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T06:53:54.694Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T06:53:54.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\Partials\\Company.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\Partials\\Company.cs",
@@ -267,12 +298,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\Partials\\Company.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T09:28:37.289Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T09:28:37.289Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "PropertyPathWorker.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\c824721cd7d9c028e31d9faa77b348c59e49e6a99818a102ec7b7f9254f84219\\PropertyPathWorker.cs",
@@ -285,32 +315,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\MainWindow.xaml.cs",
-              "RelativeToolTip": "DesktopVendingMachine\\MainWindow.xaml.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAA9wDYAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T08:41:05.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\MainWindow.xaml",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\MainWindow.xaml",
               "RelativeToolTip": "DesktopVendingMachine\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T08:41:05.921Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T08:41:05.921Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "DataManager.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Services\\DataManager.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Services\\DataManager.cs",
@@ -318,36 +334,22 @@
               "RelativeToolTip": "DesktopVendingMachine\\Services\\DataManager.cs",
               "ViewState": "AgIAABQAAAAAAAAAAAAQwDcAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T07:21:44.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T07:21:44.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MainPage.xaml",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\MainPage.xaml",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\MainPage.xaml",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\MainPage.xaml",
               "RelativeToolTip": "DesktopVendingMachine\\Pages\\MainPage.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-05T09:22:12.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T09:22:12.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VendingMachineWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
-              "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
-              "RelativeToolTip": "DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-04-06T07:08:35.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "ConnectionProvider.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\ConnectionProvider.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\ConnectionProvider.cs",
@@ -355,12 +357,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\ConnectionProvider.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAUwCUAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T08:37:37.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T08:37:37.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ModelData.tt",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\ModelData.tt",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\ModelData.tt",
@@ -368,12 +369,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\ModelData.tt",
               "ViewState": "AgIAAMkCAAAAAAAAAAAuwO0CAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-06T06:51:04.917Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T06:51:04.917Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\App.xaml.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\App.xaml.cs",
@@ -381,12 +381,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\App.xaml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T09:53:17.341Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T09:53:17.341Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "VendingMachineWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml.cs",
@@ -394,12 +393,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Windows\\VendingMachineWindow.xaml.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAowFcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T14:58:51.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T14:58:51.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\App.xaml",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\App.xaml",
@@ -411,7 +409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "ErrorMessage.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\ErrorMessage.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\ErrorMessage.cs",
@@ -419,12 +417,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\ErrorMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T07:48:09.134Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T07:48:09.134Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "ModelData.Context.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\ModelData.Context.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\ModelData.Context.cs",
@@ -432,12 +429,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\ModelData.Context.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T06:51:51.255Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T06:51:51.255Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "WorkMode.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\WorkMode.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\WorkMode.cs",
@@ -445,12 +441,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\WorkMode.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T06:51:46.882Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T06:51:46.882Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "MainPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Pages\\MainPage.xaml.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Pages\\MainPage.xaml.cs",
@@ -458,12 +453,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Pages\\MainPage.xaml.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAzwDEAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T13:05:40.814Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T13:05:40.814Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "VendingMachin.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\Partials\\VendingMachin.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\Partials\\VendingMachin.cs",
@@ -471,12 +465,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\Partials\\VendingMachin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T13:34:35.082Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T13:34:35.082Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\Partials\\User.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\Partials\\User.cs",
@@ -484,12 +477,11 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\Partials\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T09:56:23.402Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T09:56:23.402Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "GetToken.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\GetToken.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\GetToken.cs",
@@ -497,8 +489,7 @@
               "RelativeToolTip": "DesktopVendingMachine\\Models\\GetToken.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T08:50:31.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T08:50:31.253Z"
             }
           ]
         }
@@ -523,7 +514,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\DesktopVendingMachine\\DesktopVendingMachine\\Models\\Company.cs",
               "RelativeDocumentMoniker": "DesktopVendingMachine\\Models\\Company.cs",

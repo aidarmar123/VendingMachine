@@ -15,20 +15,18 @@ namespace DesktopVendingMachine.Models
 	 using DesktopVendingMachine.Services;
 	using System.Linq;
     
-    public partial class ConnectionProvider
+    public partial class StatusReport
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public ConnectionProvider()
+        public StatusReport()
         {
-            this.VendingMachin = new HashSet<VendingMachin>();
+            this.Report = new HashSet<Report>();
         }
     
         public int Id { get; set; }
         public string Name { get; set; }
-        public Nullable<int> Price { get; set; }
-        public byte[] Icon { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VendingMachin> VendingMachin { get; set; }
+        public virtual ICollection<Report> Report { get; set; }
     }
 }

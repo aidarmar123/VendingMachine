@@ -53,9 +53,20 @@
             <TabControl Grid.Row="1" >
                 <TabItem Header="В строку">
                     <DataGrid x:Name="DGMacine"
-           
+                    AlternationCount="2"
              AutoGenerateColumns="False"
                    IsReadOnly="True">
+                        <DataGrid.RowStyle>
+                            <Style TargetType="DataGridRow">
+                                <Style.Triggers>
+                                    <Trigger Property="ItemsControl.AlternationIndex" Value="0">
+                                        <Setter Property="Background"
+                                                Value="Gray"/>
+                                    </Trigger>
+                                             
+                                </Style.Triggers>
+                            </Style>
+                        </DataGrid.RowStyle>
                         <DataGrid.Columns>
 
 
