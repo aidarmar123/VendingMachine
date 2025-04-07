@@ -2709,6 +2709,334 @@
       ]
     },
     {
+      "Route": "_content/Blazorise.PdfViewer/pdfviewer.76gv4o9spg.js",
+      "AssetFile": "_content/Blazorise.PdfViewer/pdfviewer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 09:48:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "76gv4o9spg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/pdfviewer.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/pdfviewer.js",
+      "AssetFile": "_content/Blazorise.PdfViewer/pdfviewer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 09:48:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.min.mjs",
+      "AssetFile": "_content/Blazorise.PdfViewer/vendors/pdf.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.min.qk7jngmgkr.mjs",
+      "AssetFile": "_content/Blazorise.PdfViewer/vendors/pdf.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qk7jngmgkr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/vendors/pdf.min.mjs"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.hqc0x7yf0r.mjs",
+      "AssetFile": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1363103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqc0x7yf0r"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.mjs"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.mjs",
+      "AssetFile": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1363103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.css",
+      "AssetFile": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.fg3mdqcb6h.css",
+      "AssetFile": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fg3mdqcb6h"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.css"
+        }
+      ]
+    },
+    {
       "Route": "_content/Blazorise.Snackbar/blazorise.snackbar.css",
       "AssetFile": "_content/Blazorise.Snackbar/blazorise.snackbar.css",
       "Selectors": [],

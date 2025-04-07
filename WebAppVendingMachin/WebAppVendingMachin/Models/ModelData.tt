@@ -129,8 +129,7 @@ foreach (var entity in typeMapper.GetItemsToGenerate<EntityType>(itemCollection)
 
         }
     }
-#>
-}
+#>}
 <#
     EndNamespace(code);
 }
@@ -447,7 +446,7 @@ public class CodeStringGenerator
         return inHeader == string.IsNullOrEmpty(_code.VsNamespaceSuggestion())
             ? string.Format(
                 CultureInfo.InvariantCulture,
-                "{0}using System;\n\tusing Newtonsoft.Json;{1}\n\t using WebAppVendingMachin.Services;\n\tusing System.Linq;" +
+                "{0}using System;\n\tusing Newtonsoft.Json;\n\tusing WebAppVendingMachin.Services;{1}" +
                 "{2}",
                 inHeader ? Environment.NewLine : "",
                 includeCollections ? (Environment.NewLine + "using System.Collections.Generic;") : "",

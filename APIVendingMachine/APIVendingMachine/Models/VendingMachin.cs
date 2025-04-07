@@ -20,8 +20,10 @@ namespace APIVendingMachine.Models
         {
             this.MachineProduct = new HashSet<MachineProduct>();
             this.MachineTypePay = new HashSet<MachineTypePay>();
+            this.Report = new HashSet<Report>();
             this.Sales = new HashSet<Sales>();
             this.Services = new HashSet<Services>();
+            this.EquipmentVachinMachin = new HashSet<EquipmentVachinMachin>();
         }
     
         public int Id { get; set; }
@@ -58,7 +60,11 @@ namespace APIVendingMachine.Models
         public Nullable<int> CompanyId { get; set; }
         public int PriceInMounth { get; set; }
         public int PaybackMonth { get; set; }
+        public int Money { get; set; }
+        public int MinumProduct { get; set; }
     
+        [JsonIgnore]
+        public virtual Company Company { get; set; }
         [JsonIgnore]
         public virtual ConnectionProvider ConnectionProvider { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -73,6 +79,8 @@ namespace APIVendingMachine.Models
         public virtual PriotityService PriotityService { get; set; }
         [JsonIgnore]
         public virtual ProductMatrix ProductMatrix { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Report> Report { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Sales> Sales { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -95,7 +103,7 @@ namespace APIVendingMachine.Models
         public virtual User User3 { get; set; }
         [JsonIgnore]
         public virtual WorkMode WorkMode { get; set; }
-        [JsonIgnore]
-        public virtual Company Company { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
     }
 }

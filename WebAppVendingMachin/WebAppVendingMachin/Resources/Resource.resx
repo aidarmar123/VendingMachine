@@ -150,4 +150,16 @@
   <data name="Rent" xml:space="preserve">
     <value />
   </data>
+  <data name="Main" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Documnets" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Vending Machin" xml:space="preserve">
+    <value />
+  </data>
 </root>

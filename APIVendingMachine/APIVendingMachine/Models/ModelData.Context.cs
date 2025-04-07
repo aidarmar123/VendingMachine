@@ -35,18 +35,21 @@ namespace APIVendingMachine.Models
         public virtual DbSet<PriotityService> PriotityService { get; set; }
         public virtual DbSet<Product> Product { get; set; }
         public virtual DbSet<ProductMatrix> ProductMatrix { get; set; }
+        public virtual DbSet<Report> Report { get; set; }
         public virtual DbSet<Role> Role { get; set; }
         public virtual DbSet<Sales> Sales { get; set; }
         public virtual DbSet<Services> Services { get; set; }
         public virtual DbSet<ShcemaCritValue> ShcemaCritValue { get; set; }
         public virtual DbSet<ShcemaNotification> ShcemaNotification { get; set; }
-        public virtual DbSet<StateConnect> StateConnect { get; set; }
         public virtual DbSet<StatusMachin> StatusMachin { get; set; }
+        public virtual DbSet<StatusReport> StatusReport { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TimeZone> TimeZone { get; set; }
         public virtual DbSet<TypePay> TypePay { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<VendingMachin> VendingMachin { get; set; }
         public virtual DbSet<WorkMode> WorkMode { get; set; }
+        public virtual DbSet<Equipment> Equipment { get; set; }
+        public virtual DbSet<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
     }
 }

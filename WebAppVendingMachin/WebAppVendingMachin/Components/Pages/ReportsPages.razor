@@ -1,6 +1,38 @@
 ﻿@page "/reports"
+@using WebAppVendingMachin.Components.Components
+@inject IStringLocalizer<Resource> Localizer
 <h3>ReportsPages</h3>
+<DataGrid TItem="Report" Data="@Reports">
+	<DataGridColumns>
+		<DataGridColumn Field="@nameof(Report.Id)" Caption="@Localizer["Id"]" />
+		<DataGridColumn Field="@nameof(Report.DateSigning)" Caption="@Localizer["Date Signing"]" />
+		<DataGridColumn Field="@nameof(Report.DateStart)" Caption="@Localizer["Start Date"]" />
+		<DataGridColumn Field="@nameof(Report.DateEnd)" Caption="@Localizer["End Date"]" />
+		<DataGridColumn TItem="Report" Caption="@Localizer["Status"]">
+			<DisplayTemplate>
+				@(context.DateSigning != null ? Localizer["Singing Report"] : Localizer["No Singing"])
+			</DisplayTemplate>
+		</DataGridColumn>
+		<DataGridColumn TItem="Report" Caption="@Localizer["Action"]">
+			<DisplayTemplate>
+				<Button Clicked="@(()=>SingingReport(context))" Disabled="@(context.DateSigning != null)">
+					@Localizer["Singing"]
+				</Button>
 
+			</DisplayTemplate>
+		</DataGridColumn>
+
+	</DataGridColumns>
+</DataGrid>
 @code {
+	[Inject]
+	IModalService modalService { get; set; }
+	public List<Report> Reports = DataManager.Reports;
 
+
+	private async Task SingingReport(Report report)
+	{
+
+		await modalService.Show<ReportViewr>(Localizer["Signing"], x => x.Add(y => y.contextReport, report), new ModalInstanceOptions() { Size = ModalSize.ExtraLarge });
+	}
 }

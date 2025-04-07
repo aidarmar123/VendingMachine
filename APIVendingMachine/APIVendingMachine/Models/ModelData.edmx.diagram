@@ -4,32 +4,34 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9ae950cf22c04cdc93f81fade6c29830" Name="Diagram1">
-        <EntityTypeShape EntityType="VendingMachinesModel.Company" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.ConnectionProvider" Width="1.5" PointX="6" PointY="12.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.MachineProduct" Width="1.5" PointX="10.5" PointY="8.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.MachineTypePay" Width="1.5" PointX="10.5" PointY="5.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.Manufacture" Width="1.5" PointX="6" PointY="15.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.Model" Width="1.5" PointX="6" PointY="18.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.News" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.PriotityService" Width="1.5" PointX="6" PointY="20.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.Product" Width="1.5" PointX="8.25" PointY="16.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.ProductMatrix" Width="1.5" PointX="6" PointY="22.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.Role" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.Sales" Width="1.5" PointX="13.5" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.Services" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.ShcemaCritValue" Width="1.5" PointX="6" PointY="25.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.ShcemaNotification" Width="1.5" PointX="6" PointY="27.625" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.StateConnect" Width="1.5" PointX="3.75" PointY="13.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.StatusMachin" Width="1.5" PointX="6" PointY="30" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="1.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.TimeZone" Width="1.5" PointX="6" PointY="32.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.TypePay" Width="1.5" PointX="8.25" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.User" Width="1.5" PointX="3" PointY="7.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.VendingMachin" Width="1.5" PointX="8.25" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="VendingMachinesModel.WorkMode" Width="1.5" PointX="6" PointY="34.625" IsExpanded="true" />
+      <Diagram DiagramId="9b808e78ed674c398878acc6a00ae691" Name="Diagram1">
+        <EntityTypeShape EntityType="VendingMachinesModel.Company" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.ConnectionProvider" Width="1.5" PointX="9" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.MachineProduct" Width="1.5" PointX="13.5" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.MachineTypePay" Width="1.5" PointX="13.5" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Manufacture" Width="1.5" PointX="9" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Model" Width="1.5" PointX="9" PointY="19.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.News" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.PriotityService" Width="1.5" PointX="9" PointY="22.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Product" Width="1.5" PointX="11.25" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.ProductMatrix" Width="1.5" PointX="9" PointY="24.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Report" Width="1.5" PointX="3" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Role" Width="1.5" PointX="3.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Sales" Width="1.5" PointX="16.5" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Services" Width="1.5" PointX="8.25" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.ShcemaCritValue" Width="1.5" PointX="9" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.ShcemaNotification" Width="1.5" PointX="9" PointY="29.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.StatusMachin" Width="1.5" PointX="9" PointY="31.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.StatusReport" Width="1.5" PointX="0.75" PointY="23.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.TimeZone" Width="1.5" PointX="9" PointY="33.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.TypePay" Width="1.5" PointX="11.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.User" Width="1.5" PointX="6" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.VendingMachin" Width="1.5" PointX="11.25" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="VendingMachinesModel.WorkMode" Width="1.5" PointX="9" PointY="36.25" IsExpanded="true" />
+        <AssociationConnector Association="VendingMachinesModel.FK_Report_Company" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_User_Company" ManuallyRouted="false" />
-        <AssociationConnector Association="VendingMachinesModel.FK_ConnectionProvider_StateConnect" ManuallyRouted="false" />
+        <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_Company" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_ConnectionProvider" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_MachineProduct_Product" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_MachineProduct_VendingMachin" ManuallyRouted="false" />
@@ -40,6 +42,8 @@
         <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_PriotityService" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_Sales_Product" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_ProductMatrix" ManuallyRouted="false" />
+        <AssociationConnector Association="VendingMachinesModel.FK_Report_StatusReport" ManuallyRouted="false" />
+        <AssociationConnector Association="VendingMachinesModel.FK_Report_VendingMachin" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_User_Role" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_Sales_TypePay" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_Sales_VendingMachin" ManuallyRouted="false" />
@@ -54,7 +58,10 @@
         <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_User2" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_User3" ManuallyRouted="false" />
         <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_WorkMode" ManuallyRouted="false" />
-        <AssociationConnector Association="VendingMachinesModel.FK_VendingMachin_Company" />
+        <EntityTypeShape EntityType="VendingMachinesModel.Equipment" Width="1.5" PointX="11.25" PointY="21.625" />
+        <EntityTypeShape EntityType="VendingMachinesModel.EquipmentVachinMachin" Width="1.5" PointX="13.5" PointY="13.375" />
+        <AssociationConnector Association="VendingMachinesModel.FK_EquipmentVachinMachin_Equipment" />
+        <AssociationConnector Association="VendingMachinesModel.FK_EquipmentVachinMachin_VendingMachin" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

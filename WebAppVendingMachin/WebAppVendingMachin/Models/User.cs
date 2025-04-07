@@ -11,11 +11,9 @@ namespace WebAppVendingMachin.Models
 {
     using System;
 	using Newtonsoft.Json;
+	using WebAppVendingMachin.Services;
     using System.Collections.Generic;
-	 using WebAppVendingMachin.Services;
-	using System.Linq;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class User
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -27,41 +25,29 @@ namespace WebAppVendingMachin.Models
             this.VendingMachin2 = new HashSet<VendingMachin>();
             this.VendingMachin3 = new HashSet<VendingMachin>();
         }
-
+    
         public int Id { get; set; }
-       
-       
         public string Name { get; set; }
-      
-       
         public string Surname { get; set; }
-       
         public string Patronic { get; set; }
-        [Required]
-        [Length(3, 50)]
-        [EmailAddress]
         public string Email { get; set; }
         public Nullable<int> RoleId { get; set; }
-        [Required]
-        [Length(8, 50)]
-        [RegularExpression("^(?=.*[A-z])(?=.*[0-9])(?=.*[!@#$%^&*()?><:\"{}\\[\\]|~`]).+$")]
         public string Password { get; set; }
-      
         public int CompanyId { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Services> Services { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VendingMachin> VendingMachin { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VendingMachin> VendingMachin1 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VendingMachin> VendingMachin2 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<VendingMachin> VendingMachin3 { get; set; }
-       
-       
-
+    
+        [JsonIgnore]
+    
+        public virtual Company Company 
+        {
+            get
+            {
+                return DataManager.Companys.FirstOrDefault(x=>x.Id == CompanyId);
+            }
+            set
+            {
+            CompanyId= value.Id;
+            }
+        }
         [JsonIgnore]
     
         public virtual Role Role 
@@ -75,17 +61,15 @@ namespace WebAppVendingMachin.Models
             RoleId= value.Id;
             }
         }
-        [JsonIgnore]
-        public virtual Company Company
-        {
-            get
-            {
-                return DataManager.Companys.FirstOrDefault(x => x.Id == CompanyId);
-            }
-            set
-            {
-                CompanyId = value.Id;
-            }
-        }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Services> Services { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VendingMachin> VendingMachin { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VendingMachin> VendingMachin1 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VendingMachin> VendingMachin2 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VendingMachin> VendingMachin3 { get; set; }
     }
 }

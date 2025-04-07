@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SKRTpyx1i6RRIQ/TR9GjV/OOrVaLGIeW08krcyvh8jo=",
+  "Hash": "6BXhyVSpxhidcR7Eby4TqudTh/nu9PZ+R+2KEUfUd6k=",
   "Source": "WebAppVendingMachin",
   "BasePath": "_content/WebAppVendingMachin",
   "Mode": "Default",
@@ -687,6 +687,90 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.icons.fontawesome\\1.7.5\\staticwebassets\\v6\\webfonts\\fa-v4compatibility.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\pdfviewer.js",
+      "SourceId": "Blazorise.PdfViewer",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\",
+      "BasePath": "_content/Blazorise.PdfViewer",
+      "RelativePath": "pdfviewer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "76gv4o9spg",
+      "Integrity": "YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\pdfviewer.js"
+    },
+    {
+      "Identity": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.min.mjs",
+      "SourceId": "Blazorise.PdfViewer",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\",
+      "BasePath": "_content/Blazorise.PdfViewer",
+      "RelativePath": "vendors/pdf.min.mjs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qk7jngmgkr",
+      "Integrity": "GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.min.mjs"
+    },
+    {
+      "Identity": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.worker.min.mjs",
+      "SourceId": "Blazorise.PdfViewer",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\",
+      "BasePath": "_content/Blazorise.PdfViewer",
+      "RelativePath": "vendors/pdf.worker.min.mjs",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hqc0x7yf0r",
+      "Integrity": "eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.worker.min.mjs"
+    },
+    {
+      "Identity": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf_viewer.min.css",
+      "SourceId": "Blazorise.PdfViewer",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\",
+      "BasePath": "_content/Blazorise.PdfViewer",
+      "RelativePath": "vendors/pdf_viewer.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fg3mdqcb6h",
+      "Integrity": "AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf_viewer.min.css"
     },
     {
       "Identity": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.snackbar\\1.7.5\\staticwebassets\\blazorise.snackbar.css",
@@ -4298,6 +4382,334 @@
         {
           "Name": "label",
           "Value": "_content/Blazorise.Icons.FontAwesome/v6/webfonts/fa-v4compatibility.woff2"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/pdfviewer.76gv4o9spg.js",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\pdfviewer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 09:48:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "76gv4o9spg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/pdfviewer.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/pdfviewer.js",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\pdfviewer.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7497"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 28 Feb 2025 09:48:24 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-YShEtNqHOwzBYhxgQ0kEBk0PZ2eHS4lQlO3yrvIbz+M="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.min.mjs",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.min.qk7jngmgkr.mjs",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "328102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qk7jngmgkr"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GsSE6LkLYA0+P28Lg1m9tCfG8jOaHDOhkSG9PNINraQ="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/vendors/pdf.min.mjs"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.hqc0x7yf0r.mjs",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.worker.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1363103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hqc0x7yf0r"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.mjs"
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf.worker.min.mjs",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf.worker.min.mjs",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1363103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-eV06xG5ciFEh7jWOlttcDb9wfWhuLbN63MuZcOaCTaw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.css",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf_viewer.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.fg3mdqcb6h.css",
+      "AssetFile": "C:\\Users\\Ajdar\\.nuget\\packages\\blazorise.pdfviewer\\1.7.5\\staticwebassets\\vendors\\pdf_viewer.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "65680"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 25 Nov 2024 09:48:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fg3mdqcb6h"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-AfCCVgoJd8W1Bnw0wsh/DXotsQ/gyAZ2elMVsgd2rDU="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/Blazorise.PdfViewer/vendors/pdf_viewer.min.css"
         }
       ]
     },

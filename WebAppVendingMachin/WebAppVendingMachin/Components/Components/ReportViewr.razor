@@ -1,0 +1,108 @@
+﻿@using iText.Kernel.Pdf
+@using iText.Layout
+@inject IJSRuntime JS
+@inject IStringLocalizer<Resource> Localizer
+<h3>ReportViewr</h3>
+@if (contextReport.ReportData != null)
+{
+
+	<Blazorise.PdfViewer.PdfViewer Source='@($"data:application/pdf;base64,{Convert.ToBase64String(contextReport.ReportData)}")'></Blazorise.PdfViewer.PdfViewer>
+}
+<canvas id="signatureCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+<Button Clicked="Signing">@Localizer["Signing"]</Button>
+@code {
+	[Parameter] public Report contextReport { get; set; }
+	[Inject] IModalService modalService { get; set; }
+	[Inject] IToastService toastService { get; set; }
+	protected override void OnParametersSet()
+	{
+		if (contextReport.ReportData == null)
+		{
+			contextReport.ReportData = CreateReport();
+		}
+	}
+
+	private byte[] CreateReport()
+	{
+		//var file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates", "Template.pdf");
+		//var pdfRider = new PdfReader(file);
+
+		using (var ms = new MemoryStream())
+		{
+			var pdfWriter = new PdfWriter(ms);
+			var pdf = new PdfDocument(pdfWriter);
+
+			var document = new Document(pdf);
+
+			document.Add(new iText.Layout.Element.Paragraph("Report"));
+			document.Add(new iText.Layout.Element.Paragraph(contextReport.Company.Name));
+			document.Add(new iText.Layout.Element.Paragraph($"Арендую тороговый автомат {contextReport.VendingMachin.Name} с номером {contextReport.VendingMachinId}"));
+			document.Add(new iText.Layout.Element.Paragraph($"C {contextReport.DateStart.ToString("D")} по {contextReport.DateEnd.ToString("D")}"));
+			document.Close();
+			pdf.Close();
+			return ms.ToArray();
+
+		}
+	}
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (firstRender)
+		{
+			await JS.InvokeVoidAsync("initSignaturePad", "signatureCanvas");
+		}
+	}
+	private async Task Signing(MouseEventArgs args)
+	{
+		contextReport.DateSigning = DateTime.Now;
+		await NetManager.Put($"api/Reports/{contextReport.Id}", contextReport);
+		await modalService.Hide();
+		await toastService.Success("Report signing");
+	}
+}
+<script>
+	  window.initSignaturePad = function (canvasId) {
+		const canvas = document.getElementById(canvasId);
+		const ctx = canvas.getContext("2d");
+
+		let drawing = false;
+
+		const getPosition = (e) => {
+			const rect = canvas.getBoundingClientRect();
+			return {
+				x: (e.clientX || e.touches[0].clientX) - rect.left,
+				y: (e.clientY || e.touches[0].clientY) - rect.top
+			};
+		};
+
+		const startDrawing = (e) => {
+			drawing = true;
+			const pos = getPosition(e);
+			ctx.beginPath();
+			ctx.moveTo(pos.x, pos.y);
+			e.preventDefault();
+		};
+
+		const draw = (e) => {
+			if (!drawing) return;
+			const pos = getPosition(e);
+			ctx.lineTo(pos.x, pos.y);
+			ctx.stroke();
+			e.preventDefault();
+		};
+
+		const stopDrawing = () => {
+			drawing = false;
+		};
+
+		// Mouse events
+		canvas.addEventListener("mousedown", startDrawing);
+		canvas.addEventListener("mousemove", draw);
+		canvas.addEventListener("mouseup", stopDrawing);
+		canvas.addEventListener("mouseleave", stopDrawing);
+
+		// Touch events
+
+	};
+
+
+</script>

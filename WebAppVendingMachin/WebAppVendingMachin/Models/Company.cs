@@ -11,16 +11,17 @@ namespace WebAppVendingMachin.Models
 {
     using System;
 	using Newtonsoft.Json;
+	using WebAppVendingMachin.Services;
     using System.Collections.Generic;
-	 using WebAppVendingMachin.Services;
-	using System.Linq;
     
     public partial class Company
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Company()
         {
+            this.User = new HashSet<User>();
             this.VendingMachin = new HashSet<VendingMachin>();
+            this.Report = new HashSet<Report>();
         }
     
         public int Id { get; set; }
@@ -31,6 +32,10 @@ namespace WebAppVendingMachin.Models
         public System.DateTime InitWork { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<User> User { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Report> Report { get; set; }
     }
 }

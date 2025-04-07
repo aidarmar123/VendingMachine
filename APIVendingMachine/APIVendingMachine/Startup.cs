@@ -21,6 +21,7 @@ namespace APIVendingMachine
         {
             RegistartionProvider<VendingMachin, MetaVendingMachine>();
             RegistartionProvider<Company, MetaCompany>();
+            RegistartionProvider<User, MetaUser>();
 
             var secretKey = ConfigurationManager.AppSettings["secretKey"];
             var issure = ConfigurationManager.AppSettings["issure"];

@@ -141,6 +141,15 @@
   <data name="Code" xml:space="preserve">
     <value>Код</value>
   </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Доступен</value>
+  </data>
+  <data name="Busy" xml:space="preserve">
+    <value>Забронирован</value>
+  </data>
+  <data name="Rent" xml:space="preserve">
+    <value>Арендовать Автомат</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Ошибка</value>
   </data>
@@ -156,13 +165,70 @@
   <data name="Email" xml:space="preserve">
     <value>Почта</value>
   </data>
-  <data name="Enable" xml:space="preserve">
-    <value>Доступен</value>
+  <data name="All" xml:space="preserve">
+    <value>Все</value>
   </data>
-  <data name="Busy" xml:space="preserve">
-    <value>Забронирован</value>
+  <data name="Ascading" xml:space="preserve">
+    <value>По возрастанию</value>
   </data>
-  <data name="Rent" xml:space="preserve">
-    <value>Арендовать Автомат</value>
+  <data name="Desinding" xml:space="preserve">
+    <value>По убыванию</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Сортировать по</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Действия</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Подверждаете аренду</value>
+  </data>
+  <data name="Date Signing" xml:space="preserve">
+    <value>Дата подписания</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>Конечная дата</value>
+  </data>
+  <data name="Insurance" xml:space="preserve">
+    <value>Страхование</value>
+  </data>
+  <data name="No Singing" xml:space="preserve">
+    <value>Не подписан</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Бронь завершена</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Сохранить</value>
+  </data>
+  <data name="Signing" xml:space="preserve">
+    <value>Подписать</value>
+  </data>
+  <data name="Singing Report" xml:space="preserve">
+    <value>Подписан</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Начальная дата</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Статус</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Успешно</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Да</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Главная</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Настройки</value>
+  </data>
+  <data name="Documnets" xml:space="preserve">
+    <value>Документы</value>
+  </data>
+  <data name="Vending Machin" xml:space="preserve">
+    <value>Торговые автоматы</value>
   </data>
 </root>

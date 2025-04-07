@@ -22,6 +22,8 @@ namespace WebAppVendingMachin.Services
         public static List<ConnectionProvider> ConnectionProviders;
         public static List<StateConnect> StateConnects;
         public static List<Models.Company> Companys;
+        public static List<StatusReport> StatusReports;
+        public static List<Report> Reports;
 
 
         public static List<WebAppVendingMachin.Models.User> Users;
@@ -54,6 +56,8 @@ namespace WebAppVendingMachin.Services
             Saless = await NetManager.Get<List<Sales>>("api/Sales");
             Servicess = await NetManager.Get<List<Models.Services>>("api/Services");
             Companys = await NetManager.Get<List<Company>>("api/Companys");
+            StatusReports = await NetManager.Get<List<StatusReport>>("api/StatusReports");
+            Reports = await NetManager.Get<List<Report>>("api/Reports");
             
         }
     }

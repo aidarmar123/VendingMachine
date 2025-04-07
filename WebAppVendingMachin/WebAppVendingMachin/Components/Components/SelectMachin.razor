@@ -1,41 +1,103 @@
 ﻿@using Microsoft.Extensions.Localization
+@using WebAppVendingMachin.Components.Pages
 @inject IStringLocalizer<Resource> Localizer
+@inject NavigationManager navigationManager
 
 <PageTitle>@Localizer["SelectMachin"]</PageTitle>
 <h3>@Localizer["SelectMachin"]</h3>
+
+<div class="filter">
+    <Label>@Localizer["Model"]</Label>
+    <select @bind="@selectModelId" @bind:after="Filter" >
+        <option value="0">@Localizer["All"]</option>
+        @foreach (var model in DataManager.Models)
+        {
+            <option value="@model.Id">@model.Name</option>
+        }
+    </select>
+
+    <Label>@Localizer["Status"]</Label>
+    <select @bind="selectStatus" @bind:after="Filter">
+        <option value="0">@Localizer["All"]</option>
+        <option value="1">@Localizer["Enable"]</option>
+        <option value="2">@Localizer["Busy"]</option>
+
+    </select>
+
+    <Label>@Localizer["Sort"]</Label>
+    <select @bind="selectSort" @bind:after="Filter">
+
+
+        <option value="1">@Localizer["Ascading"]</option>
+        <option value="2">@Localizer["Desinding"]</option>
+
+    </select>
+
+</div>
 <div class="listMachin">
-	@foreach (var contextVendingMachin in vendingMachins)
-	{
-		<Card>
-			<CardBody>
-				<h3>@contextVendingMachin.Name</h3>
-				<p>@contextVendingMachin.Model.Name</p>
-				<p>@contextVendingMachin.PriceInMounth</p>
-				<p>@(contextVendingMachin.PaybackMonth * 12)</p>
-				<p>@(contextVendingMachin.CompanyId == null ? Localizer["Enable"] : Localizer["Busy"])</p>
-				<p>@contextVendingMachin.FullAdress</p>
-				<p>@contextVendingMachin.PaybackMonth</p>
+    @foreach (var contextVendingMachin in vendingMachins)
+    {
+        <Card Class="m-2">
+            <CardBody>
+                <h3>@contextVendingMachin.Name</h3>
+                <p>@contextVendingMachin.Model.Name</p>
+                <p>@contextVendingMachin.PriceInMounth</p>
+                <p>@(contextVendingMachin.PaybackMonth * 12)</p>
+                <p>@(contextVendingMachin.CompanyId == null ? Localizer["Enable"] : Localizer["Busy"])</p>
+                <p>@contextVendingMachin.FullAdress</p>
+                <p>@contextVendingMachin.PaybackMonth</p>
 
-			</CardBody>
-			<CardFooter>
-				<Button Clicked="(()=>SelectClick(contextVendingMachin))">@Localizer["SelectMachin"]</Button>
-			</CardFooter>
-		</Card>
+            </CardBody>
+            <CardFooter>
+                <Button Clicked="(()=>SelectClick(contextVendingMachin))">@Localizer["SelectMachin"]</Button>
+            </CardFooter>
+        </Card>
 
-	}
+    }
 </div>
 
 @code {
-	private List<Models.VendingMachin> vendingMachins { get; set; } = DataManager.VendingMachins;
+    
+    [Inject] IModalService modalService { get; set; }
 
-	private void SelectClick(VendingMachin args)
+
+    private List<Models.VendingMachin> vendingMachins { get; set; } = DataManager.VendingMachins;
+
+    private int selectModelId { get; set; }
+    private int selectStatus { get; set; }
+    private int selectSort { get; set; }
+
+    private async Task SelectClick(VendingMachin args)
+    {
+        await modalService.Hide();
+        await modalService.Show<ReportComponent>("Договор", x=>x.Add(y=>y.vendingMachin, args));
+    }
+	private void Filter()
 	{
-		throw new NotImplementedException();
+		var query = DataManager.VendingMachins;
+
+		if (selectModelId != 0)
+			query = query.Where(x => x.ModelId == selectModelId).ToList();
+
+		if(selectStatus ==1)
+			query = query.Where(x => x.Company == null).ToList();
+		else if(selectStatus == 2)
+			query = query.Where(x => x.Company != null).ToList();
+
+		if (selectSort == 1)
+			query = query.OrderBy(x => x.PriceInMounth).ToList();
+		else if(selectSort == 2)
+			query = query.OrderByDescending(x => x.PriceInMounth).ToList();
+
+		vendingMachins = query;
+		StateHasChanged();
 	}
+	
 }
 <style>
-	.listMachin{
-		display:flex;
-
+	.listMachin {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 	}
 </style>

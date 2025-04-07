@@ -11,9 +11,8 @@ namespace WebAppVendingMachin.Models
 {
     using System;
 	using Newtonsoft.Json;
+	using WebAppVendingMachin.Services;
     using System.Collections.Generic;
-	 using WebAppVendingMachin.Services;
-	using System.Linq;
     
     public partial class StatusMachin
     {

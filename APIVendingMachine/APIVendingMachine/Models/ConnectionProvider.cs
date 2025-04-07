@@ -25,10 +25,7 @@ namespace APIVendingMachine.Models
         public string Name { get; set; }
         public Nullable<int> Price { get; set; }
         public byte[] Icon { get; set; }
-        public int StateConnectId { get; set; }
     
-        [JsonIgnore]
-        public virtual StateConnect StateConnect { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin { get; set; }
     }

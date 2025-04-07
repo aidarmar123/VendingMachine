@@ -5,23 +5,22 @@
 @inject NavigationManager navigationManager
 @inject IHttpContextAccessor HttpContextAccessor
 @inject IStringLocalizer<Resource> Localizer
-<PageTitle>Login</PageTitle>
-<Button Clicked="SetEnglish">En</Button>
-<Button Clicked="SetRussia">Ru</Button>
+<PageTitle>@Localizer["Login"]</PageTitle>
+
 <EditForm FormName="Authorize" Model="contextUser" OnValidSubmit="Login">
 	<DataAnnotationsValidator />
 	<Microsoft.AspNetCore.Components.Forms.ValidationSummary />
 	<div class="form-center">
 		<div>
 			<label>
-				Email:
+				@Localizer["Email"]:
 			</label>
 			<br/>
 			<InputText @bind-Value="@contextUser.Email" />
 		</div>
 		<div>
 			<label>
-				Password:
+				@Localizer["Password"]:
 			</label>
 			<br />
 

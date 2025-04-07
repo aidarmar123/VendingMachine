@@ -2,15 +2,18 @@
 @using WebAppVendingMachin.Components.Components
 @inject IStringLocalizer<Resource> Localizer
 
-<h3>Vending Machin</h3>
-<Button Clicked="RentMachin">@Localizer["Rent"]</Button>
+@if (vendingMachins.Count(x => x.CompanyId == UserServices.AuthUser.CompanyId) == 0)
+{
+	<Button Clicked="RentMachin">@Localizer["Rent"]</Button>
+
+}
 <DataGrid TItem="VendingMachin"
-Data="@vendingMachins"
-Responsive
-ShowPager
-ShowPageSizes
-PagerPosition="DataGridPagerPosition.TopAndBottom"
-PagerOptions="new(){ ButtonSize=Size.Small }">
+		  Data="@vendingMachins"
+		  Responsive
+		  ShowPager
+		  ShowPageSizes
+		  PagerPosition="DataGridPagerPosition.TopAndBottom"
+		  PagerOptions="new(){ ButtonSize=Size.Small }">
 	<DataGridColumns>
 		<DataGridCommandColumn />
 		<DataGridColumn Field="@nameof(VendingMachin.Id)" Caption="#" Sortable="false" />
@@ -69,6 +72,11 @@ PagerOptions="new(){ ButtonSize=Size.Small }">
 
 	private Task ShowModal()
 	{
-		return modalService.Show<SelectMachin>(Localizer["SelectMachin"]);
+		var options = new ModalInstanceOptions
+			{
+				Size = ModalSize.ExtraLarge
+			};
+		return modalService.Show<SelectMachin>(Localizer["SelectMachin"], options);
 	}
-	}
+
+}

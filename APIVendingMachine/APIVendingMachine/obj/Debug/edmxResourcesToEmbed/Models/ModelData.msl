@@ -20,7 +20,6 @@
           <ScalarProperty Name="Name" ColumnName="Name" />
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="Icon" ColumnName="Icon" />
-          <ScalarProperty Name="StateConnectId" ColumnName="StateConnectId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -94,6 +93,21 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Report">
+      <EntityTypeMapping TypeName="VendingMachinesModel.Report">
+        <MappingFragment StoreEntitySet="Report">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="DateSigning" ColumnName="DateSigning" />
+          <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+          <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+          <ScalarProperty Name="StatusReportId" ColumnName="StatusReportId" />
+          <ScalarProperty Name="ReportData" ColumnName="ReportData" />
+          <ScalarProperty Name="VendingMachinId" ColumnName="VendingMachinId" />
+          <ScalarProperty Name="NeedInsurance" ColumnName="NeedInsurance" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Role">
       <EntityTypeMapping TypeName="VendingMachinesModel.Role">
         <MappingFragment StoreEntitySet="Role">
@@ -143,17 +157,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="StateConnect">
-      <EntityTypeMapping TypeName="VendingMachinesModel.StateConnect">
-        <MappingFragment StoreEntitySet="StateConnect">
+    <EntitySetMapping Name="StatusMachin">
+      <EntityTypeMapping TypeName="VendingMachinesModel.StatusMachin">
+        <MappingFragment StoreEntitySet="StatusMachin">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="StatusMachin">
-      <EntityTypeMapping TypeName="VendingMachinesModel.StatusMachin">
-        <MappingFragment StoreEntitySet="StatusMachin">
+    <EntitySetMapping Name="StatusReport">
+      <EntityTypeMapping TypeName="VendingMachinesModel.StatusReport">
+        <MappingFragment StoreEntitySet="StatusReport">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
         </MappingFragment>
@@ -203,6 +217,8 @@
     <EntitySetMapping Name="VendingMachin">
       <EntityTypeMapping TypeName="VendingMachinesModel.VendingMachin">
         <MappingFragment StoreEntitySet="VendingMachin">
+          <ScalarProperty Name="MinumProduct" ColumnName="MinumProduct" />
+          <ScalarProperty Name="Money" ColumnName="Money" />
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Adress" ColumnName="Adress" />
           <ScalarProperty Name="Lacation" ColumnName="Lacation" />
@@ -245,6 +261,23 @@
         <MappingFragment StoreEntitySet="WorkMode">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Equipment">
+      <EntityTypeMapping TypeName="VendingMachinesModel.Equipment">
+        <MappingFragment StoreEntitySet="Equipment">
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EquipmentVachinMachin">
+      <EntityTypeMapping TypeName="VendingMachinesModel.EquipmentVachinMachin">
+        <MappingFragment StoreEntitySet="EquipmentVachinMachin">
+          <ScalarProperty Name="VendingMachinId" ColumnName="VendingMachinId" />
+          <ScalarProperty Name="EquipmentId" ColumnName="EquipmentId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

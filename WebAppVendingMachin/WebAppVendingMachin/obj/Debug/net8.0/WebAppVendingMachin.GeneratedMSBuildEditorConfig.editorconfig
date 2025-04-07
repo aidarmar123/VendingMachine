@@ -24,6 +24,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Ajdar/OneDrive/Desktop/VendingMachines/WebAppVendingMachin/WebAppVendingMachin/Components/Components/ReportComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXFJlcG9ydENvbXBvbmVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Ajdar/OneDrive/Desktop/VendingMachines/WebAppVendingMachin/WebAppVendingMachin/Components/Components/ReportViewr.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXFJlcG9ydFZpZXdyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Ajdar/OneDrive/Desktop/VendingMachines/WebAppVendingMachin/WebAppVendingMachin/Components/Components/SelectMachin.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xDb21wb25lbnRzXFNlbGVjdE1hY2hpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

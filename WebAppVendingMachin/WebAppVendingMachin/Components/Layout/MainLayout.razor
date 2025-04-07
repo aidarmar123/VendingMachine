@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
 @inject NavigationManager navigationManager
 <div class="page">
     <div class="sidebar">
@@ -6,8 +7,10 @@
     </div>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+        
+        <div>
+            <Button Clicked="SetEnglish">En</Button>
+            <Button Clicked="SetRussia">Ru</Button>
         </div>
 
         <article class="content px-4">
@@ -29,4 +32,28 @@
             navigationManager.NavigateTo("/Login");
         }
     }
+    private async Task SetRussia(MouseEventArgs args)
+    {
+        await JS.InvokeVoidAsync("setCulture", "ru");
+        StateHasChanged();
+    }
+    private async Task SetEnglish(MouseEventArgs args)
+    {
+        await JS.InvokeVoidAsync("setCulture", "en");
+        StateHasChanged();
+
+    }
 }
+<style>
+    .filter{
+        display: flex;
+        flex-wrap: wrap;
+    }
+</style>
+
+<script>
+    function setCulture(culture) {
+        document.cookie = `.AspNetCore.Culture=c=${culture}|uic=${culture}; path=/`;
+        location.reload();
+    }
+</script>

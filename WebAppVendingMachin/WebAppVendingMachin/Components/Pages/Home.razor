@@ -3,73 +3,11 @@
 
 <PageTitle>Home</PageTitle>
 
-<canvas id="signatureCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
 
-<button @onclick="ClearSignature">Очистить</button>
+
 
 @code {
-    [Inject] IMessageService messageService{ get; set; }
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender)
-        {
-            await JS.InvokeVoidAsync("initSignaturePad", "signatureCanvas");
-        }
-    }
-
-    private async Task ClearSignature()
-    {
-        await ShowMsg();     
-    }
-    private Task ShowMsg()
-    {
-        return messageService.Success("adfds", "fssdf");
-    }
-}
-<script>
-      window.initSignaturePad = function (canvasId) {
-        const canvas = document.getElementById(canvasId);
-        const ctx = canvas.getContext("2d");
-
-        let drawing = false;
-
-        const getPosition = (e) => {
-            const rect = canvas.getBoundingClientRect();
-            return {
-                x: (e.clientX || e.touches[0].clientX) - rect.left,
-                y: (e.clientY || e.touches[0].clientY) - rect.top
-            };
-        };
-
-        const startDrawing = (e) => {
-            drawing = true;
-            const pos = getPosition(e);
-            ctx.beginPath();
-            ctx.moveTo(pos.x, pos.y);
-            e.preventDefault();
-        };
-
-        const draw = (e) => {
-            if (!drawing) return;
-            const pos = getPosition(e);
-            ctx.lineTo(pos.x, pos.y);
-            ctx.stroke();
-            e.preventDefault();
-        };
-
-        const stopDrawing = () => {
-            drawing = false;
-        };
-
-        // Mouse events
-        canvas.addEventListener("mousedown", startDrawing);
-        canvas.addEventListener("mousemove", draw);
-        canvas.addEventListener("mouseup", stopDrawing);
-        canvas.addEventListener("mouseleave", stopDrawing);
-
-        // Touch events
-       
-    };
 
    
-</script>
+    
+}

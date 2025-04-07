@@ -1,0 +1,102 @@
+﻿@inject IStringLocalizer<Resource> Localizer
+@using iText
+@using iText.Forms
+@using iText.Kernel.Pdf
+@using iText.Layout
+<EditForm FormName="CreateReport" Model="@contextReport" OnValidSubmit="Save">
+	<DataAnnotationsValidator />
+	<Microsoft.AspNetCore.Components.Forms.ValidationSummary />
+	<div>
+		<Label>@Localizer["Start Date"]</Label><br />
+		<InputDate @bind-Value="@contextReport.DateStart"></InputDate>
+	</div>
+
+	<div>
+		<Label>@Localizer["End Date"]</Label><br />
+		<InputDate @bind-Value="@contextReport.DateEnd"></InputDate>
+	</div>
+
+	<div>
+		<Label>@Localizer["Insurance"]</Label><br />
+		<InputCheckbox @bind-Value="@contextReport.NeedInsurance">@Localizer["Yes"]</InputCheckbox>
+	</div>
+
+	<Button Disabled="IsDisable" Type="ButtonType.Submit">@Localizer["Save"]</Button>
+
+</EditForm>
+
+
+@code {
+	[Parameter] public VendingMachin vendingMachin { get; set; }
+	[Parameter] public SelectMachin parentWindow { get; set; }
+
+	[Inject] IMessageService messageService { get; set; }
+	[Inject] IModalService modalService { get; set; }
+	[Inject] IToastService toastService { get; set; }
+	private Report contextReport { get; set; }
+	private bool IsDisable { get; set; } = false;
+
+
+	protected override void OnInitialized()
+	{
+		contextReport = new Report()
+			{
+				CompanyId = UserServices.AuthUser.CompanyId,
+				VendingMachinId = vendingMachin.Id,
+				DateEnd = DateTime.Now.AddYears(1),
+				DateStart = DateTime.Now,
+				StatusReportId = 1
+
+			};
+
+	}
+
+	private async Task Save(EditContext args)
+	{
+
+		if (await messageService.Confirm(Localizer["Confirm"]))
+		{
+			var response = await NetManager.Post("api/Reports", contextReport);
+			if (response.IsSuccessStatusCode)
+			{
+				await modalService.Hide();
+				contextReport.ReportData = CreateReport();
+				await toastService.Success(Localizer["Success"], Localizer["Notification"]);
+
+				await modalService.Show<ReportViewr>(Localizer["Signing"], async x=>x.Add(y=>y.contextReport, await NetManager.ParseResponse<Report>(response)));
+			}
+			else
+			{
+				var error = await NetManager.ParseResponse<ErrorMessage>(response);
+				await messageService.Error(error.Message);
+			}
+		}
+		else
+		{
+			IsDisable = false;
+		}
+	}
+	private byte[] CreateReport()
+	{
+		//var file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates", "Template.pdf");
+		//var pdfRider = new PdfReader(file);
+
+		using (var ms = new MemoryStream())
+		{
+			var pdfWriter = new PdfWriter(ms);
+			var pdf = new PdfDocument(pdfWriter);
+		
+			var document = new Document(pdf);
+
+			document.Add(new iText.Layout.Element.Paragraph("Report"));
+			document.Add(new iText.Layout.Element.Paragraph(contextReport.Company.Name));
+			document.Add(new iText.Layout.Element.Paragraph($"Арендую тороговый автомат {contextReport.VendingMachin.Name} с номером {contextReport.VendingMachinId}"));
+			document.Add(new iText.Layout.Element.Paragraph($"C {contextReport.DateStart.ToString("D")} по {contextReport.DateEnd.ToString("D")}"));
+			document.Close();
+			pdf.Close();
+			return ms.ToArray();
+
+		}
+	}
+}
+

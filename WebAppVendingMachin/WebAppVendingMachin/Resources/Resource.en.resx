@@ -141,6 +141,15 @@
   <data name="Code" xml:space="preserve">
     <value>Code</value>
   </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Busy" xml:space="preserve">
+    <value>Busy</value>
+  </data>
+  <data name="Rent" xml:space="preserve">
+    <value>Rent Machine</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
@@ -156,13 +165,70 @@
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
-  <data name="Enable" xml:space="preserve">
-    <value>Enable</value>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
   </data>
-  <data name="Busy" xml:space="preserve">
-    <value>Busy</value>
+  <data name="Ascading" xml:space="preserve">
+    <value>Ascading</value>
   </data>
-  <data name="Rent" xml:space="preserve">
-    <value>Rent Machine</value>
+  <data name="Desinding" xml:space="preserve">
+    <value>Desinding</value>
+  </data>
+  <data name="Sort" xml:space="preserve">
+    <value>Sort</value>
+  </data>
+  <data name="Action" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Date Signing" xml:space="preserve">
+    <value>Date Signing</value>
+  </data>
+  <data name="End Date" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="Insurance" xml:space="preserve">
+    <value>Insurance</value>
+  </data>
+  <data name="No Singing" xml:space="preserve">
+    <value>No Singing</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Notification</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Signing" xml:space="preserve">
+    <value>Signing</value>
+  </data>
+  <data name="Singing Report" xml:space="preserve">
+    <value>Singing Report</value>
+  </data>
+  <data name="Start Date" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Documnets" xml:space="preserve">
+    <value>Documnets</value>
+  </data>
+  <data name="Vending Machin" xml:space="preserve">
+    <value>Vending Machin</value>
   </data>
 </root>

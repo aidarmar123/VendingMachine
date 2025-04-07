@@ -232,6 +232,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AutorizationController.cs" />
     <Compile Include="Controllers\CompanysController.cs" />
+    <Compile Include="Controllers\ConnectionProvidersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MachineProductsController.cs" />
     <Compile Include="Controllers\MachineTypePaysController.cs" />
@@ -241,12 +242,14 @@
     <Compile Include="Controllers\PriotityServicesController.cs" />
     <Compile Include="Controllers\ProductMatrixsController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\ReportsController.cs" />
     <Compile Include="Controllers\RolesController.cs" />
     <Compile Include="Controllers\SalesController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
     <Compile Include="Controllers\ShcemaCritValuesController.cs" />
     <Compile Include="Controllers\ShcemaNotificationsController.cs" />
     <Compile Include="Controllers\StatusMachinsController.cs" />
+    <Compile Include="Controllers\StatusReportsController.cs" />
     <Compile Include="Controllers\TimeZonesController.cs" />
     <Compile Include="Controllers\TypePaysController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
@@ -265,6 +268,12 @@
     <Compile Include="Models\ConnectionProvider.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Equipment.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EquipmentVachinMachin.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ErrorMessage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\MachineProduct.cs">
@@ -277,6 +286,7 @@
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\MetaData\MetaCompany.cs" />
+    <Compile Include="Models\MetaData\MetaUser.cs" />
     <Compile Include="Models\MetaData\MetaVendingMachine.cs" />
     <Compile Include="Models\Model.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
@@ -308,6 +318,9 @@
     <Compile Include="Models\ProductMatrix.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Report.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Role.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -323,10 +336,10 @@
     <Compile Include="Models\ShcemaNotification.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\StateConnect.cs">
+    <Compile Include="Models\StatusMachin.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\StatusMachin.cs">
+    <Compile Include="Models\StatusReport.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
