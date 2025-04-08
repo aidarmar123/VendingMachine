@@ -73,10 +73,10 @@
                 </StackPanel>
                 <lvc:CartesianChart x:Name="ChartSale" Grid.Row="1">
                     <lvc:CartesianChart.AxisX>
-                        <lvc:Axis ShowLabels="True" Separator="{Binding Separator}">
+                        <lvc:Axis ShowLabels="True" Separator="{Binding Separator}" Labels="{Binding LabelsSales}">
                         
                         </lvc:Axis>
-                        <L
+                        
                     </lvc:CartesianChart.AxisX>
                 </lvc:CartesianChart>
             </Grid>

@@ -13,6 +13,9 @@
     <NavigationProperty Name="Report" Relationship="Self.FK_Report_Company" FromRole="Company" ToRole="Report" />
     <NavigationProperty Name="User" Relationship="Self.FK_User_Company" FromRole="Company" ToRole="User" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_VendingMachin_Company" FromRole="Company" ToRole="VendingMachin" />
+    <Property Name="MainCompanyId" Type="Int32" />
+    <NavigationProperty Name="Company1" Relationship="VendingMachinesModel.FK_Company_Company" FromRole="Company" ToRole="Company1" />
+    <NavigationProperty Name="MainCompany" Relationship="VendingMachinesModel.FK_Company_Company" FromRole="Company1" ToRole="Company" />
   </EntityType>
   <EntityType Name="ConnectionProvider">
     <Key>
@@ -41,6 +44,7 @@
     <Property Name="VendingMachinId" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Equipment" Relationship="Self.FK_EquipmentVachinMachin_Equipment" FromRole="EquipmentVachinMachin" ToRole="Equipment" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_EquipmentVachinMachin_VendingMachin" FromRole="EquipmentVachinMachin" ToRole="VendingMachin" />
+    <Property Name="IsWork" Type="Boolean" Nullable="false" />
   </EntityType>
   <EntityType Name="MachineProduct">
     <Key>
@@ -52,6 +56,7 @@
     <Property Name="MinProduct" Type="Int32" Nullable="false" />
     <NavigationProperty Name="Product" Relationship="Self.FK_MachineProduct_Product" FromRole="MachineProduct" ToRole="Product" />
     <NavigationProperty Name="VendingMachin" Relationship="Self.FK_MachineProduct_VendingMachin" FromRole="MachineProduct" ToRole="VendingMachin" />
+    <Property Name="CountProduct" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="MachineTypePay">
     <Key>
@@ -245,6 +250,9 @@
     <NavigationProperty Name="VendingMachin1" Relationship="Self.FK_VendingMachin_User1" FromRole="User" ToRole="VendingMachin" />
     <NavigationProperty Name="VendingMachin2" Relationship="Self.FK_VendingMachin_User2" FromRole="User" ToRole="VendingMachin" />
     <NavigationProperty Name="VendingMachin3" Relationship="Self.FK_VendingMachin_User3" FromRole="User" ToRole="VendingMachin" />
+    <Property Name="Phone" Type="String" MaxLength="11" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="CenterNotification" Relationship="VendingMachinesModel.FK_CenterNotification_User" FromRole="User" ToRole="CenterNotification" />
+    <NavigationProperty Name="HistoryWeb" Relationship="VendingMachinesModel.FK_HistoryWeb_User" FromRole="User" ToRole="HistoryWeb" />
   </EntityType>
   <EntityType Name="VendingMachin">
     <Key>
@@ -307,7 +315,10 @@
     <NavigationProperty Name="Tap" Relationship="Self.FK_VendingMachin_User3" FromRole="VendingMachin" ToRole="User" />
     <NavigationProperty Name="WorkMode" Relationship="Self.FK_VendingMachin_WorkMode" FromRole="VendingMachin" ToRole="WorkMode" />
     <NavigationProperty Name="VendingMachinTypeConnection" Relationship="VendingMachinesModel.FK_VendingMachinTypeConnection_VendingMachin" FromRole="VendingMachin" ToRole="VendingMachinTypeConnection" />
-    <Property Name="MinumProduct" Type="Int32" Nullable="false" />
+    <Property Name="TypeMachinId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="TypeMachin" Relationship="VendingMachinesModel.FK_VendingMachin_TypeMachine" FromRole="VendingMachin" ToRole="TypeMachine" />
+    <Property Name="TotalProduct" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Incasation" Relationship="VendingMachinesModel.FK_Incasation_VendingMachin" FromRole="VendingMachin" ToRole="Incasation" />
   </EntityType>
   <EntityType Name="WorkMode">
     <Key>
@@ -850,6 +861,30 @@
       <End Role="VendingMachin" EntitySet="VendingMachin" />
       <End Role="VendingMachinTypeConnection" EntitySet="VendingMachinTypeConnection" />
     </AssociationSet>
+    <EntitySet Name="TypeMachine" EntityType="VendingMachinesModel.TypeMachine" />
+    <AssociationSet Name="FK_Company_Company" Association="VendingMachinesModel.FK_Company_Company">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Company1" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_VendingMachin_TypeMachine" Association="VendingMachinesModel.FK_VendingMachin_TypeMachine">
+      <End Role="TypeMachine" EntitySet="TypeMachine" />
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+    </AssociationSet>
+    <EntitySet Name="CenterNotification" EntityType="VendingMachinesModel.CenterNotification" />
+    <EntitySet Name="HistoryWeb" EntityType="VendingMachinesModel.HistoryWeb" />
+    <EntitySet Name="Incasation" EntityType="VendingMachinesModel.Incasation" />
+    <AssociationSet Name="FK_CenterNotification_User" Association="VendingMachinesModel.FK_CenterNotification_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="CenterNotification" EntitySet="CenterNotification" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HistoryWeb_User" Association="VendingMachinesModel.FK_HistoryWeb_User">
+      <End Role="User" EntitySet="User" />
+      <End Role="HistoryWeb" EntitySet="HistoryWeb" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Incasation_VendingMachin" Association="VendingMachinesModel.FK_Incasation_VendingMachin">
+      <End Role="VendingMachin" EntitySet="VendingMachin" />
+      <End Role="Incasation" EntitySet="Incasation" />
+    </AssociationSet>
   </EntityContainer>
   <EntityType Name="TypeConnection">
     <Key>
@@ -889,6 +924,104 @@
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="VendingMachinTypeConnection">
+        <PropertyRef Name="VendingMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="TypeMachine">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="VendingMachin" Relationship="VendingMachinesModel.FK_VendingMachin_TypeMachine" FromRole="TypeMachine" ToRole="VendingMachin" />
+  </EntityType>
+  <Association Name="FK_Company_Company">
+    <End Type="VendingMachinesModel.Company" Role="Company" Multiplicity="0..1" />
+    <End Type="VendingMachinesModel.Company" Role="Company1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company1">
+        <PropertyRef Name="MainCompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_VendingMachin_TypeMachine">
+    <End Type="VendingMachinesModel.TypeMachine" Role="TypeMachine" Multiplicity="1" />
+    <End Type="VendingMachinesModel.VendingMachin" Role="VendingMachin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeMachine">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="VendingMachin">
+        <PropertyRef Name="TypeMachinId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="CenterNotification">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Notification" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="User" Relationship="VendingMachinesModel.FK_CenterNotification_User" FromRole="CenterNotification" ToRole="User" />
+  </EntityType>
+  <EntityType Name="HistoryWeb">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="ActionDesxription" Type="String" Nullable="false" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="VendingMachinesModel.FK_HistoryWeb_User" FromRole="HistoryWeb" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Incasation">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VendingMachinId" Type="Int32" Nullable="false" />
+    <Property Name="DateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Money" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="VendingMachin" Relationship="VendingMachinesModel.FK_Incasation_VendingMachin" FromRole="Incasation" ToRole="VendingMachin" />
+  </EntityType>
+  <Association Name="FK_CenterNotification_User">
+    <End Type="VendingMachinesModel.User" Role="User" Multiplicity="1" />
+    <End Type="VendingMachinesModel.CenterNotification" Role="CenterNotification" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="CenterNotification">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HistoryWeb_User">
+    <End Type="VendingMachinesModel.User" Role="User" Multiplicity="1" />
+    <End Type="VendingMachinesModel.HistoryWeb" Role="HistoryWeb" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="HistoryWeb">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Incasation_VendingMachin">
+    <End Type="VendingMachinesModel.VendingMachin" Role="VendingMachin" Multiplicity="1" />
+    <End Type="VendingMachinesModel.Incasation" Role="Incasation" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="VendingMachin">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Incasation">
         <PropertyRef Name="VendingMachinId" />
       </Dependent>
     </ReferentialConstraint>

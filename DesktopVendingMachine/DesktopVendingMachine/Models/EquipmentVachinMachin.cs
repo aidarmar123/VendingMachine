@@ -20,6 +20,7 @@ namespace DesktopVendingMachine.Models
         public int Id { get; set; }
         public int EquipmentId { get; set; }
         public int VendingMachinId { get; set; }
+        public bool IsWork { get; set; }
     
         [JsonIgnore]
     

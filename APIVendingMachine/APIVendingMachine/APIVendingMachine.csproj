@@ -229,7 +229,6 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
-    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AutorizationController.cs" />
     <Compile Include="Controllers\CompanysController.cs" />
     <Compile Include="Controllers\ConnectionProvidersController.cs" />
@@ -238,6 +237,7 @@
     <Compile Include="Controllers\MachineTypePaysController.cs" />
     <Compile Include="Controllers\ManufacturesController.cs" />
     <Compile Include="Controllers\ModelsController.cs" />
+    <Compile Include="Controllers\MonitorController.cs" />
     <Compile Include="Controllers\NewsController.cs" />
     <Compile Include="Controllers\PriotityServicesController.cs" />
     <Compile Include="Controllers\ProductMatrixsController.cs" />
@@ -251,6 +251,7 @@
     <Compile Include="Controllers\StatusMachinsController.cs" />
     <Compile Include="Controllers\StatusReportsController.cs" />
     <Compile Include="Controllers\TimeZonesController.cs" />
+    <Compile Include="Controllers\TypeConnectionsController.cs" />
     <Compile Include="Controllers\TypePaysController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -262,6 +263,9 @@
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AuthUser.cs" />
+    <Compile Include="Models\CenterNotification.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Company.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -275,7 +279,13 @@
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ErrorMessage.cs" />
+    <Compile Include="Models\HistoryWeb.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Incasation.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MachineProduct.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -348,6 +358,12 @@
     <Compile Include="Models\TimeZone.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\TypeConnection.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TypeMachine.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\TypePay.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -355,6 +371,9 @@
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\VendingMachin.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VendingMachinTypeConnection.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\WorkMode.cs">

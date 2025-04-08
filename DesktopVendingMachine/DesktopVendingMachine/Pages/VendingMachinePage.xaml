@@ -54,7 +54,7 @@
                     <DataGrid x:Name="DGMacine"
                         AlternationCount="2"
                 AutoGenerateColumns="False"
-                      IsReadOnly="True">
+                      IsReadOnly="True" >
                         <DataGrid.RowStyle>
                             <Style TargetType="DataGridRow">
                                 <Style.Triggers>
@@ -67,6 +67,7 @@
                             </Style>
                         </DataGrid.RowStyle>
                         <DataGrid.Columns>
+                           
                             <DataGridTextColumn Header="Id"
                                   Binding="{Binding Id}"/>
 

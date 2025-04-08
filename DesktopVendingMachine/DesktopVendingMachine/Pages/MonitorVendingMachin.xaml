@@ -9,8 +9,263 @@
       Title="MonitorVendingMachin">
 
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
         <StackPanel>
-            
+            <TextBlock Text="Монитор торговых автоматов" FontSize="24"
+                       Foreground="#2394cd"/>
+
+            <StackPanel Margin="0 10" Orientation="Horizontal">
+                <StackPanel>
+                    <TextBlock Text="Общие состояние сети"/>
+                    <ListBox x:Name="LVState" HorizontalAlignment="Center">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <Ellipse Height="20" Width="20" Fill="{Binding Color}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Подключение"/>
+                    <ListBox x:Name="LVConnection">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Name}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Дополнительные статусы"/>
+                    <ListBox x:Name="LVAdditional">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Icon}"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                        <ListBox.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel/>
+                            </ItemsPanelTemplate>
+                        </ListBox.ItemsPanel>
+                    </ListBox>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock Text="Сортировка"/>
+                    <ComboBox x:Name="CBSort">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding }"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+
+                    </ComboBox>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Button x:Name="BFilter"
+                        Content="Применить"
+                        Background="#0088cc"
+                        Foreground="White"
+                        Click="BFilter_Click"/>
+                <Button x:Name="BAll"
+                        Content="Очистить"
+                        Background="Transparent"
+Foreground="White"
+                        Click="BAll_Click"/>
+
+            </StackPanel>
         </StackPanel>
+        <TextBlock Text="Нет активных торговых автоматов, соответсвующие фильтру" Grid.Row="1"/>
+        <DataGrid Grid.Row="1"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  x:Name="DgVendingMachine"
+                  AlternationCount="1000"
+                >
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="#"
+Binding="{Binding AlternationIndex, RelativeSource={RelativeSource
+                             AncestorType=DataGridRow}}"/>
+                <DataGridTemplateColumn Header="Торговый автомат">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="auto"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+                                <Ellipse Height="20" Width="20" Fill="{Binding Color}"/>
+                                <StackPanel Grid.Column="1">
+                                    <TextBlock Text="{Binding NameWithId}"/>
+                                    <TextBlock Text="{Binding FullAdress}" Foreground="Gray"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Связь">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal" Grid.Row="2">
+                                    <Rectangle Width="5"
+               Height="5"
+               Margin="1"
+               VerticalAlignment="Bottom"
+               Fill="{Binding ProviderState1}"/>
+                                    <Rectangle Width="5"
+               Height="10"
+               Margin="1"
+               VerticalAlignment="Bottom"
+                
+               Fill="{Binding ProviderState2}"/>
+                                    <Rectangle Width="5"
+               Height="15"
+               Margin="1"
+               VerticalAlignment="Bottom"
+                
+               Fill="{Binding ProviderState3}"/>
+                                    <Rectangle Width="5"
+               Height="20"
+               VerticalAlignment="Bottom"
+               Margin="1"
+               Fill="{Binding ProviderState4}"/>
+                                    <Rectangle Width="5"
+               Height="25"
+               Margin="1"
+               VerticalAlignment="Bottom"
+               Fill="{Binding ProviderState5}"/>
+
+                                    <Image Source="{Binding ConnectionProvider.Icon}"/>
+                                </StackPanel>
+                                <TextBlock Text="{Binding ConnectionProvider.Price}"/>
+                                <TextBlock Text="{Binding DateTime.Now}"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Загрузка">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center">
+                                <ProgressBar Minimum="0" Foreground="#7ae0c7" Maximum="1" Value="{Binding AllDownload}" Height="10" Margin="10"/>
+                                <ProgressBar Minimum="0" Foreground="#7ae0c7" Maximum="1" Value="{Binding MinDownload}" Height="10" Margin="10"/>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Денежные средства">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="💵" Foreground="#0088cc"/>
+                                    <TextBlock Text="{Binding Banknots}"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="📀" Foreground="#0088cc"/>
+                                    <TextBlock Text="{Binding Coins}"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="💰" Foreground="#0088cc"/>
+                                    <TextBlock Text="{Binding Total}"/>
+                                </StackPanel>
+
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="События">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="☕" Foreground="#0088cc"/>
+                                    <TextBlock Text="{Binding LastService}"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="💰" Foreground="#0088cc"/>
+                                    <TextBlock Text="{Binding LastSale}"/>
+                                </StackPanel>
+
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="🚚" Foreground="#0088cc"/>
+                                    <TextBlock Text="{Binding LastIncasation}"/>
+                                </StackPanel>
+
+
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Оборудование">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="🔌" Foreground="{Binding Socket}"/>
+                                    <TextBlock Text="💵" Foreground="{Binding AcceptBanknot}"/>
+                                    <TextBlock Text="👛" Foreground="{Binding AccpeptCoin}"/>
+                                    <TextBlock Text="💳" Foreground="{Binding AcceptCard}"/>
+                                </StackPanel>
+                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="🗃" Foreground="{Binding Provider}"/>
+                                    <TextBlock Text="🖥" Foreground="{Binding Display}"/>
+                                    <TextBlock Text="📶" Foreground="{Binding AccpetNfc}"/>
+                                </StackPanel>
+                                
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Информация">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+                <DataGridTemplateColumn Header="Доп.">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <TextBlock x:Name="TbResult" Grid.Row="2"/>
     </Grid>
 </Page>

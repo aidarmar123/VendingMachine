@@ -51,5 +51,11 @@ namespace APIVendingMachine.Models
         public virtual DbSet<WorkMode> WorkMode { get; set; }
         public virtual DbSet<Equipment> Equipment { get; set; }
         public virtual DbSet<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
+        public virtual DbSet<TypeConnection> TypeConnection { get; set; }
+        public virtual DbSet<TypeMachine> TypeMachine { get; set; }
+        public virtual DbSet<VendingMachinTypeConnection> VendingMachinTypeConnection { get; set; }
+        public virtual DbSet<CenterNotification> CenterNotification { get; set; }
+        public virtual DbSet<HistoryWeb> HistoryWeb { get; set; }
+        public virtual DbSet<Incasation> Incasation { get; set; }
     }
 }

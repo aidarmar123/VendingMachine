@@ -42,7 +42,8 @@ namespace DesktopVendingMachine.Pages
                     await DataManager.InitData();
                     App.AuthUser  = (await NetManager.ParseResponse<GetToken>(response)).contextUser;
                     App.mainWindow.GProfile.DataContext = null;
-
+                    App.mainWindow.Content.Visibility = Visibility.Visible;
+                    App.mainWindow.FrameLogin.Visibility = Visibility.Collapsed;
                     App.mainWindow.GProfile.DataContext =App.AuthUser;
                     NavigationService.Navigate(new MainPage());
 

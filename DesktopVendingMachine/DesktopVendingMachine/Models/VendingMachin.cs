@@ -27,6 +27,7 @@ namespace DesktopVendingMachine.Models
             this.Sales = new HashSet<Sales>();
             this.Services = new HashSet<Services>();
             this.VendingMachinTypeConnection = new HashSet<VendingMachinTypeConnection>();
+            this.Incasation = new HashSet<Incasation>();
         }
     
         public int Id { get; set; }
@@ -64,7 +65,8 @@ namespace DesktopVendingMachine.Models
         public int PriceInMounth { get; set; }
         public int PaybackMonth { get; set; }
         public int Money { get; set; }
-        public int MinumProduct { get; set; }
+        public int TypeMachinId { get; set; }
+        public int TotalProduct { get; set; }
     
         [JsonIgnore]
     
@@ -275,5 +277,20 @@ namespace DesktopVendingMachine.Models
         }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachinTypeConnection> VendingMachinTypeConnection { get; set; }
+        [JsonIgnore]
+    
+        public virtual TypeMachine TypeMachin 
+        {
+            get
+            {
+                return DataManager.TypeMachines.FirstOrDefault(x=>x.Id == TypeMachinId);
+            }
+            set
+            {
+            TypeMachinId= value.Id;
+            }
+        }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Incasation> Incasation { get; set; }
     }
 }

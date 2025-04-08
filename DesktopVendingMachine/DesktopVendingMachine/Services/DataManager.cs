@@ -20,11 +20,12 @@ namespace DesktopVendingMachine.Services
         public static List<StatusMachin> StatusMachins;
         public static List<TypePay> TypePays;
         public static List<ConnectionProvider> ConnectionProviders;
-       
+
         public static List<Company> Companys;
         public static List<Equipment> Equipments;
         public static List<StatusReport> StatusReports;
         public static List<TypeConnection> TypeConnections;
+        public static List<TypeMachine> TypeMachines;
 
 
         public static List<User> Users;
@@ -36,7 +37,7 @@ namespace DesktopVendingMachine.Services
         public static List<ShcemaCritValue> ShcemaCritValues;
         public static List<ShcemaNotification> ShcemaNotifications;
 
-        public  static async Task InitData()
+        public static async Task InitData()
         {
             Roles = await NetManager.Get<List<Role>>("api/Roles");
             Models = await NetManager.Get<List<Model>>("api/Models");
@@ -51,15 +52,23 @@ namespace DesktopVendingMachine.Services
             TimeZones = await NetManager.Get<List<Models.TimeZone>>("api/TimeZones");
             StatusMachins = await NetManager.Get<List<StatusMachin>>("api/StatusMachins");
             ConnectionProviders = await NetManager.Get<List<ConnectionProvider>>("api/ConnectionProviders");
+            TypeConnections = await NetManager.Get<List<TypeConnection>>("api/TypeConnections");
+
             
 
+            VendingMachins = (await NetManager.Get<List<VendingMachin>>("api/VendingMachins"));
+            await Task.WhenAll(VendingMachins.Select(async x =>
+            {
+                await x.GetProducts();
+                await x.GetMoney();
+                await x.GetStateConnection();
+            }));
 
-            VendingMachins = await NetManager.Get<List<VendingMachin>>("api/VendingMachins");
             Products = await NetManager.Get<List<Product>>("api/Products");
             Saless = await NetManager.Get<List<Sales>>("api/Sales");
             Servicess = await NetManager.Get<List<Models.Services>>("api/Services");
             Companys = await NetManager.Get<List<Company>>("api/Companys");
-            
+
         }
     }
 }

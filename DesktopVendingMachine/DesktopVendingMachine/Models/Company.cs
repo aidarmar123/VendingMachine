@@ -23,6 +23,7 @@ namespace DesktopVendingMachine.Models
             this.Report = new HashSet<Report>();
             this.User = new HashSet<User>();
             this.VendingMachin = new HashSet<VendingMachin>();
+            this.Company1 = new HashSet<Company>();
         }
     
         public int Id { get; set; }
@@ -31,6 +32,7 @@ namespace DesktopVendingMachine.Models
         public string ContactCompany { get; set; }
         public string Notes { get; set; }
         public System.DateTime InitWork { get; set; }
+        public Nullable<int> MainCompanyId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Report> Report { get; set; }
@@ -38,5 +40,20 @@ namespace DesktopVendingMachine.Models
         public virtual ICollection<User> User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Company> Company1 { get; set; }
+        [JsonIgnore]
+    
+        public virtual Company MainCompany 
+        {
+            get
+            {
+                return DataManager.Companys.FirstOrDefault(x=>x.Id == MainCompanyId);
+            }
+            set
+            {
+            MainCompanyId= value.Id;
+            }
+        }
     }
 }

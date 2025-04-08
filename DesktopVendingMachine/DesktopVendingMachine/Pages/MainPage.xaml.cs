@@ -82,11 +82,6 @@ namespace DesktopVendingMachine.Pages
             };
 
             ChartSale.Series = seriesCollection;
-
-            ChartSale.AxisX.Add(new Axis
-            {
-                
-            });
         }
 
         private void GenerateState()

@@ -19,6 +19,7 @@ namespace APIVendingMachine.Models
         public int ProductId { get; set; }
         public int VendingMachinId { get; set; }
         public int MinProduct { get; set; }
+        public int CountProduct { get; set; }
     
         [JsonIgnore]
         public virtual Product Product { get; set; }

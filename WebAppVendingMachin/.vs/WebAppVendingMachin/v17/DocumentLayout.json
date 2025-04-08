@@ -43,7 +43,7 @@
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\webappvendingmachin\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
@@ -51,7 +51,7 @@
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\resources\\resource.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\webappvendingmachin\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
@@ -190,8 +190,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\NavMenu.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T12:20:25.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:20:25.351Z"
             },
             {
               "$type": "Document",
@@ -202,8 +201,7 @@
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.ru.resx",
               "RelativeToolTip": "WebAppVendingMachin\\Resources\\Resource.ru.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-07T12:19:58.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T12:19:58.996Z"
             },
             {
               "$type": "Document",
@@ -215,8 +213,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\AuthorizationLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T12:20:46.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:20:46.456Z"
             },
             {
               "$type": "Document",
@@ -228,8 +225,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\MainLayout.razor",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:32:56.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:32:56.213Z"
             },
             {
               "$type": "Document",
@@ -241,8 +237,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\Error.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:45:15.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:45:15.089Z"
             },
             {
               "$type": "Document",
@@ -253,8 +248,7 @@
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.en.resx",
               "RelativeToolTip": "WebAppVendingMachin\\Resources\\Resource.en.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-06T14:58:29.263Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T14:58:29.263Z"
             },
             {
               "$type": "Document",
@@ -279,8 +273,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T12:19:18.114Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T12:19:18.114Z"
             },
             {
               "$type": "Document",
@@ -291,8 +284,7 @@
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.resx",
               "RelativeToolTip": "WebAppVendingMachin\\Resources\\Resource.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-07T12:19:39.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T12:19:39.5Z"
             },
             {
               "$type": "Document",
@@ -304,8 +296,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\App.razor",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:32:30.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:32:30.963Z"
             },
             {
               "$type": "Document",
@@ -317,8 +308,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:48:31.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:48:31.536Z"
             },
             {
               "$type": "Document",
@@ -330,8 +320,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:33:00.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:33:00.908Z"
             },
             {
               "$type": "Document",
@@ -343,8 +332,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Components\\ReportViewr.razor",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T10:46:41.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T10:46:41.836Z"
             },
             {
               "$type": "Document",
@@ -356,8 +344,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\LoginPage.razor",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T11:56:26.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:56:26.398Z"
             },
             {
               "$type": "Document",
@@ -369,8 +356,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\VendingMachinPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T13:55:03.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:55:03.574Z"
             },
             {
               "$type": "Document",
@@ -382,8 +368,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\Registration.razor",
               "ViewState": "AgIAAI8AAAAAAAAAAAAEwJ8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T12:49:15.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:49:15.512Z"
             },
             {
               "$type": "Document",
@@ -395,8 +380,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Components\\ReportComponent.razor",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T07:11:40.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:11:40.895Z"
             },
             {
               "$type": "Document",
@@ -408,8 +392,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\ReportsPages.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T13:55:43.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:55:43.659Z"
             },
             {
               "$type": "Document",
@@ -421,8 +404,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Resource.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:40:45.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T14:40:45.266Z"
             },
             {
               "$type": "Document",
@@ -434,8 +416,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:55:43.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:55:43.121Z"
             },
             {
               "$type": "Document",
@@ -447,8 +428,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\ConnectionProvider.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA9wBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:40:17.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:40:17.107Z"
             },
             {
               "$type": "Document",
@@ -460,8 +440,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Components\\SelectMachin.razor",
               "ViewState": "AgIAADYAAAAAAAAAAAAqwEgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T16:33:14.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T16:33:14.218Z"
             },
             {
               "$type": "Document",
@@ -473,8 +452,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Services\\DataManager.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAQwDsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:28:22.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:28:22.564Z"
             },
             {
               "$type": "Document",
@@ -486,8 +464,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Services.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAA4wCQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:33.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:33.573Z"
             },
             {
               "$type": "Document",
@@ -499,8 +476,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\ModelData.tt",
               "ViewState": "AgIAALABAAAAAAAAAAAAAMABAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-07T07:33:55.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:33:55.628Z"
             },
             {
               "$type": "Document",
@@ -512,8 +488,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Report.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAjwBUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:41:46.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:41:46.756Z"
             },
             {
               "$type": "Document",
@@ -525,8 +500,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\VendingMachin.cs",
               "ViewState": "AgIAAO4AAAAAAAAAAAAUwAgBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:38:14.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:38:14.356Z"
             },
             {
               "$type": "Document",
@@ -538,8 +512,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\MachineProduct.cs",
               "ViewState": "AgIAABAAAAAAAAAAAIA9wCIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:39:11.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:39:11.693Z"
             },
             {
               "$type": "Document",
@@ -551,8 +524,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\MetaData\\MetaVendingMachine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:38:56.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:38:56.672Z"
             },
             {
               "$type": "Document",
@@ -564,8 +536,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\MetaData\\MetaCompany.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:39:15.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:39:15.613Z"
             },
             {
               "$type": "Document",
@@ -577,8 +548,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Services\\NetManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:30:19.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:30:19.056Z"
             },
             {
               "$type": "Document",
@@ -590,8 +560,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\ErrorMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:46:22.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:46:22.139Z"
             },
             {
               "$type": "Document",
@@ -603,8 +572,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Services\\UserServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T12:43:24.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:43:24.899Z"
             },
             {
               "$type": "Document",
@@ -616,8 +584,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\WorkMode.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T17:06:04.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T17:06:04.553Z"
             },
             {
               "$type": "Document",
@@ -642,8 +609,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\LoginUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:34:24.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:34:24.344Z"
             },
             {
               "$type": "Document",
@@ -655,8 +621,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\User.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAEBUwB8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:00.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:00.312Z"
             },
             {
               "$type": "Document",
@@ -668,8 +633,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\SettingsPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T13:56:11.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:56:11.366Z"
             },
             {
               "$type": "Document",
@@ -681,8 +645,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\GetToken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:36:50.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:36:50.126Z"
             },
             {
               "$type": "Document",
@@ -694,8 +657,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Partials\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:28.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:28.647Z"
             },
             {
               "$type": "Document",
@@ -707,8 +669,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Partials\\VendingMachin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:21.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:21.642Z"
             },
             {
               "$type": "Document",
@@ -720,8 +681,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\wwwroot\\js\\TestCanvas.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-06T10:37:28.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:37:28.844Z"
             }
           ]
         }

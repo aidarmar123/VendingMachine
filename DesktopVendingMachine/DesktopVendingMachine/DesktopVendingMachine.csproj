@@ -88,14 +88,30 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\CenterNotification.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Company.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ConnectionProvider.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CountProducts.cs" />
+    <Compile Include="Models\Equipment.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\EquipmentVachinMachin.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\ErrorMessage.cs" />
     <Compile Include="Models\GetToken.cs" />
+    <Compile Include="Models\HistoryWeb.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Incasation.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\MachineProduct.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
@@ -108,11 +124,6 @@
     <Compile Include="Models\Model.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ModelData.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ModelData.Context.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\ModelData.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -123,10 +134,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ModelData.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Models\Money.cs" />
     <Compile Include="Models\News.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Partials\Company.cs" />
+    <Compile Include="Models\Partials\StatusMachin.cs" />
     <Compile Include="Models\Partials\User.cs" />
     <Compile Include="Models\Partials\VendingMachin.cs" />
     <Compile Include="Models\PriotityService.cs">
@@ -136,6 +149,9 @@
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\ProductMatrix.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Report.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Role.cs">
@@ -153,22 +169,23 @@
     <Compile Include="Models\ShcemaNotification.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>ModelData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\sp_helpdiagrams_Result.cs">
-      <DependentUpon>ModelData.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\StateConnect.cs">
-      <DependentUpon>ModelData.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\StateApi.cs" />
     <Compile Include="Models\StatusMachin.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\StatusReport.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagrams.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TimeZone.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TypeConnection.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TypeMachine.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TypePay.cs">
@@ -178,6 +195,9 @@
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\VendingMachin.cs">
+      <DependentUpon>ModelData.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VendingMachinTypeConnection.cs">
       <DependentUpon>ModelData.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\WorkMode.cs">
@@ -282,11 +302,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Models\ModelData.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ModelData.Context.cs</LastGenOutput>
-      <DependentUpon>ModelData.edmx</DependentUpon>
-    </Content>
     <Content Include="Models\ModelData.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>ModelData.edmx</DependentUpon>

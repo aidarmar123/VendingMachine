@@ -24,6 +24,8 @@ namespace APIVendingMachine.Models
             this.Sales = new HashSet<Sales>();
             this.Services = new HashSet<Services>();
             this.EquipmentVachinMachin = new HashSet<EquipmentVachinMachin>();
+            this.VendingMachinTypeConnection = new HashSet<VendingMachinTypeConnection>();
+            this.Incasation = new HashSet<Incasation>();
         }
     
         public int Id { get; set; }
@@ -61,7 +63,8 @@ namespace APIVendingMachine.Models
         public int PriceInMounth { get; set; }
         public int PaybackMonth { get; set; }
         public int Money { get; set; }
-        public int MinumProduct { get; set; }
+        public int TypeMachinId { get; set; }
+        public int TotalProduct { get; set; }
     
         [JsonIgnore]
         public virtual Company Company { get; set; }
@@ -105,5 +108,11 @@ namespace APIVendingMachine.Models
         public virtual WorkMode WorkMode { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
+        [JsonIgnore]
+        public virtual TypeMachine TypeMachine { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<VendingMachinTypeConnection> VendingMachinTypeConnection { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Incasation> Incasation { get; set; }
     }
 }

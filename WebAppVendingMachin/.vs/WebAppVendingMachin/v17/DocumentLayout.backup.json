@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\models\\modeldata.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\models\\modeldata.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\components\\layout\\mainlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\components\\layout\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\components\\layout\\authorizationlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -39,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\components\\pages\\error.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\webappvendingmachin\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\resources\\resource.ru.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
@@ -47,12 +55,8 @@
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\resources\\resource.en.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\webappvendingmachin\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\resources\\resource.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|solutionrelative:webappvendingmachin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9BF3DCEC-72F5-42B5-A06E-8AD388C98BBD}|WebAppVendingMachin\\WebAppVendingMachin.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\webappvendingmachin\\webappvendingmachin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -178,49 +182,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\appsettings.json",
-              "RelativeDocumentMoniker": "WebAppVendingMachin\\appsettings.json",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\appsettings.json",
-              "RelativeToolTip": "WebAppVendingMachin\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-07T12:19:18.114Z",
-              "EditorCaption": ""
+              "DocumentIndex": 0,
+              "Title": "ModelData.edmx",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\ModelData.edmx",
+              "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\ModelData.edmx",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\ModelData.edmx*",
+              "RelativeToolTip": "WebAppVendingMachin\\Models\\ModelData.edmx*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-04-08T15:44:30.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "NavMenu.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Layout\\NavMenu.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Layout\\NavMenu.razor",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Layout\\NavMenu.razor*",
-              "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\NavMenu.razor*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABFAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Layout\\NavMenu.razor",
+              "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\NavMenu.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T12:20:25.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:20:25.351Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Resource.ru.resx",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.ru.resx",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Resources\\Resource.ru.resx",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.ru.resx",
               "RelativeToolTip": "WebAppVendingMachin\\Resources\\Resource.ru.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-07T12:19:58.996Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T12:19:58.996Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AuthorizationLayout.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Layout\\AuthorizationLayout.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Layout\\AuthorizationLayout.razor",
@@ -228,25 +228,23 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\AuthorizationLayout.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T12:20:46.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:20:46.456Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainLayout.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Layout\\MainLayout.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Layout\\MainLayout.razor",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Layout\\MainLayout.razor",
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Layout\\MainLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:32:56.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:32:56.213Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Error.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\Error.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\Error.razor",
@@ -254,36 +252,58 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\Error.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:45:15.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:45:15.089Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Resource.en.resx",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.en.resx",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Resources\\Resource.en.resx",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.en.resx",
               "RelativeToolTip": "WebAppVendingMachin\\Resources\\Resource.en.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-06T14:58:29.263Z",
+              "WhenOpened": "2025-04-06T14:58:29.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Program.cs",
+              "RelativeDocumentMoniker": "WebAppVendingMachin\\Program.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Program.cs",
+              "RelativeToolTip": "WebAppVendingMachin\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T10:46:29.098Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAppVendingMachin\\appsettings.json",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\appsettings.json",
+              "RelativeToolTip": "WebAppVendingMachin\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-07T12:19:18.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Resource.resx",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.resx",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Resources\\Resource.resx",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resources\\Resource.resx",
               "RelativeToolTip": "WebAppVendingMachin\\Resources\\Resource.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-04-07T12:19:39.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T12:19:39.5Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\App.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\App.razor",
@@ -291,12 +311,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\App.razor",
               "ViewState": "AgIAAAcAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:32:30.963Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:32:30.963Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "Routes.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Routes.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Routes.razor",
@@ -304,12 +323,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Routes.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:48:31.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:48:31.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\Home.razor",
@@ -317,12 +335,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\Home.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:33:00.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:33:00.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ReportViewr.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Components\\ReportViewr.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Components\\ReportViewr.razor",
@@ -330,12 +347,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Components\\ReportViewr.razor",
               "ViewState": "AgIAABgAAAAAAAAAAAAAABMAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T10:46:41.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T10:46:41.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "LoginPage.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\LoginPage.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\LoginPage.razor",
@@ -343,12 +359,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\LoginPage.razor",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAE8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T11:56:26.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:56:26.398Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "VendingMachinPage.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\VendingMachinPage.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\VendingMachinPage.razor",
@@ -356,12 +371,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\VendingMachinPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T13:55:03.574Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:55:03.574Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Registration.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\Registration.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\Registration.razor",
@@ -369,12 +383,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\Registration.razor",
               "ViewState": "AgIAAI8AAAAAAAAAAAAEwJ8AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T12:49:15.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:49:15.512Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ReportComponent.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Components\\ReportComponent.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Components\\ReportComponent.razor",
@@ -382,25 +395,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Components\\ReportComponent.razor",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAAEoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-07T07:11:40.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:11:40.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Program.cs",
-              "RelativeDocumentMoniker": "WebAppVendingMachin\\Program.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Program.cs",
-              "RelativeToolTip": "WebAppVendingMachin\\Program.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAUwDEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T10:46:29.098Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ReportsPages.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\ReportsPages.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\ReportsPages.razor",
@@ -408,12 +407,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\ReportsPages.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T13:55:43.659Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:55:43.659Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Resource.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Resource.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Resource.cs",
@@ -421,12 +419,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Resource.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T14:40:45.266Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T14:40:45.266Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "_Imports.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\_Imports.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\_Imports.razor",
@@ -434,12 +431,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\_Imports.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T10:55:43.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:55:43.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "ConnectionProvider.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\ConnectionProvider.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\ConnectionProvider.cs",
@@ -447,12 +443,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\ConnectionProvider.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAA9wBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:40:17.107Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:40:17.107Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "SelectMachin.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Components\\SelectMachin.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Components\\SelectMachin.razor",
@@ -460,12 +455,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Components\\SelectMachin.razor",
               "ViewState": "AgIAADYAAAAAAAAAAAAqwEgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T16:33:14.218Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T16:33:14.218Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DataManager.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Services\\DataManager.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Services\\DataManager.cs",
@@ -473,12 +467,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Services\\DataManager.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAQwDsAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:28:22.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:28:22.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Services.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\Services.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\Services.cs",
@@ -486,12 +479,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Services.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAA4wCQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:33.573Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:33.573Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ModelData.tt",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\ModelData.tt",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\ModelData.tt",
@@ -499,12 +491,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\ModelData.tt",
               "ViewState": "AgIAALABAAAAAAAAAAAAAMABAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2025-04-07T07:33:55.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:33:55.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Report.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\Report.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\Report.cs",
@@ -512,12 +503,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Report.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAjwBUAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:41:46.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:41:46.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "VendingMachin.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\VendingMachin.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\VendingMachin.cs",
@@ -525,12 +515,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\VendingMachin.cs",
               "ViewState": "AgIAAO4AAAAAAAAAAAAUwAgBAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:38:14.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:38:14.356Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "MachineProduct.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\MachineProduct.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\MachineProduct.cs",
@@ -538,12 +527,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\MachineProduct.cs",
               "ViewState": "AgIAABAAAAAAAAAAAIA9wCIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:39:11.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:39:11.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "MetaVendingMachine.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\MetaData\\MetaVendingMachine.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\MetaData\\MetaVendingMachine.cs",
@@ -551,12 +539,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\MetaData\\MetaVendingMachine.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:38:56.672Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:38:56.672Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "MetaCompany.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\MetaData\\MetaCompany.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\MetaData\\MetaCompany.cs",
@@ -564,12 +551,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\MetaData\\MetaCompany.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T07:39:15.613Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-07T07:39:15.613Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "NetManager.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Services\\NetManager.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Services\\NetManager.cs",
@@ -577,12 +563,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Services\\NetManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:30:19.056Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:30:19.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "ErrorMessage.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\ErrorMessage.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\ErrorMessage.cs",
@@ -590,12 +575,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\ErrorMessage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:46:22.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:46:22.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "UserServices.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Services\\UserServices.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Services\\UserServices.cs",
@@ -603,12 +587,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Services\\UserServices.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T12:43:24.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T12:43:24.899Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "WorkMode.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\WorkMode.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\WorkMode.cs",
@@ -616,12 +599,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\WorkMode.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T17:06:04.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T17:06:04.553Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "WebAppVendingMachin.csproj",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\WebAppVendingMachin.csproj",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\WebAppVendingMachin.csproj",
@@ -634,7 +616,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "LoginUser.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\LoginUser.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\LoginUser.cs",
@@ -642,12 +624,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\LoginUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T13:34:24.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:34:24.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\User.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\User.cs",
@@ -655,12 +636,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\User.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAEBUwB8AAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:00.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:00.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "SettingsPage.razor",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Components\\Pages\\SettingsPage.razor",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Components\\Pages\\SettingsPage.razor",
@@ -668,12 +648,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Components\\Pages\\SettingsPage.razor",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-06T13:56:11.366Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T13:56:11.366Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "GetToken.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\GetToken.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\GetToken.cs",
@@ -681,12 +660,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\GetToken.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:36:50.126Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:36:50.126Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\Partials\\User.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\Partials\\User.cs",
@@ -694,12 +672,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Partials\\User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:28.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:28.647Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "VendingMachin.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\Models\\Partials\\VendingMachin.cs",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\Models\\Partials\\VendingMachin.cs",
@@ -707,12 +684,11 @@
               "RelativeToolTip": "WebAppVendingMachin\\Models\\Partials\\VendingMachin.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T11:37:21.642Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T11:37:21.642Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "TestCanvas.js",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\WebAppVendingMachin\\WebAppVendingMachin\\wwwroot\\js\\TestCanvas.js",
               "RelativeDocumentMoniker": "WebAppVendingMachin\\wwwroot\\js\\TestCanvas.js",
@@ -720,8 +696,7 @@
               "RelativeToolTip": "WebAppVendingMachin\\wwwroot\\js\\TestCanvas.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAA6wAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-04-06T10:37:28.844Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T10:37:28.844Z"
             }
           ]
         }

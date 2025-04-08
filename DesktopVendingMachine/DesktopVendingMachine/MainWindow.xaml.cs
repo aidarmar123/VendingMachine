@@ -25,13 +25,15 @@ namespace DesktopVendingMachine
         {
             InitializeComponent();
             App.mainWindow = this;
-            Main.Navigate(new LoginPage());
+            FrameLogin.Navigate(new LoginPage());
         }
         private void BExit_Click(object sender, RoutedEventArgs e)
         {
             App.AuthUser = null;
             GProfile.DataContext = null;
-            Main.Navigate(new LoginPage());
+            FrameLogin.Navigate(new LoginPage());
+            Main.Visibility = Visibility.Collapsed;
+            FrameLogin.Visibility = Visibility.Visible;
         }
         private void HLMain_Click(object sender, RoutedEventArgs e)
         {
@@ -41,7 +43,7 @@ namespace DesktopVendingMachine
 
         private void HLMonitor_Click(object sender, RoutedEventArgs e)
         {
-            Main.Navigate(new MonitorPage());
+            Main.Navigate(new MonitorVendingMachin());
         }
 
         private void HLVendingMachine_Click(object sender, RoutedEventArgs e)
