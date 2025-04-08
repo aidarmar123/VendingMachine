@@ -1,4 +1,6 @@
 ﻿@page "/Registration"
+@using System.Text
+@using System.Security.Cryptography
 @inject NavigationManager navigationManager
 @layout AuthorizationLayout
 @inject IStringLocalizer<Resource> Localizer
@@ -149,6 +151,15 @@
 			return;
 		}
 
+		var password = contextUser.Password;
+		var bytePassword = Encoding.UTF8.GetBytes(password);
+		var hashMD5 = MD5.Create().ComputeHash(bytePassword);
+		var sb = new StringBuilder();
+		foreach(var item in hashMD5)
+		{
+			sb.Append(item.ToString("X2"));
+		}
+		contextUser.Password = sb.ToString();
 		var response = await NetManager.Post("api/Users", contextUser);
 		if (response.IsSuccessStatusCode)
 		{
@@ -157,6 +168,7 @@
 		}
 		else
 		{
+			contextUser.Password = password;
 			var error = await NetManager.ParseResponse<ErrorMessage>(response);
 			await ShowMessage(error.Message, Localizer["Error"]);
 		}

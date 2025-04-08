@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Security.RightsManagement;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +37,16 @@ namespace DesktopVendingMachine.Pages
         {
             if (!string.IsNullOrWhiteSpace(Login + Password))
             {
+
+                var bytePassword = Encoding.UTF8.GetBytes(Password);
+                var hashByte = MD5.Create().ComputeHash(bytePassword);
+                var sb = new StringBuilder();
+                foreach (var item in hashByte)
+                {
+                    sb.Append(item.ToString("X2"));
+                }
+                Password = sb.ToString();
+
                 var response = await NetManager.Authorization(Login, Password);
                 if (response.IsSuccessStatusCode)
                 {

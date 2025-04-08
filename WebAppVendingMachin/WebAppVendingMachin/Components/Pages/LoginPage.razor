@@ -1,6 +1,8 @@
 ﻿@page "/Login"
 @using Microsoft.AspNetCore.Localization
 @using Microsoft.Extensions.Localization
+@using System.Text
+@using System.Security.Cryptography
 @layout AuthorizationLayout
 @inject NavigationManager navigationManager
 @inject IHttpContextAccessor HttpContextAccessor
@@ -41,7 +43,16 @@
 	}
 	private async Task Login(EditContext args)
 	{
-		var response = await NetManager.Authorization(contextUser.Email, contextUser.Password);
+		var password = contextUser.Password;
+		var bytePassword = Encoding.UTF8.GetBytes(password);
+		var hashMD5 = MD5.Create().ComputeHash(bytePassword);
+		var sb = new StringBuilder();
+		foreach(var item in hashMD5)
+		{
+			sb.Append(item.ToString("X2"));
+		}
+		password = sb.ToString();
+		var response = await NetManager.Authorization(contextUser.Email, password);
 		if (response.IsSuccessStatusCode)
 		{
 			UserServices.AuthUser = (await NetManager.ParseResponse<GetToken>(response)).contextUser;
