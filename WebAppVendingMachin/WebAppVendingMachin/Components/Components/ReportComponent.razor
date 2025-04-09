@@ -1,8 +1,6 @@
 ﻿@inject IStringLocalizer<Resource> Localizer
-@using iText
-@using iText.Forms
-@using iText.Kernel.Pdf
-@using iText.Layout
+
+
 <EditForm FormName="CreateReport" Model="@contextReport" OnValidSubmit="Save">
 	<DataAnnotationsValidator />
 	<Microsoft.AspNetCore.Components.Forms.ValidationSummary />
@@ -22,6 +20,7 @@
 	</div>
 
 	<Button Disabled="IsDisable" Type="ButtonType.Submit">@Localizer["Save"]</Button>
+	
 
 </EditForm>
 
@@ -50,7 +49,7 @@
 			};
 
 	}
-
+	
 	private async Task Save(EditContext args)
 	{
 
@@ -61,6 +60,13 @@
 			{
 				await modalService.Hide();
 				contextReport.ReportData = CreateReport();
+
+				await NetManager.Post("api/CenterNotifications", new CenterNotification()
+					{
+						DateTime = DateTime.Now,
+						Notification = Localizer["Notification"],
+						UserId = UserServices.AuthUser.Id
+					});
 				await toastService.Success(Localizer["Success"], Localizer["Notification"]);
 
 				await modalService.Show<ReportViewr>(Localizer["Signing"], async x=>x.Add(y=>y.contextReport, await NetManager.ParseResponse<Report>(response)));
@@ -78,22 +84,12 @@
 	}
 	private byte[] CreateReport()
 	{
-		//var file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates", "Template.pdf");
+		var fileTemplate = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates", "Template.word");
 		//var pdfRider = new PdfReader(file);
 
 		using (var ms = new MemoryStream())
 		{
-			var pdfWriter = new PdfWriter(ms);
-			var pdf = new PdfDocument(pdfWriter);
-		
-			var document = new Document(pdf);
-
-			document.Add(new iText.Layout.Element.Paragraph("Report"));
-			document.Add(new iText.Layout.Element.Paragraph(contextReport.Company.Name));
-			document.Add(new iText.Layout.Element.Paragraph($"Арендую тороговый автомат {contextReport.VendingMachin.Name} с номером {contextReport.VendingMachinId}"));
-			document.Add(new iText.Layout.Element.Paragraph($"C {contextReport.DateStart.ToString("D")} по {contextReport.DateEnd.ToString("D")}"));
-			document.Close();
-			pdf.Close();
+			
 			return ms.ToArray();
 
 		}

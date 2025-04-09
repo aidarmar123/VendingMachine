@@ -230,8 +230,10 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\AutorizationController.cs" />
+    <Compile Include="Controllers\CenterNotificationsController.cs" />
     <Compile Include="Controllers\CompanysController.cs" />
     <Compile Include="Controllers\ConnectionProvidersController.cs" />
+    <Compile Include="Controllers\HistoryWebsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MachineProductsController.cs" />
     <Compile Include="Controllers\MachineTypePaysController.cs" />

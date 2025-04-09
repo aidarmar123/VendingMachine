@@ -18,14 +18,14 @@ namespace APIVendingMachine.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public VendingMachin()
         {
+            this.EquipmentVachinMachin = new HashSet<EquipmentVachinMachin>();
+            this.Incasation = new HashSet<Incasation>();
             this.MachineProduct = new HashSet<MachineProduct>();
             this.MachineTypePay = new HashSet<MachineTypePay>();
             this.Report = new HashSet<Report>();
             this.Sales = new HashSet<Sales>();
             this.Services = new HashSet<Services>();
-            this.EquipmentVachinMachin = new HashSet<EquipmentVachinMachin>();
             this.VendingMachinTypeConnection = new HashSet<VendingMachinTypeConnection>();
-            this.Incasation = new HashSet<Incasation>();
         }
     
         public int Id { get; set; }
@@ -63,13 +63,17 @@ namespace APIVendingMachine.Models
         public int PriceInMounth { get; set; }
         public int PaybackMonth { get; set; }
         public int Money { get; set; }
-        public int TypeMachinId { get; set; }
         public int TotalProduct { get; set; }
+        public int TypeMachinId { get; set; }
     
         [JsonIgnore]
         public virtual Company Company { get; set; }
         [JsonIgnore]
         public virtual ConnectionProvider ConnectionProvider { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Incasation> Incasation { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MachineProduct> MachineProduct { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -97,6 +101,8 @@ namespace APIVendingMachine.Models
         [JsonIgnore]
         public virtual TimeZone TimeZone { get; set; }
         [JsonIgnore]
+        public virtual TypeMachine TypeMachine { get; set; }
+        [JsonIgnore]
         public virtual User User { get; set; }
         [JsonIgnore]
         public virtual User User1 { get; set; }
@@ -107,12 +113,6 @@ namespace APIVendingMachine.Models
         [JsonIgnore]
         public virtual WorkMode WorkMode { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
-        [JsonIgnore]
-        public virtual TypeMachine TypeMachine { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachinTypeConnection> VendingMachinTypeConnection { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Incasation> Incasation { get; set; }
     }
 }

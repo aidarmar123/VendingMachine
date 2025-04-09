@@ -150,6 +150,18 @@
   <data name="Rent" xml:space="preserve">
     <value>Rent Machine</value>
   </data>
+  <data name="Main" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="Documnets" xml:space="preserve">
+    <value>Documnets</value>
+  </data>
+  <data name="Vending Machin" xml:space="preserve">
+    <value>Vending Machin</value>
+  </data>
   <data name="Error" xml:space="preserve">
     <value>Error</value>
   </data>
@@ -219,16 +231,7 @@
   <data name="Yes" xml:space="preserve">
     <value>Yes</value>
   </data>
-  <data name="Main" xml:space="preserve">
-    <value>Main</value>
-  </data>
-  <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
-  </data>
-  <data name="Documnets" xml:space="preserve">
-    <value>Documnets</value>
-  </data>
-  <data name="Vending Machin" xml:space="preserve">
-    <value>Vending Machin</value>
+  <data name="View" xml:space="preserve">
+    <value>View</value>
   </data>
 </root>

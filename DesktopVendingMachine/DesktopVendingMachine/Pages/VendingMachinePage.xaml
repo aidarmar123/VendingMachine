@@ -121,10 +121,10 @@
                     </DataGrid>
                 </TabItem>
                 <TabItem Header="Плиткой">
-                    <ListView x:Name="LVMachine">
+                    <ListView x:Name="LVMachine" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
                         <ListView.ItemTemplate>
                             <DataTemplate>
-                                <StackPanel>
+                                <StackPanel Background="LightGray" Margin="1">
                                     <TextBlock 
       Text="{Binding Id, StringFormat='Id {0}'}"/>
 

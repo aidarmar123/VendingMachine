@@ -109,7 +109,7 @@ namespace DesktopVendingMachine.Pages
 
         private void BPrevous_Click(object sender, RoutedEventArgs e)
         {
-            if (IndexPage > 0)
+            if (IndexPage > 1)
                 indexPage--;
             DataContext = null;
             DataContext = this;

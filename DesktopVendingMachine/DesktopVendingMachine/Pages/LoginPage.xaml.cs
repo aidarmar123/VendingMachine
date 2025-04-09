@@ -56,7 +56,7 @@ namespace DesktopVendingMachine.Pages
                     App.mainWindow.Content.Visibility = Visibility.Visible;
                     App.mainWindow.FrameLogin.Visibility = Visibility.Collapsed;
                     App.mainWindow.GProfile.DataContext =App.AuthUser;
-                    NavigationService.Navigate(new MainPage());
+                    App.mainWindow.Main.Navigate(new MainPage());
 
                 }
                 else

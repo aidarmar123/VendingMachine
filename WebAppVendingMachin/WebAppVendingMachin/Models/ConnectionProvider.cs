@@ -26,21 +26,7 @@ namespace WebAppVendingMachin.Models
         public string Name { get; set; }
         public Nullable<int> Price { get; set; }
         public byte[] Icon { get; set; }
-        public int StateConnectId { get; set; }
     
-        [JsonIgnore]
-    
-        public virtual StateConnect StateConnect 
-        {
-            get
-            {
-                return DataManager.StateConnects.FirstOrDefault(x=>x.Id == StateConnectId);
-            }
-            set
-            {
-            StateConnectId= value.Id;
-            }
-        }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin { get; set; }
     }

@@ -36,9 +36,9 @@ namespace DesktopVendingMachine.Pages
 
         public double ValueEffects { get; set; } = 1;
 
-        public LiveCharts.Wpf.Separator Separator { get; set; } = new LiveCharts.Wpf.Separator { Step = 1 };
+        public LiveCharts.Wpf.Separator Separator { get; set; } = new LiveCharts.Wpf.Separator() { Step=1};
 
-        public string[] LabelsSales { get; set; } = Enumerable.Range(0, 11).Select(i => DateTime.Now.AddDays(-10 + i).ToString("M")).ToArray();
+        public string[] LabelSales { get; set; } = Enumerable.Range(0,11).Select(i => DateTime.Now.AddDays(-10 + i).ToString("M")).ToArray();
         public string Dates { get; set; } = $"{DateTime.Now.AddDays(-10).ToString("d")} по {DateTime.Now.ToString("d")}";
         public MainPage()
         {
@@ -47,7 +47,7 @@ namespace DesktopVendingMachine.Pages
             GenerateState();
             GenerateSales();
             Refresh();
-            ValueEffects = DataManager.VendingMachins.Select(x => x.StatusMachinId == 1).Count() / DataManager.VendingMachins.Count * 100;
+            ValueEffects =DataManager.VendingMachins.Count(x=>x.StatusMachinId==1)/DataManager.VendingMachins.Count()*100;
             DataContext = this;
 
         }
@@ -67,54 +67,59 @@ namespace DesktopVendingMachine.Pages
 
         private void GenerateSales(bool isSum = false)
         {
-            var sales = DataManager.Saless.Where(x => x.DateTimeSale >= DateTime.Now.AddDays(-10)).ToList();
+            var sales = DataManager.Saless.Where(x => x.DateTimeSale.Date >= DateTime.Now.AddDays(-10).Date).ToList();
 
-            //var values = sales.GroupBy(x => x.DateTimeSale.Date).Select(y => y.Sum(s => s.CountProduct * (isSum ? s.Product.Price : 1)) );
-            var values = Enumerable.Range(0, 11)
-                .Select(x => sales.Where(s => s.DateTimeSale.Date == DateTime.Now.AddDays(-10 + x).Date).Select(y => y.CountProduct * (isSum ? y.Product.Price : 1)).Sum());
-            var seriesCollection = new SeriesCollection()
+            var values = Enumerable.Range(0, 11).Select(i => sales.Where(x => x.DateTimeSale.Date == DateTime.Now.AddDays(-10 + i).Date).Sum(x=>x.CountProduct* (isSum ? x.Product.Price : 1))).ToList();
+
+            //var values = sales.GroupBy(x => x.DateTimeSale.Date).Select(y => y.Select(s => s.CountProduct *(isSum?s.Product.Price:1)).Sum()).AsChartValues();
+
+            var seriesCollection = new SeriesCollection(
+
+
+                )
             {
-                new ColumnSeries
+                  new ColumnSeries
                 {
-
+                    Title = "Продажи",
                     Values = values.AsChartValues(),
                 }
             };
 
-            ChartSale.Series = seriesCollection;
+            LVSales.Series = seriesCollection;
         }
 
         private void GenerateState()
         {
-            int work = DataManager.VendingMachins.Count(x => x.StatusMachinId == 1);
-            int dontwork = DataManager.VendingMachins.Count(x => x.StatusMachinId == 2);
-            int toservice = DataManager.VendingMachins.Count(x => x.StatusMachinId == 3);
-            var seriesCollection = new SeriesCollection()
+            var vendingMachin = DataManager.VendingMachins;
+
+            var pieCollection = new SeriesCollection()
             {
                 new PieSeries
                 {
-                    Title="рабочий ",
-                    Values = new ChartValues<int>{work}
+                    Title ="работает",
+                    Values = new ChartValues<int>{vendingMachin.Count(x=>x.StatusMachinId==1)}
 
                 },
-                new PieSeries
+                 new PieSeries
                 {
-                    Title="не рабочий ",
-                    Values = new ChartValues<int>{dontwork}
+                    Title ="не работает",
+                    Values = new ChartValues<int>{vendingMachin.Count(x=>x.StatusMachinId==2)}
+                    
 
                 },
-                new PieSeries
+                 new PieSeries
                 {
-                    Title="на обслуживании",
-                    Values = new ChartValues<int>{toservice}
+                    Title ="на обслуживании",
+                    Values = new ChartValues<int>{vendingMachin.Count(x=>x.StatusMachinId==3)}
+
 
                 },
 
 
             };
-
-            PieChart.Series = seriesCollection;
-
+                
+            PStae.Series = pieCollection;
+                
         }
 
         private void BSum_Click(object sender, RoutedEventArgs e)

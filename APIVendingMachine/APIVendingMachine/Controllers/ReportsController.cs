@@ -109,7 +109,8 @@ namespace APIVendingMachine.Controllers
                 return BadRequest("Автомат уже забранирован");
             }
 
-            vendingMachin.CompanyId = report.CompanyId;
+            //vendingMachin.CompanyId = report.CompanyId;
+            report.VendingMachin = null;
             db.Report.Add(report);
             db.SaveChanges();
 
@@ -132,6 +133,32 @@ namespace APIVendingMachine.Controllers
             db.SaveChanges();
 
             return Ok(report);
+        }
+
+        [HttpGet]
+        [Route("file/{id}")]
+        public IHttpActionResult GetFileByName(int id)
+        {
+            var material = db.Report.FirstOrDefault(m => m.Id == id);
+
+            if (material == null)
+            {
+                return NotFound();
+            }
+
+            var result = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = new ByteArrayContent(material.ReportData)
+            };
+
+            result.Content.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("application/octet-stream");
+
+            result.Content.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("attachment")
+            {
+                FileName = $"{id}.pdf"
+            };
+
+            return ResponseMessage(result);
         }
 
         protected override void Dispose(bool disposing)

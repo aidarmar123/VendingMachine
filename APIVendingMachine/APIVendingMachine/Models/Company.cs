@@ -18,10 +18,10 @@ namespace APIVendingMachine.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Company()
         {
+            this.Company1 = new HashSet<Company>();
             this.Report = new HashSet<Report>();
             this.User = new HashSet<User>();
             this.VendingMachin = new HashSet<VendingMachin>();
-            this.Company1 = new HashSet<Company>();
         }
     
         public int Id { get; set; }
@@ -33,14 +33,14 @@ namespace APIVendingMachine.Models
         public Nullable<int> MainCompanyId { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Company> Company1 { get; set; }
+        [JsonIgnore]
+        public virtual Company Company2 { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Report> Report { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<User> User { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Company> Company1 { get; set; }
-        [JsonIgnore]
-        public virtual Company Company2 { get; set; }
     }
 }

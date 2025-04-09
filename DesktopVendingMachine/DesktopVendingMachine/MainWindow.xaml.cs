@@ -25,6 +25,7 @@ namespace DesktopVendingMachine
         {
             InitializeComponent();
             App.mainWindow = this;
+
             FrameLogin.Navigate(new LoginPage());
         }
         private void BExit_Click(object sender, RoutedEventArgs e)

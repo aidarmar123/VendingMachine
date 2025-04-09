@@ -137,7 +137,7 @@
     <Property Name="DateStart" Type="datetime" Nullable="false" />
     <Property Name="DateEnd" Type="datetime" Nullable="false" />
     <Property Name="StatusReportId" Type="int" Nullable="false" />
-    <Property Name="ReportData" Type="varbinary" MaxLength="4000" />
+    <Property Name="ReportData" Type="varbinary(max)" />
     <Property Name="VendingMachinId" Type="int" Nullable="false" />
     <Property Name="NeedInsurance" Type="bit" Nullable="false" />
   </EntityType>

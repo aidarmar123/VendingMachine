@@ -25,8 +25,13 @@ namespace APIVendingMachine.Models
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<CenterNotification> CenterNotification { get; set; }
         public virtual DbSet<Company> Company { get; set; }
         public virtual DbSet<ConnectionProvider> ConnectionProvider { get; set; }
+        public virtual DbSet<Equipment> Equipment { get; set; }
+        public virtual DbSet<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
+        public virtual DbSet<HistoryWeb> HistoryWeb { get; set; }
+        public virtual DbSet<Incasation> Incasation { get; set; }
         public virtual DbSet<MachineProduct> MachineProduct { get; set; }
         public virtual DbSet<MachineTypePay> MachineTypePay { get; set; }
         public virtual DbSet<Manufacture> Manufacture { get; set; }
@@ -45,17 +50,12 @@ namespace APIVendingMachine.Models
         public virtual DbSet<StatusReport> StatusReport { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<TimeZone> TimeZone { get; set; }
+        public virtual DbSet<TypeConnection> TypeConnection { get; set; }
+        public virtual DbSet<TypeMachine> TypeMachine { get; set; }
         public virtual DbSet<TypePay> TypePay { get; set; }
         public virtual DbSet<User> User { get; set; }
         public virtual DbSet<VendingMachin> VendingMachin { get; set; }
-        public virtual DbSet<WorkMode> WorkMode { get; set; }
-        public virtual DbSet<Equipment> Equipment { get; set; }
-        public virtual DbSet<EquipmentVachinMachin> EquipmentVachinMachin { get; set; }
-        public virtual DbSet<TypeConnection> TypeConnection { get; set; }
-        public virtual DbSet<TypeMachine> TypeMachine { get; set; }
         public virtual DbSet<VendingMachinTypeConnection> VendingMachinTypeConnection { get; set; }
-        public virtual DbSet<CenterNotification> CenterNotification { get; set; }
-        public virtual DbSet<HistoryWeb> HistoryWeb { get; set; }
-        public virtual DbSet<Incasation> Incasation { get; set; }
+        public virtual DbSet<WorkMode> WorkMode { get; set; }
     }
 }

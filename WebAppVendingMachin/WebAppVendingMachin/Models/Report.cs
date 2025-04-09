@@ -19,7 +19,7 @@ namespace WebAppVendingMachin.Models
         public int Id { get; set; }
         public int CompanyId { get; set; }
         public Nullable<System.DateTime> DateSigning { get; set; }
-        public System.DateTime DateStart { get; set; } 
+        public System.DateTime DateStart { get; set; }
         public System.DateTime DateEnd { get; set; }
         public int StatusReportId { get; set; }
         public byte[] ReportData { get; set; }

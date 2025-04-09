@@ -24,6 +24,9 @@ namespace WebAppVendingMachin.Services
         public static List<Models.Company> Companys;
         public static List<StatusReport> StatusReports;
         public static List<Report> Reports;
+        public static List<Equipment> Equipments;
+        public static List<TypeConnection> TypeConnections;
+        public static List<TypeMachine> TypeMachines;
 
 
         public static List<WebAppVendingMachin.Models.User> Users;

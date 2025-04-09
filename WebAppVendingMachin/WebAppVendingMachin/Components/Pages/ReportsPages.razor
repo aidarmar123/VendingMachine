@@ -21,6 +21,15 @@
 
 			</DisplayTemplate>
 		</DataGridColumn>
+		<DataGridColumn TItem="Report" Caption="@Localizer["Action"]">
+			<DisplayTemplate>
+				<Button Clicked="@(()=>SingingReport(context))">
+					@Localizer["View"]
+					
+				</Button>
+
+			</DisplayTemplate>
+		</DataGridColumn>
 
 	</DataGridColumns>
 </DataGrid>

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\vendingmachinscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\vendingmachinscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\models\\modeldata.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\modeldata.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\controllers\\connectionproviderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\connectionproviderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\models\\metadata\\metauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\metadata\\metauser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\controllers\\historywebscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\historywebscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,23 +31,15 @@
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\reportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\models\\modeldata.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\models\\modeldata.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\modeldata.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|c:\\users\\ajdar\\onedrive\\desktop\\vendingmachines\\apivendingmachine\\apivendingmachine\\controllers\\statusreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\statusreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\statusreportscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -49,10 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\autorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\autorizationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\vendingmachinscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\vendingmachinscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\machinetypepayscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -115,10 +111,6 @@
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\errormessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\models\\accountbindingmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\models\\accountbindingmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -161,6 +153,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\apivendingmachine\\controllers\\manufacturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EAF736B1-B9C9-4908-B7D5-1962326E52BF}|APIVendingMachine\\APIVendingMachine.csproj|solutionrelative:apivendingmachine\\controllers\\manufacturescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:APIVendingMachine\\Controllers\\AccountController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -170,75 +166,62 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ConnectionProvidersController.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ConnectionProvidersController.cs",
-              "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ConnectionProvidersController.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ConnectionProvidersController.cs",
-              "RelativeToolTip": "APIVendingMachine\\Controllers\\ConnectionProvidersController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T14:13:36.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MetaUser.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\MetaData\\MetaUser.cs",
-              "RelativeDocumentMoniker": "APIVendingMachine\\Models\\MetaData\\MetaUser.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\MetaData\\MetaUser.cs",
-              "RelativeToolTip": "APIVendingMachine\\Models\\MetaData\\MetaUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:50:10.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\User.cs",
-              "RelativeDocumentMoniker": "APIVendingMachine\\Models\\User.cs",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\User.cs",
-              "RelativeToolTip": "APIVendingMachine\\Models\\User.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAA8wDkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-07T12:49:37.385Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ModelData.edmx [Diagram1]",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\ModelData.edmx",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\ModelData.edmx",
-              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\ModelData.edmx [Diagram1]*",
-              "RelativeToolTip": "APIVendingMachine\\Models\\ModelData.edmx [Diagram1]*",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\ModelData.edmx [Diagram1]",
+              "RelativeToolTip": "APIVendingMachine\\Models\\ModelData.edmx [Diagram1]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-04-07T08:48:47.117Z",
+              "WhenOpened": "2025-04-09T13:25:16.962Z",
               "EditorCaption": " [Diagram1]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ReportsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ReportsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ReportsController.cs",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ReportsController.cs",
               "RelativeToolTip": "APIVendingMachine\\Controllers\\ReportsController.cs",
-              "ViewState": "AgIAAF8AAAAAAAAAAAAqwHEAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAcwI8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-07T07:43:50.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "APIVendingMachine\\Models\\Report.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\Report.cs",
+              "RelativeToolTip": "APIVendingMachine\\Models\\Report.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T07:10:17.076Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HistoryWebsController.cs",
+              "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\HistoryWebsController.cs",
+              "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\HistoryWebsController.cs",
+              "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\HistoryWebsController.cs",
+              "RelativeToolTip": "APIVendingMachine\\Controllers\\HistoryWebsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-09T12:38:07.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "UsersController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\UsersController.cs",
@@ -251,20 +234,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 0,
               "Title": "VendingMachinsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\VendingMachinsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\VendingMachinsController.cs",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\VendingMachinsController.cs",
               "RelativeToolTip": "APIVendingMachine\\Controllers\\VendingMachinsController.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAowF8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAgwHQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-05T08:01:36.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 15,
               "Title": "MetaCompany.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\MetaData\\MetaCompany.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\MetaData\\MetaCompany.cs",
@@ -290,7 +273,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Web.config",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Web.config",
               "RelativeDocumentMoniker": "APIVendingMachine\\Web.config",
@@ -303,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Startup.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Startup.cs",
@@ -355,7 +338,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 20,
               "Title": "ProductMatrixsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ProductMatrixsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ProductMatrixsController.cs",
@@ -368,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 14,
               "Title": "MetaVendingMachine.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\MetaData\\MetaVendingMachine.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\MetaData\\MetaVendingMachine.cs",
@@ -381,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "MachineProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\MachineProductsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\MachineProductsController.cs",
@@ -394,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "MachineTypePaysController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\MachineTypePaysController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\MachineTypePaysController.cs",
@@ -407,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 21,
               "Title": "TimeZonesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\TimeZonesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\TimeZonesController.cs",
@@ -420,7 +403,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 16,
               "Title": "CompanysController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\CompanysController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\CompanysController.cs",
@@ -433,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 17,
               "Title": "PriotityServicesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\PriotityServicesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\PriotityServicesController.cs",
@@ -446,7 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 19,
               "Title": "ShcemaCritValuesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ShcemaCritValuesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ShcemaCritValuesController.cs",
@@ -459,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 18,
               "Title": "ShcemaNotificationsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ShcemaNotificationsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ShcemaNotificationsController.cs",
@@ -472,7 +455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 27,
               "Title": "AccountBindingModels.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\AccountBindingModels.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\AccountBindingModels.cs",
@@ -485,7 +468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 28,
               "Title": "AccountViewModels.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\AccountViewModels.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\AccountViewModels.cs",
@@ -498,7 +481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 25,
               "Title": "AuthUser.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\AuthUser.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\AuthUser.cs",
@@ -511,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 24,
               "Title": "ApplicationOAuthProvider.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Providers\\ApplicationOAuthProvider.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Providers\\ApplicationOAuthProvider.cs",
@@ -524,7 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 23,
               "Title": "ChallengeResult.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Results\\ChallengeResult.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Results\\ChallengeResult.cs",
@@ -537,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 22,
               "Title": "NewsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\NewsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\NewsController.cs",
@@ -550,7 +533,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 26,
               "Title": "ErrorMessage.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Models\\ErrorMessage.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Models\\ErrorMessage.cs",
@@ -563,20 +546,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 38,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\AccountController.cs",
               "RelativeToolTip": "APIVendingMachine\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-05T08:25:04.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-05T08:25:04.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 30,
               "Title": "WorkModesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\WorkModesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\WorkModesController.cs",
@@ -589,7 +570,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 31,
               "Title": "TypePaysController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\TypePaysController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\TypePaysController.cs",
@@ -602,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 32,
               "Title": "StatusMachinsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\StatusMachinsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\StatusMachinsController.cs",
@@ -615,7 +596,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 33,
               "Title": "ServicesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ServicesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ServicesController.cs",
@@ -628,7 +609,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 29,
               "Title": "SalesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\SalesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\SalesController.cs",
@@ -641,7 +622,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 34,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\RolesController.cs",
@@ -654,7 +635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 35,
               "Title": "ProductsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ProductsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ProductsController.cs",
@@ -667,7 +648,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 36,
               "Title": "ModelsController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ModelsController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ModelsController.cs",
@@ -680,7 +661,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "ManufacturesController.cs",
               "DocumentMoniker": "C:\\Users\\Ajdar\\OneDrive\\Desktop\\VendingMachines\\APIVendingMachine\\APIVendingMachine\\Controllers\\ManufacturesController.cs",
               "RelativeDocumentMoniker": "APIVendingMachine\\Controllers\\ManufacturesController.cs",

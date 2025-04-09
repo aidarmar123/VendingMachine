@@ -4,10 +4,19 @@
 <PageTitle>Home</PageTitle>
 
 
-
+<DataGrid TItem="CenterNotification"
+Data="centerNotifications">
+    <DataGridColumns>
+        <DataGridColumn Field="@nameof(CenterNotification.DateTime)" Caption="Date"/>
+        <DataGridColumn Field="@nameof(CenterNotification.Notification)" Caption="Notifacation"/>
+    </DataGridColumns>
+</DataGrid>
 
 @code {
-
-   
-    
+    public List<CenterNotification> centerNotifications { get; set; }
+    protected override async Task OnInitializedAsync()
+    {
+        UserServices.AuthUser = await NetManager.Get<User>($"api/Users/{UserServices.AuthUser.Id}");
+        centerNotifications = UserServices.AuthUser.CenterNotification.ToList();
+    }
 }

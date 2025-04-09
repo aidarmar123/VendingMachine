@@ -26,7 +26,7 @@ namespace WebAppVendingMachin.Models
     
         [JsonIgnore]
     
-        public virtual User User 
+        public virtual User Employee 
         {
             get
             {
@@ -34,7 +34,7 @@ namespace WebAppVendingMachin.Models
             }
             set
             {
-                EmployeeId = value.Id;
+            EmployeeId= value.Id;
             }
         }
         [JsonIgnore]

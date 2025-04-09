@@ -18,13 +18,13 @@ namespace APIVendingMachine.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public User()
         {
+            this.CenterNotification = new HashSet<CenterNotification>();
+            this.HistoryWeb = new HashSet<HistoryWeb>();
             this.Services = new HashSet<Services>();
             this.VendingMachin = new HashSet<VendingMachin>();
             this.VendingMachin1 = new HashSet<VendingMachin>();
             this.VendingMachin2 = new HashSet<VendingMachin>();
             this.VendingMachin3 = new HashSet<VendingMachin>();
-            this.CenterNotification = new HashSet<CenterNotification>();
-            this.HistoryWeb = new HashSet<HistoryWeb>();
         }
     
         public int Id { get; set; }
@@ -37,8 +37,12 @@ namespace APIVendingMachine.Models
         public int CompanyId { get; set; }
         public string Phone { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CenterNotification> CenterNotification { get; set; }
         [JsonIgnore]
         public virtual Company Company { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HistoryWeb> HistoryWeb { get; set; }
         [JsonIgnore]
         public virtual Role Role { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -51,9 +55,5 @@ namespace APIVendingMachine.Models
         public virtual ICollection<VendingMachin> VendingMachin2 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<VendingMachin> VendingMachin3 { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CenterNotification> CenterNotification { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HistoryWeb> HistoryWeb { get; set; }
     }
 }

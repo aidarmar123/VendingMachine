@@ -1,16 +1,24 @@
-﻿@using iText.Kernel.Pdf
-@using iText.Layout
+﻿@using System.Text
 @inject IJSRuntime JS
 @inject IStringLocalizer<Resource> Localizer
 <h3>ReportViewr</h3>
 @if (contextReport.ReportData != null)
 {
-
-	<Blazorise.PdfViewer.PdfViewer Source='@($"data:application/pdf;base64,{Convert.ToBase64String(contextReport.ReportData)}")'></Blazorise.PdfViewer.PdfViewer>
+	<Blazorise.PdfViewer.PdfViewerContainer>
+		<Button Clicked="@(()=>pdfViewr.PreviousPage())">⬅</Button>
+		<Button Clicked="@(()=>pdfViewr.NextPage())">➡</Button>
+		<Blazorise.PdfViewer.PdfViewer @ref="pdfViewr" Source='@($"data:application/pdf;base64,{Convert.ToBase64String(contextReport.ReportData)}")'></Blazorise.PdfViewer.PdfViewer>
+	</Blazorise.PdfViewer.PdfViewerContainer>
 }
+
 <canvas id="signatureCanvas" width="400" height="200" style="border:1px solid #000;"></canvas>
+<Button Clicked="Test">Test</Button>
 <Button Clicked="Signing">@Localizer["Signing"]</Button>
 @code {
+	PdfViewer pdfViewr;
+
+
+
 	[Parameter] public Report contextReport { get; set; }
 	[Inject] IModalService modalService { get; set; }
 	[Inject] IToastService toastService { get; set; }
@@ -18,50 +26,47 @@
 	{
 		if (contextReport.ReportData == null)
 		{
-			contextReport.ReportData = CreateReport();
+			contextReport.ReportData = CreateReport.GetReportPDF(contextReport);
 		}
 	}
 
-	private byte[] CreateReport()
-	{
-		//var file = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Templates", "Template.pdf");
-		//var pdfRider = new PdfReader(file);
 
-		using (var ms = new MemoryStream())
-		{
-			var pdfWriter = new PdfWriter(ms);
-			var pdf = new PdfDocument(pdfWriter);
-
-			var document = new Document(pdf);
-
-			document.Add(new iText.Layout.Element.Paragraph("Report"));
-			document.Add(new iText.Layout.Element.Paragraph(contextReport.Company.Name));
-			document.Add(new iText.Layout.Element.Paragraph($"Арендую тороговый автомат {contextReport.VendingMachin.Name} с номером {contextReport.VendingMachinId}"));
-			document.Add(new iText.Layout.Element.Paragraph($"C {contextReport.DateStart.ToString("D")} по {contextReport.DateEnd.ToString("D")}"));
-			document.Close();
-			pdf.Close();
-			return ms.ToArray();
-
-		}
-	}
 	protected override async Task OnAfterRenderAsync(bool firstRender)
 	{
 		if (firstRender)
 		{
-			await JS.InvokeVoidAsync("initSignaturePad", "signatureCanvas");
+			await JS.InvokeVoidAsync("initSignaturePad");
 		}
 	}
 	private async Task Signing(MouseEventArgs args)
 	{
+		var sign = await JS.InvokeAsync<string>("getSignatureImage");
+		contextReport.ReportData = CreateReport.InsertSign(contextReport.ReportData, Convert.FromBase64String(sign.Split(',')[1]));
+		await InvokeAsync(StateHasChanged);
+
+
+
 		contextReport.DateSigning = DateTime.Now;
 		await NetManager.Put($"api/Reports/{contextReport.Id}", contextReport);
 		await modalService.Hide();
-		await toastService.Success("Report signing");
+
+		string contentNotification = "Документ создан";
+		await NetManager.Post("api/CenterNotifications", new CenterNotification()
+			{
+				DateTime = DateTime.Now,
+				Notification = contentNotification,
+				UserId = UserServices.AuthUser.Id
+			});
+		await toastService.Success(contentNotification);
+	}
+	private async Task Test(MouseEventArgs args)
+	{
+
 	}
 }
 <script>
-	  window.initSignaturePad = function (canvasId) {
-		const canvas = document.getElementById(canvasId);
+	  window.initSignaturePad = function () {
+		const canvas = document.getElementById("signatureCanvas");
 		const ctx = canvas.getContext("2d");
 
 		let drawing = false;
@@ -101,8 +106,15 @@
 		canvas.addEventListener("mouseleave", stopDrawing);
 
 		// Touch events
-
 	};
+
+	window.getSignatureImage=function(){
+		const canvas = document.getElementById("signatureCanvas")
+		if(canvas){
+			return canvas.toDataURL();
+		}
+		return "";
+	}
 
 
 </script>

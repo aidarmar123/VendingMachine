@@ -37,6 +37,7 @@
 	[Inject] IJSRuntime JS { get; set; }
 	LoginUser contextUser { get; set; } = new LoginUser();
 
+	Timer timer { get; set; }
 	private void Registration(MouseEventArgs args)
 	{
 		navigationManager.NavigateTo("/Registration");

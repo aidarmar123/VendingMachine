@@ -41,9 +41,10 @@
                     <RowDefinition Height="auto"/>
                     </Grid.RowDefinitions>
                     <TextBlock Text="Эффективность cети"  Background="LightGray"/>
-                <lvc:AngularGauge LabelsStep="100"  Grid.Row="1" Value="{Binding ValueEffects}" SectionsInnerRadius=".5" Wedge="250"  Margin="10" >
+
+                <lvc:AngularGauge Grid.Row="1"  Value="{Binding ValueEffects}" LabelsStep="100" SectionsInnerRadius="0.5">
                     <lvc:AngularGauge.Sections>
-                        <lvc:AngularSection FromValue="1" ToValue="100" Fill="Green"/>
+                        <lvc:AngularSection FromValue="1" ToValue="100" Fill="#00cc33"/>
                     </lvc:AngularGauge.Sections>
                 </lvc:AngularGauge>
                 <TextBlock Grid.Row="2" HorizontalAlignment="Center" Text="{Binding ValueEffects, StringFormat='Работающих автоматов: {0}%'}"/>
@@ -71,12 +72,9 @@
            
                     </StackPanel>
                 </StackPanel>
-                <lvc:CartesianChart x:Name="ChartSale" Grid.Row="1">
+                <lvc:CartesianChart Name="LVSales" Grid.Row="1">
                     <lvc:CartesianChart.AxisX>
-                        <lvc:Axis ShowLabels="True" Separator="{Binding Separator}" Labels="{Binding LabelsSales}">
-                        
-                        </lvc:Axis>
-                        
+                        <lvc:Axis Labels="{Binding LabelSales}" Separator="{Binding Separator}"/>
                     </lvc:CartesianChart.AxisX>
                 </lvc:CartesianChart>
             </Grid>
@@ -87,7 +85,9 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
                 <TextBlock Text="Состояние сети"/>
-                <lvc:PieChart Grid.Row="1" x:Name="PieChart" InnerRadius="10">
+                <lvc:PieChart x:Name="PStae" InnerRadius="1"
+                              Grid.Row="1">
+                    
                 </lvc:PieChart>
             </Grid>
 
